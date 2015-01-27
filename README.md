@@ -1,10 +1,10 @@
-# Dune
+# dune
 
 De l'union née l'évolution
 
 ## PlateForme de financement participatif
 
-Bienvenue sur Code source de Dune nouvel acteur de l'économie locale française
+Bienvenue sur Code source de dune nouvel acteur de l'économie locale française
 
 
 ## Credits
