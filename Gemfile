@@ -136,7 +136,7 @@ group :test do
 end
 
 gem 'asset_sync'
-gem 'sass-rails', '~> 4.0.4'
+gem 'sass-rails', '~> 4.0.5'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'uglifier'
 gem 'font-icons-rails', github: 'josemarluedke/font-icons-rails', branch: 'fix-svgz'

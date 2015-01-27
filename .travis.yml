@@ -13,7 +13,7 @@ before_script:
   -    secure: tWSfGLGVFh1VPJxIlHzA+iVM8qjDsqmw+eQx0t3//pNJXCpSatS98Dzr8u/W8JXQlMH4mauKfFEVdIKmOQHLfi/yIFIxgjM4CrHOXgDZ7ZtXpzY5NiwUt7eXiCKdWalLmmkdt4vBL9GYTCuGk47HD9cRL8L6jySGxxgjV5zIYTg=
   -  app: dune-investissement
   -  on:
-  -    repo: neighborly/neighborly
+  -    repo: dune-investissement
   -  run:
   -    - rake db:migrate
   -    - restart
