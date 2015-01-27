@@ -1,0 +1,26 @@
+fr:
+  words:
+    _no: 'Non'
+    _yes: 'Oui'
+    or: 'ou'
+    send: 'envoi'
+    sending: 'Envoi en cours...'
+    remaining_plural: 'restants'
+    remaining_singular: 'restant'
+    neighbor_plural: 'voisins'
+    neighbor_singular: 'voisin'
+    confirm: 'Vous êtes sûr ?'
+    detele: 'Supprimer'
+    cancel: 'Annuler'
+    fix-errors-below: "S'il vous plaît, corriger les erreurs ci-dessous:"
+    accept_terms_html: "J'ai lu et accepté les %{link}."
+    terms: "Conditions d'utilisation"
+    see_more: 'Voir plus'
+    credits: 'Crédits'
+    no_name: 'Anonyme'
+    found_plural: 'Trouvés'
+    found_singular: 'Trouvé'
+    contribution_plural: 'contributeurs'
+    contribution_singular: 'contributeur'
+    project_plural: 'projets'
+    project_singular: 'projet'

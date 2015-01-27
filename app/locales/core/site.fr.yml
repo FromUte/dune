@@ -1,0 +1,11 @@
+fr:
+  facebook_locale: 'fr_FR'
+  site:
+    title: "De l'union née l'évolution"
+    meta_title:  "%{title} · %{company_name}"
+    description: "De l'union de votre épargne née l'évolution de nos entreprises"
+    keywords: "Dune, crowdfunding, projets, communauté, open source, civique, économie local, innovation, Finance, Finance participative, prêts, intêrets, TPE, PME"
+    email:
+      contact: 'legrand.work@gmail.com'
+    ograph:
+      description: "Dune-crowdfunding est le meilleur moyen de faire travailler intelligemment son épargne en invertissant dans l'économie locale, en y gagnant des intérêts, en supportant nos TPE/PME."

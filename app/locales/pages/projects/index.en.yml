@@ -1,0 +1,24 @@
+en:
+  projects:
+    index:
+      title: 'Fundraising for civic projects | Civic Crowdfunding | CSR | Cause Marketing'
+      recommended: 'Projects We'
+      near: 'Projects Near'
+      channels: 'Partners'
+      ending_soon: 'Ending Soon'
+      successful: 'Past Campaigns'
+      coming_soon: 'Coming Soon'
+      with_active_matches: 'Active Matches'
+      join:
+        join_the_neighborhood: 'Join the Neighborhood'
+        already_joined: 'Already joined? %{link}.'
+        sign_in: 'Sign in'
+      hero:
+        title: 'Support the places you care about'
+        subtitle: "Donate to local projects, enhance cities and earn perks."
+      start-one:
+        title: 'Have a community project in need of funding?'
+        button: 'Start one in your area'
+    invest_box:
+      facebook: 'Share'
+      twitter: 'Tweet'

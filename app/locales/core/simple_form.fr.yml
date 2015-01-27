@@ -1,0 +1,123 @@
+fr:
+  simple_form:
+    "yes": 'Oui'
+    "no": 'Non'
+    required:
+      text: 'requis'
+      mark: '*'
+    error_notification:
+      default_message: "S'il vous plaît examiner les problèmes suivant :"
+    placeholders:
+      user:
+        name: 'nom et prénom'
+        email: 'Email'
+        password: 'Mot de passe'
+        current_password: 'Mot de passe actuel'
+        bio: '140 caractères ou moins ...'
+        facebook_url: 'http://facebook.com/'
+        other_url: 'http://www.'
+        linkedin_url: 'http://linkedin.com/in/'
+        twitter_url: 'http://twitter.com/'
+      channel:
+        facebook: 'http://facebook.com/'
+        twitter: 'http://twitter.com/'
+        website: 'http://www.'
+    labels:
+      contact:
+        first_name: 'Prénom'
+        last_name: 'Nom de Famille'
+        organization_name: "Nom de la société"
+        organization_website: 'Site web de la société'
+        email: 'Adresse e-mail'
+        phone: 'Téléphone (Si vous préférez être appelé)'
+        message: "Quelque chose en particulier que vous aimeriez savoir ?"
+      channel:
+        how_it_works: 'À Propos De Nous'
+        submit_your_project_text: 'Soumettez votre projet'
+        start_hero_image: "Tête d'image"
+        start_content:
+          start_primary_content: 'Contenu primaire'
+          start_secondary_content: 'Contenu secondaire'
+      user:
+        bio: 'Courte biographie'
+        password: 'Nouveau Mot de Passe'
+        newsletter: 'Recevoir des e-mails occasionel de Dune-crowdFunding'
+        new_project: 'Envoyez-moi des e-mails lorsque de nouveaux projets sont ajoutés à Dune-crowdfunding'
+        profile_type: 'Afficher moi comme un'
+        phone_number: 'Numéro de téléphone'
+        location: 'Ville, Région'
+        address_street: 'Adresse de la rue'
+        address_neighborhood: 'Nom du quartier'
+        address_zip_code: 'Code Postale'
+        other_url: 'Votre site web'
+        update_address: "Mettre à jour mon adresse."
+      project:
+        name: 'Titre du projet'
+        campaign_type: 'Type de projet'
+        category_id: 'Catégorie'
+        category: 'Catégorie'
+        permalink: 'Lien permanent'
+        goal: 'Budget du projet'
+        headline: 'Résumé'
+        about: "L'histoire"
+        expires_at: 'Durée'
+        online_days: 'Durée en ligne'
+        video_url: 'Vidéo URL'
+        uploaded_image: 'Miniature du projet'
+        hero_image: "L'image d'en-tête du projet"
+        site: 'Site Web'
+        hash_tag: 'Hashtag'
+        foundation_widget: 'Utilisez widget de nouvelle entreprise ?'
+        address_neighborhood: "Nom de la zone d'activité"
+        location: 'Ville, Région'
+        address_city: 'Ville'
+        address_state: 'Région'
+        budget: 'Détail du budget'
+        tag_list: 'Mots clés'
+        street_address: 'Adresse de la rue'
+        new:
+          category_id: 'Catégorie du projet'
+      contribution:
+        new:
+          anonymous: 'Facultatif: réaliser un prêt anonyme.'
+          short_note: "Facultatif: Ajoutez un message court. Il sera afficher avec votre nom dans l'onglet 'Voisins'."
+    hints:
+      project:
+        edit:
+          video_url_edit: "Collez ici l'URL de votre vidéo Vimeo ou Youtube."
+          about: "Racontez nous l'histoire de votre projet. Soyez fin objectif charmant, présenter à vos lecteurs un texte qui les émeut, tout en étant très transparent sur les attentes de votre projet !"
+          category: "Quelle catégorie décrit le mieux votre projet ?"
+          expires_at: "Combien de temps va durer votre campagne ? Nos recherches montrent qu'une durée correcte doit être comprise entre 30 et 60 jours."
+          goal: "Quel est le montant nécessaire à la réalisation de votre projet ? Gardez à l'esprit les frais de dossier de Dune. Ne pas mettre de virgule, signe de devise ou décimale."
+          first_contributions: "Affin d'atteindre votre but, il est indispensable d'engager vos contacts. Si vous avez déjà un panel de contributeurs sur lesquels vous pouvez compter dès le premier jour listé les ici. Si vous n'en n'avez pas, expliquez qui vous pensez cibler afin de mener à bien votre campagne."
+          headline: "Résumez votre projet en 130 caractères. Ce paragraphe sera le premier contact entre la communauté et votre projet. Soyez créatif, clair et direct"
+          name: "Soyez concis et objectif. 8 mots ou moins."
+          uploaded_image: "Ajouter une image de 500x340 minimum (.jpg ou .png)."
+          hero_image: "Ajouter une image de 1600x600 minimum (.jpg or .png)."
+          video_url: "Collez le lien de votre vidéo YouTube ou Viméo. Votre vidéo doit être concise afin de ne pas perdre de prêteur en chemin, mais suffisamment descriptive pour que les prêteurs puissent comprendre clairement votre projet."
+          hash_tag: 'Un hashtag concis qui peut être ajouté aux tweets et mises à jour Facebook.'
+          site: "Collez le lien complet du site de votre projet, si vous en possédez un."
+          foundation_widget: "Si vous voulez utiliser le nouveau widget d'intégration, cochez la case !"
+          campaign_type: "Tout ou rien : les fonds ne sont versés que si l'objectif est atteint avant la date limite. <br> Chaque euro compte : gardez les fonds, que l'objectif soit atteint ou non."
+          budget: 'Il est nécessaire de présenter un business plan cohérent à vos prêteurs afin de les rassurer. Expliquez clairement comment les fonds seront utilisés.'
+          permalink: 'Généré automatiquement. Vous pourrez modifier ce champ plus tard.'
+          headlinet: "Titre de l'astuce"
+          address_neighborhood: 'Si vous êtes dans un quartier spécifique, préciser le.'
+          address_city: 'La ville dans laquelle votre entreprise est situé.'
+          address_state: 'La région dans laquelle votre entreprise est situé.'
+          tag_list: "Ajouter des mots-clés améliore la visibilité de votre projet. Par exemple, ajouter votre domaine d'activité. Commencez à taper les premiers caractères pour afficher une liste de mots-clés existants."
+      channel:
+        image: "Ajouter une image de 600x300 minimum (.jpg or .png)."
+      organization:
+        image: "Ajouter une image de 300x150 minimum (.jpg or .png)."
+      user:
+        uploaded_image: "Ajouter une image de 150x150 minimum (.jpg or .png)."
+  helpers:
+    submit:
+      contact:
+        create: "Parlons en !!"
+      user:
+        update: 'Enregistrer les modifications'
+      project:
+        create: 'Soumettez votre projet'
+        update: 'Mettez à jour votre projet'

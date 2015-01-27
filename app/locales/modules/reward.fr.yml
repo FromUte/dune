@@ -1,0 +1,6 @@
+fr:
+  reward:
+    dont_want: "Je ne veux pas d'avantage."
+    limited: 'Limité'
+    sold_out: 'Epuisé'
+    display_remaining: "Seulement %{remaining} sur %{maximum} restant"

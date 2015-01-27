@@ -1,0 +1,8 @@
+fr:
+  images:
+    new:
+      title: 'Ajouter une image'
+      description: 'Déposer une image ici ou cliquez ici pour en sélectionner une.'
+      insert: 'Insérer une image'
+      upload: 'Démarrer le téléchargement'
+      uploading: 'Chargement...'

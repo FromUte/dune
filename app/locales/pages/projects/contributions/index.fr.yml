@@ -1,0 +1,12 @@
+fr:
+  projects:
+    contributions:
+      index:
+        empty: "Pas encore de contributions. Soyez le premier !"
+        active_matches: 'Challenge actif'
+        match_progress: "%{pledged} jusqu'à présent sur %{ceil}"
+        load_more: 'Charger plus'
+      contribution:
+        anonymous_contribution: "Prêteur anonyme"
+        no_reward: "Ce prêteur n'a pas choisi de récompense"
+        matched_by: 'de pair avec %{matchers}'

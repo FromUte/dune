@@ -1,0 +1,23 @@
+fr:
+  projects:
+    matches:
+      new:
+        hero_call_html: "Vous cherchez à améliorer votre impact?<br>Le Match est l'outil qu'il vous faut"
+        title: "Configurer vos challenges."
+        steps:
+          first:
+            title: "Multiplier vos prêteurs"
+            description: "En créant un challenge, vous donnez à la communauté la possibilité de doubler sont impact."
+          second:
+            title: "Accroître l'engagement"
+            description: "Créer un challenge aide à augmenter l'engagement de la communauté et encourage les investisseurs à vous financer rapidement."
+          third:
+            title: "Gagnez en médiatisation"
+            description: "Engager un tout nouveau public d'investisseur et faite vous reconnaître en contribuant à un projet digne d'intérêt."
+        i_pledge_to_match: "Je match"
+        for_each_1_raised_between: "pour chaque €1 levée entre"
+        and: "et"
+        up_to: "jusqu'à"
+        form:
+          inputs:
+            submit: "Prévisualiser votre match"

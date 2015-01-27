@@ -1,0 +1,53 @@
+- content_for :title, t('.title', project_name: @project.name)
+.create-contribution-page[data-thank-you-path=project_contribution_path(project_id: @project, id: @contribution.id)]
+  = hero_header_tag @project do
+    .row
+      .large-10.columns.large-centered
+        h3
+          = t('.you_are_contributing_to')
+          br/
+          strong = @project.name
+        form.total-value
+          .row
+            .large-5.columns.large-centered.small-centered
+              input[type='text' disabled=true value="#{t('.total')}#{number_to_currency(@contribution.value)}" data-total-text=t('.total')]
+              - if @project.matches.active.any?
+                .to-be-matched-by
+                  = t('.to_be_matched_by')
+                  br/
+                  = @project.matches.active.map { |m| m.user.display_name }.uniq.to_sentence
+              .who-pay-fees
+                = check_box_tag 'pay_payment_fees', 1, true
+                = label_tag 'pay_payment_fees', t('.i_want_pay_fees')
+                - if browser.mobile? || browser.tablet?
+                  = link_to '#', class: 'fees-info-button', data: { reveal_id: 'pay-fees-modal' } do
+                    i.icon-et-info-circled
+
+                  #pay-fees-modal.reveal-modal.small
+                    a.close-reveal-modal ×
+                    p = t('.tooltip-text', project_name: @project.name).html_safe
+                - else
+                  .custom-tooltip
+                    = link_to '#', class: 'fees-info-button' do
+                      i.icon-et-info-circled
+                    .tooltip-content.hide
+                      p = t('.tooltip-text', project_name: @project.name).html_safe
+
+
+  .row
+    section.content.large-8.medium-8.columns
+      = render 'shared/payments/form', resource: @contribution
+
+    aside.large-4.medium-4.columns
+      .project-image
+        = image_tag @project.display_image('project_thumb_large'), id: 'project_image', alt: @project.name
+        h5 = "#{@project.time_to_go[:time]} #{@project.time_to_go[:unit]} #{@project.remaining_text}"
+
+      - if @contribution.reward
+        .selected-reward
+          h4 = t('.reward.title')
+          .description
+            h5 = @contribution.reward.title
+            p = @contribution.reward.description
+      .faqs
+        = render 'faqs'

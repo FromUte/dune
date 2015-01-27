@@ -1,0 +1,7 @@
+fr:
+  projects:
+    embed_panel:
+      title: 'Aider à diffuser cette campagne sur le web !'
+      subtitle: "Copier et coller le code ci-dessous sur votre site Web afin d'en afficher un widget."
+      campaign_progress: 'Progression de la campagne'
+      campaign_video: 'Vidéo de la campagne'

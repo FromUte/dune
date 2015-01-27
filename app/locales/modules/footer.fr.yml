@@ -1,0 +1,13 @@
+fr:
+  layouts:
+    footer:
+      quick_links: 'Bon à savoir...'
+      about: 'Rencontrer nous'
+      discover: 'Découvrer les projets'
+      how_it_works: 'Comment ça marche ?'
+      contact: 'Contacter nous'
+      faq: 'FAQ / Aide'
+      legal: 'Politique de confidentialité'
+      terms: "Conditions d'utilisation"
+      stay_in_touch: "Rester en contact ?"
+      built_with_love: 'Fait avec  &#x2764; '

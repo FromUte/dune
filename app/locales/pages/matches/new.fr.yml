@@ -1,0 +1,22 @@
+fr:
+  matches:
+    new:
+      hero_call_html: "Vous cherchez à améliorer votre impact ?<br>Matching est l'outil qu'il vous faut"
+      title: "Configurez votre matching."
+      steps:
+        first:
+          title: "Multipliez vos prêts"
+          description: "En créant un matching, vous donnez la possibilités aux utilisateurs de doubler leur impact."
+        second:
+          title: "Accroître l'engagement"
+          description: "Créer un challenge aide à augmenter l'engagement de la communauté et encourage les prêteurs à agir rapidement."
+        third:
+          title: "Gagnez en médiatisation"
+          description: "Engager un tout nouveau public et faite vous reconnaître en contribuant à un projet."
+      i_pledge_to_match: "Je m'engage à correspondre"
+      for_each_1_raised_between: "pour chaque € levé entre"
+      and: "et"
+      up_to: "jusqu'à"
+      form:
+        inputs:
+          submit: "Prévisualiser votre match"

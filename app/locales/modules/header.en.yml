@@ -1,0 +1,14 @@
+en:
+  layouts:
+    header:
+      discover: 'Discover'
+      about: 'Learn'
+      sign-out: 'Log out'
+      sign-up: 'Join'
+      sign-in: 'Log in'
+      my_profile: 'My Profile'
+      settings: 'Settings'
+      my_contributions: 'My Contributions'
+      my_projects: 'My Projects'
+      dashboard: 'Dashboard'
+

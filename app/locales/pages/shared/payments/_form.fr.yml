@@ -1,0 +1,11 @@
+fr:
+  shared:
+    payments:
+      form:
+        title: "S'il vous plaît sélectionner un mode de paiement"
+        payment-method:
+          fees: 'Frais :'
+          balanced-creditcard:
+            title: 'Carte de crédit'
+          balanced-bankaccount:
+            title: 'Compte bancaire'

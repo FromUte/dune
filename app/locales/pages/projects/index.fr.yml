@@ -1,0 +1,24 @@
+fr:
+  projects:
+    index:
+      title: "De l'union née l'évolution"
+      recommended: 'Projets que nous'
+      near: 'Projets proche'
+      channels: 'Partenaire'
+      ending_soon: 'En phase final'
+      successful: 'Campagne terminé'
+      coming_soon: 'En approche'
+      with_active_matches: 'Actifs'
+      join:
+        join_the_neighborhood: 'Joindre le quartier'
+        already_joined: 'Déjà rejoint ? %{link}.'
+        sign_in: 'Se connecter'
+      hero:
+        title: 'Soutener votre région'
+        subtitle: "Prêter aux entreprises proches de vous, gagner des intérêts, participer à l'économie local."
+      start-one:
+        title: 'Vous avez un projets et vous recherchez des fonds ?'
+        button: 'Démarrez votre projet'
+    invest_box:
+      facebook: 'Partager'
+      twitter: 'Tweet'

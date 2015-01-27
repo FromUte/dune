@@ -1,0 +1,6 @@
+fr:
+  projects:
+    updates:
+      index:
+        empty: "Aucune mise à jour pour le moment. N'hésitez pas à revenir !"
+        load_more: 'Charger plus.'

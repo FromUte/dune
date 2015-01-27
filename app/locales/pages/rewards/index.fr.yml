@@ -1,0 +1,12 @@
+fr:
+  rewards:
+    index:
+      sold_out: 'Désolé, cet avantage n’est plus disponible !'
+      add: 'Ajouter un avantage'
+      estimated_deliver: "Livraison estimé : %{prevision}"
+      contributions_to_confirm:
+        one:  "Un prêt à confirmer"
+        other: "%{count} prêts à confirmer."
+      reward_title: "Pour %{minimum} ou plus"
+      contact: 'Contact'
+      reward_deliver_time: "Livraison estimé : %{prevision}"

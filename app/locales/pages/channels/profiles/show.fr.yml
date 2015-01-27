@@ -1,0 +1,23 @@
+fr:
+  channels:
+    profiles:
+      show:
+        unfollow: 'Se désabonner'
+        follow: "S'abonner"
+        submit: 'Soumettre'
+        active_projects_we_support: 'Projets actifs que nous soutenons'
+        projects_we_have_supported: 'Projets que nous avons soutenu'
+        see_more: 'En voir plus'
+        see_less: 'En voir moins'
+        submit_your_project:
+          title: 'Soumettre votre projet'
+          text: "Vous avez un projet similaire ? Soumettez-le nous ! Nous vous accompagnerons dans votre levé de fonds en ligne. Vous aurez accès à un nouveau mode de financement et de marketing."
+          button: 'Soumettre mon projet'
+        about:
+          title: 'À Propos De Nous'
+        connect:
+          title: 'Connectez-vous avec'
+          facebook: 'Facebook'
+          twitter: 'Twitter'
+          email: 'E-mail'
+          website: 'Site web'

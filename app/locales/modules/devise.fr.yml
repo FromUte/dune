@@ -1,0 +1,59 @@
+fr:
+  devise:
+    confirmations:
+      confirm: "Vérifier l'e-mail de confirmation que nous vous avons envoyé. Vous ne l'avez pas reçu ? <a href='%{link}'>cliquer ici pour le renvoyer.</a>"
+      confirmed: "Votre compte a été confirmé avec succès."
+      send_instructions: "Vous recevrez un e-mail de confirmation sous peu."
+      send_paranoid_instructions: "Si votre adresse électronique existe dans notre base de données, vous recevrez un e-mail avec les instructions de confirmation sous peu."
+    failure:
+      already_authenticated: "Vous êtes déjà connecté."
+      inactive: "Votre compte n'est pas encore activé."
+      invalid: "E-mail ou mot de passe invalide."
+      locked: "Votre compte est verrouillé. Contacter nous afin que l'on puisse le débloquer ensemble"
+      last_attempt: "Il ne vous reste plus qu'une tentative avant que votre compte ne soit verrouillé."
+      not_found_in_database: "E-mail ou mot de passe invalide."
+      timeout: "Votre session à expirée. Connectez-vous à nouveau pour continuer."
+      unauthenticated: "S'il vous plaît, connectez-vous ou inscrivez-vous."
+      unconfirmed: "Vous devez confirmer votre compte avant de continuer."
+    mailer:
+      confirmation_instructions:
+        subject: "Instructions de confirmation"
+      reset_password_instructions:
+        subject: "Instructions de réinitialisation de votre mot de passe"
+      unlock_instructions:
+        subject: "Instructions de débloquage"
+    omniauth_callbacks:
+      failure: "Impossible de vous authentifier à partir de %{kind} car \"%{reason}\"."
+      success: "Connecté avec succès par le biais de %{kind}."
+    passwords:
+      no_token: "Vous ne pouvez pas accéder à cette page sans jeton de sécurité provenant d'un e-mail de réinitialisation de mot de passe. Si vous avez bien reçu un e-mail de réinitialisation de mot de passe, s'il vous plaît assurez-vous que vous avez bien utilisé l'URL fourni en entier.Vous ne pouvez pas accéder à cette page sans jeton de sécurité provenant d'un e-mail de réinitialisation de mot de passe. Si vous avez bien reçu un e-mail de réinitialisation de mot de passe, s'il vous plaît assurez-vous que vous avez bien utilisé l'URL fourni en entier."
+      send_instructions: "Vous recevrez un e-mail de réinitialiser de votre mot de passe dans quelques minutes."
+      send_paranoid_instructions: "Si votre adresse électronique existe dans notre base de données, vous recevrez un e-mail avec les instructions de confirmation sous peu."
+      updated: "Votre mot de passe a été modifié avec succès. Vous êtes à présent connecté."
+      updated_not_active: "Votre mot de passe a été changé avec succès."
+    registrations:
+      destroyed: "Bye ! Votre compte a été annulé avec succès. Nous espérons quand même vous revoir très bientôt."
+      signed_up: 'Bienvenue sur notre Dune ! Merci de compléter votre profil afin que nous puissions échanger avec vous, et vous donner les moyens de devenir un acteur important de la Dune-communauté !'
+      signed_up_but_inactive: "Votre inscription a été prise en compte avec succès. Cependant, nous ne pouvons pas vous connecter, car votre compte n'est pas encore actif."
+      signed_up_but_locked: "Votre inscription a été prise en compte avec succès. Cependant, nous ne pouvons pas vous connecter, car votre compte est bloqué."
+      signed_up_but_unconfirmed: "Un message de confirmation a été envoyé à votre adresse e-mail. S'il vous plaît ouvrer le lien afin d'activer votre compte."
+      update_needs_confirmation: "La mise à jour de votre compte a bien été prise en compte. Afin de vérifier votre nouvelle adresse, nous vous avons envoyé un e-mail de confirmation."
+      updated: "Votre compte a été mis à jour avec succès."
+    sessions:
+      signed_in: "Bienvenue sur notre dune !"
+      signed_in_custom: 'Bienvenue sur notre dune ! Merci de <a href="%{link}">compléter votre profil</a> afin que nous puissions échanger avec vous, et vous donner les moyens de devenir un acteur important de la Dune-communauté !'
+      signed_out: "Bonne route et à très bientôt !"
+    unlocks:
+      send_instructions: "Vous allez recevoir un e-mail contenant les instructions de déblocage de votre compte dans quelques instants."
+      send_paranoid_instructions: "Si votre compte existe, vous recevrez un e-mail contenant les instructions de déblocage de votre compte dans quelques instants."
+      unlocked: "Votre compte a été déverrouiller avec succès. Vous pouvez à présent vous connecter."
+  errors:
+    messages:
+      already_confirmed: "Votre confirmation a déjà été prise en compte, vous pouvez à présent vous connecter."
+      confirmation_period_expired: "Doit être confirmée dans les %{period}."
+      expired: "À expirer, s'il vous plaît réaliser une nouvelle demande."
+      not_found: "non trouvé"
+      not_locked: "n'est pas bloqué"
+      not_saved:
+        one: "Une erreur interdit cette %{resource} d'être sauvegardé:"
+        other: "%{count} erreurs interdisent ces %{resource} d'être sauvegardées:"

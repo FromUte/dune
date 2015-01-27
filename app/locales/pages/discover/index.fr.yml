@@ -1,0 +1,19 @@
+fr:
+  discover:
+    index:
+      title: 'Découvrez des projets étonnants'
+      empty: 'Aucun projet ne correspond à vos critères de recherches.'
+      tags: 'Mots clés populaires: '
+      near: 'Position'
+      category: 'Catégorie'
+      state: 'Statut'
+      showing_results_for: 'Affichage des résultats pour : '
+      states:
+        active: 'Actif'
+        recommended: 'Recommandé'
+        expiring: 'Dernière ligne droite'
+        recent: 'Récent'
+        successful: 'Financé'
+        soon: 'En approche'
+        with_active_matches: 'Résultats actifs'
+      channels: 'Partenaires'

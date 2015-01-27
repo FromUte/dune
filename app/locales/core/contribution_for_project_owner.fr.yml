@@ -1,0 +1,20 @@
+fr:
+  models:
+    contribution_for_project_owner:
+      address_city: 'Ville'
+      address_neighborhood: 'Quartier'
+      address_state: 'Région'
+      address_street: 'Rue'
+      address_zip_code: 'Code Postale'
+      anonymous: 'Anonyme'
+      confirmed_at: 'Contribution Confirmer'
+      created_at: 'Contribution Réaliser'
+      minimum_value: 'Minimum pour récompenses'
+      payment_method: 'Méthode de paiement'
+      project_id: 'Projet'
+      reward_description: 'Description de la récompense'
+      service_fee: 'Frais Dune'
+      short_note: 'Message'
+      user_email: 'Email'
+      user_name: 'Contributeur'
+      value: 'Valeur du prêt'

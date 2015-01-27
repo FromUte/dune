@@ -1,0 +1,49 @@
+fr:
+  channels:
+    admin:
+      dashboard:
+        index:
+          title: 'Dashboard'
+          menu: 'Dashboard'
+          total_projects:
+            title: 'Nombre de Projets'
+            hint: 'Nombre de projets sur la Plateforme'
+          total_subscribers:
+            title: 'Nombre de Followers'
+      management:
+        title: "Channel management"
+        total: 'Total'
+      filter:
+        title: 'Filtrer'
+        pg_search: 'Recherche'
+        submit: 'Filtrer'
+        with_state: 'Par région'
+        order_table: 'Order table'
+        user_name_contains: 'nom contient'
+        between_created_at: 'Crée entre'
+      followers:
+        title: 'Followers'
+        download: 'Télécharger rapport Followers'
+        menu: 'Followers'
+      profile:
+        menu: 'Editer les informations du Flux'
+      projects:
+        index:
+          menu: 'Projets'
+          name: 'Nom'
+          category: 'Catégorie'
+          user_id: 'Utilisateur ID'
+          goal: 'But'
+          pledged: 'Gagé'
+          total_contributions: 'Contributions'
+          recommended: 'recommandé ?'
+          online_date: 'Date mise en ligne'
+          expires_at: 'Expire le'
+          state: 'Etat'
+          approve: 'Approuver !'
+          launch: 'Lancer !'
+          reject: 'Rejeter !'
+          send_to_draft: 'Envoyer en brouillon !'
+          order_asc: 'But asc'
+          order_desc: 'But desc'
+          order_created_at: 'Date de soumission'

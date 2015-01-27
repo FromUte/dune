@@ -1,0 +1,56 @@
+.home-page
+  header.hero
+    padding-top: +emCalc(45px)
+    min-height: +emCalc(200px)
+    h2
+      font-weight: 400
+      text-transform: uppercase
+    h3.subtitle
+      text-transform: none
+      font-size: 140%
+      font-weight: 300
+
+  section.projects
+    padding: +emCalc(25px) 0
+
+    section
+      margin-bottom: +emCalc(20px)
+      overflow: hidden
+
+    [class*="column"]:last-child
+      float: left
+
+    h3
+      text-transform: uppercase
+      color: $secondary-font-color
+      font-weight: 300
+      margin-bottom: +emCalc(10px)
+      i
+        padding-left: +emCalc(5px)
+      a
+        color: $secondary-font-color
+
+  section.press
+    @extend .white
+    padding: +emCalc(45px) 0
+    border-top: 1px solid $border-color
+    a
+      float: left
+      margin-right: +emCalc(30px)
+      margin-right: +emCalc(20px)\9
+      opacity: 0.4
+      background: white
+      +single-transition(all, 0.5s)
+      &:hover
+        opacity: 1
+
+      &:last-child
+        float: right
+        margin-right: 0
+
+@media #{$medium}
+  .home-page
+    header.hero
+      h3.subtitle
+        font-size: 180%
+        text-align: justify

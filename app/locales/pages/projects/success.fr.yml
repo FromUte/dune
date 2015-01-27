@@ -1,0 +1,8 @@
+fr:
+  projects:
+    success:
+      titles:
+        site: 'Soumis avec succès !'
+        header: 'Soumis avec succès !'
+      text: 'Félicitations, la première étape est terminée ! De là, nous examinerons votre demande pour nous assurer que votre projet s’inscrit dans la qualité de services que nous souhaitons mettre en place. <br /> <br /> en attendant, n’hésitez pas à affiner votre campagne de sorte que vous soyez prêt à la lancer dès que nous vous aurons donné le feu vert!'
+      continue: 'Continuer'

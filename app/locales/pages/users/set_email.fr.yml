@@ -1,0 +1,8 @@
+fr:
+  users:
+    set_email:
+      update_email_title: 'Ajouter votre adresse e-mail'
+      site_title: 'Créez votre compte @Dune'
+      title: "S'il vous plaît entrez votre adresse e-mail"
+      submit: 'Procéder'
+      create: 'Rejoignez la Dune'

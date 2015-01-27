@@ -1,0 +1,8 @@
+fr:
+  projects:
+    matches:
+      edit:
+        description_html: "Il s'agit d'un exemple d'affichage d'un match lors d'une campagne.<br />S'il vous plaît entrer vos informations de facturation ci-dessous pour confirmer le match."
+        title: 'Match de %{project_name}'
+        total: 'Total: '
+        tooltip-text_html: "Les paiements d'un match de défi sont recueillis en avance. Si le match n'est pas entièrement rempli, vous serez remboursé du montant versé moins les frais de transaction du monétiseur."

@@ -1,0 +1,172 @@
+= content_for :title, 'Fonctionnement'
+
+.learn-page
+  section.main-section.section-with-hero-header
+    = hero_header_tag @presenter, { class: 'text-center' }, @presenter.how_it_works_image do
+      header.title-information
+        .row
+          .small-12.columns
+            h2 Comment ça marche
+        .row
+          .small-12.columns
+            strong.subtitle Trouver des projets proche de vous
+      .row
+        .small-12.columns
+          = link_to '#how-it-works', class: 'expand-section' do
+            strong.expansion-btn.show-for-large-up[data-alternative-text="Cliquer pour réduire"] Cliquer pour en apprendre plus
+            span.expand-section-icon.icon-fa-chevron-down alt='Aller a comment ca marche'
+
+    #how-it-works.section-content
+      .row
+        .small-12.columns
+          p
+            | Chez <strong>Dune investissement</strong> notre mission est de connecter les entreprises de notre pays avec une communauté d’épargnant qui se soucie d'elle.
+      .row.text-center
+        .medium-6.columns
+          h3 Pour les Entreprises
+          p TPE / PME en bonne santé cherchant à se financer tout en marquetant ses idées.
+          = link_to 'Commencer', start_path, class: 'button'
+        .medium-6.columns
+          h3 Pour les Citoyens
+          p Épargnant cherchant à s’investir dans l’économie locale, souhaitant reprendre le contrôle de leur épargne à la recherche de placement à faible risque et à rendement intéressant.
+          = link_to 'Parcourir les projets', discover_path, class: 'button'
+
+  section.main-section.section-with-hero-header
+    = hero_header_tag @presenter, { class: 'text-center' }, @presenter.pricing_image do
+      header.title-information
+        .row
+          .small-12.columns
+            h2 Pour commencer
+        .row
+          .small-12.columns
+            strong.subtitle Des financements répondant à vos besoins
+      .row
+        .small-12.columns
+          = link_to '#pricing', class: 'expand-section' do
+            strong.expansion-btn.show-for-large-up[data-alternative-text="Cliquer pour réduire"] Cliquer pour en apprendre plus
+            span.expand-section-icon.icon-fa-chevron-down alt='Aller à plan de financement'
+
+    #pricing.section-content
+      .row.medium-collapse
+        .pricing-table.small-12.columns
+          ul.pricing-table-content
+            li.title 3 ans
+            li.price.description
+              span.strong 2%
+              | /an
+              span +3% / transaction
+            li.description Pour un taux bas
+            li.description à voir
+            li.cta-button.description = link_to 'Commencer', start_path, class: 'button secondary'
+            li.bullet-item Projet noté A
+            li.bullet-item Projet noté B
+            li.bullet-item Projet noté C
+        .pricing-table.suggested-plan.small-12.columns
+          ul.pricing-table-content
+            li.title 5 ans
+            li.price.description
+              span.strong 4%
+              | /an
+              span +3% / transaction
+            li.description Pour un projet sérieux
+            li.description à voir
+            li.cta-button.description = link_to 'Nous contacter', contact_path, class: 'button'
+            li.bullet-item Projet noté A
+            li.bullet-item Projet noté B
+            li.bullet-item Projet noté C
+        .pricing-table.small-12.columns
+          ul.pricing-table-content
+            li.title 7 ans
+            li.price.description
+              span.strong 5%
+              | /an
+              span +3% / transaction
+            li.description Pour un projet d'envergure
+            li.description à voir
+            li.cta-button.description = link_to 'Commencer', start_path, class: 'button secondary'
+            li.bullet-item Projet noté A
+            li.bullet-item Projet noté B
+            li.bullet-item Projet noté C
+
+  section#team.main-section.full-width-row
+    .row
+      .small-12.columns
+        header.title-information.text-center.row
+          .row
+            .small-12.columns
+              h2 Rencontrez-nous
+        .row
+          .small-12.columns
+            p Nous sommes une équipe de passionnés de geeks civiques, de courtiers, de comptables, de personne ayant fait leur preuve dans la finance, et surtout de courageux entrepreneurs. Notre mission est d'aider les entreprises à se financer. Nous aimons notre pays et les milliers d’entreprises qui le peuplent.
+
+        .team-members
+          = render 'team_member', nickname: :jase, name: 'Pierre Legrand', role: 'Ingénieur Concepteur Développeur et autres',
+            description: 'Chevauche les lignes de codes comme il chevauche les poneys.',
+            social_networks: { linkedin: 'http://linkedin.com/', twitter: 'http://twitter.com/' }
+          = render 'team_member', nickname: :patrick, name: 'Christian Micale', role: 'Big Boss',
+            description: 'Saute de marché financier en courtage particulier comme il prépare son petit déjeuner',
+            social_networks: { linkedin: 'http://linkedin.com/', twitter: 'http://twitter.com/' }
+          = render 'team_member', nickname: :sean, name: 'Sandra Bougaret', role: 'Jedi Master',
+            description: 'Maître Jedi, accompagne chef dentreprise et entrepreneur sur le chemin de la Force',
+            social_networks: { linkedin: 'http://linkedin.com/pub/', twitter: 'http://twitter.com/', github: 'https://github.com/' }
+
+  section#supporters.main-section.full-width-row
+    .row
+      header.title-information.text-center.row
+        .row
+          .small-12.columns
+            h2 Nos partenaires
+        .row
+          .small-12.columns
+            strong.subtitle Nous avons des amis étonnants
+
+      ul
+        li.supporter.small-6.medium-3.columns
+          = image_tag 'learn/knight.png', alt: 'Knight Foundation\'s logo', title: '2013 Knight Foundation Grantee'
+          strong
+            span @KnightFdn
+            span Backed
+        li.supporter.small-6.medium-3.columns
+          = image_tag 'learn/civicx.png', alt: 'The Points of Light Civic Accelerator\'s logo',  title: 'CivicX'
+          strong
+            span #CivicX
+            span Accelerated
+        li.supporter.small-6.medium-3.columns
+          = image_tag 'learn/tumml.png', alt: 'Tumml\'s logo',  title: 'TUMML'
+          strong
+            span @TUMML
+            span Amplified
+        li.supporter.small-6.medium-3.columns
+          = image_tag 'learn/madeinkcsf.png', alt: 'US map with hearts in Kansas City and San Francisco',  title: 'Made in KC and SF'
+          strong
+            span Made in @KCMO &amp;
+            span San Francisco
+    .angel-list.row
+      .small-12.medium-offset-3.medium-6.column.text-center
+        = link_to 'https://angel.co/neighborly' do
+          strong.important-notice
+            | Find us on
+            = image_tag 'learn/angel_list.png', alt: 'Angel List\'s logo', title: 'Angel List', class: 'angel-list-logo'
+
+  section#open.main-section.full-width-row
+    .row
+      .small-12.columns
+        header.title-information.text-center.row
+          .row
+            .small-12.columns
+              h2 Oui, nous sommes ouverts !
+          .row
+            .small-12.columns
+              strong.subtitle De l'union née l'évolution
+      .open-type.small-12.medium-4.columns.text-center
+        .open-type-image
+          = image_tag 'learn/github.png', alt: 'GitHub\'s logo', title: 'GitHub', class: 'github-logo'
+        strong.important-notice Open Source
+      .open-type.small-12.medium-4.columns.text-center
+        .open-type-image
+          = image_tag 'learn/sunlight_foundation.png', alt: 'Sunlight Foundation\'s logo', title: 'Sunlight Foundation', class: 'sunlight-foundation-logo'
+        strong.important-notice Open Data
+      .open-type.small-12.medium-4.columns.text-center
+        .open-type-image
+          = image_tag 'learn/open_company.png', alt: 'Open Company Initiative\'s logo', title: 'The Open Company Initiative', class: 'open-company-logo'
+        strong.important-notice Open Company

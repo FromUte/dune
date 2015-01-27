@@ -1,0 +1,15 @@
+fr:
+  devise:
+    passwords:
+      edit:
+        titles:
+          site: "Définition de votre mot de passe"
+          header: 'Réinitialiser votre mot de passe'
+        form:
+          hint:
+            password_length: 'Minimum 6 caractères.'
+          labels:
+            password: 'Nouveau mot de passe'
+            password_confirmation: 'Entrez à nouveau votre mot de passe'
+          inputs:
+            submit: 'Sauvegarder et me connecter'

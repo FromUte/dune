@@ -1,0 +1,12 @@
+fr:
+  projects:
+    contributions:
+      edit:
+        title: 'Vous contribuez à %{project_name}'
+        you_are_contributing_to: 'Vous contribuez à'
+        total: 'Total: '
+        i_want_pay_fees: "Je vais couvrir les frais de transaction"
+        reward:
+          title: 'Votre avantage'
+        tooltip-text: "Merci de supporter <strong>%{project_name}</strong>! Vous pourrez suivre les gains de votre prêt dans votre profil."
+        to_be_matched_by: 'Pour être de pair avec:'

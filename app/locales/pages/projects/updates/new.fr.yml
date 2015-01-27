@@ -1,0 +1,10 @@
+fr:
+  projects:
+    updates:
+      new:
+        send: "Envoyer mise à jour"
+        comment: "Texte de mise à jour"
+        exclusive: "Visible seulement par les prêteurs ?"
+        title: "Titre de la mise à jour"
+        warning: "Votre mise à jour sera automatiquement envoyée par e-mail à vos prêteurs.Votre mise à jour sera automatiquement envoyée par e-mail à vos prêteurs."
+        created: 'Votre mise à jour a été envoyé avec succès !'

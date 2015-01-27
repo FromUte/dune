@@ -1,0 +1,111 @@
+footer
+  background: $footer-bg
+  padding: 25px 0
+  color: $footer-color
+  font-size: 95%
+  a
+    color: $footer-color-link
+  h6
+    color: white
+    text-transform: uppercase
+    font-weight: 400
+    display: inline
+    [class^="icon-"], [class*=" icon-"]
+      color: $footer-icon-color
+      font-size: 150%
+      padding-right: +emCalc(10px)
+      vertical-align: middle
+
+  .quick-links, .now-acception-proposals, .stay-in-touch
+    padding-left: +emCalc(60px)
+    @media #{$medium}
+      padding-left: +emCalc(45px)
+    h6
+      margin-left: +emCalc(-40px)
+
+  .now-acception-proposals
+    [class^="icon"]
+      margin-right: +emCalc(4px)
+    p
+      font-size: 90%
+      .button
+        width: 100%
+        margin-top: +emCalc(10px)
+        font-size: 90%
+
+  .stay-in-touch
+    h6
+      margin-left: +emCalc(-40px)
+    p
+      max-width: 250px
+      font-size: 80%
+    .facebook-box
+      margin-top: +emCalc(20px)
+    .newsletter
+      margin-top: +emCalc(20px)
+      @media #{$small}
+        margin-top: 0
+      h6
+        margin-left: 0
+        margin-bottom: +emCalc(10px)
+        display: block
+
+      .newsletter-input
+        float: left
+        width: 160px
+        height: 28px
+        margin: 0
+        box-shadow: none
+        border: none
+        top: 0px
+        position: relative
+        padding-top: +emCalc(5px)
+        padding-bottom: +emCalc(5px)
+        border-radius: $button-radius 0 0 $button-radius
+        @media #{$medium}
+          width: 190px
+
+      .button
+        float: left
+        height: 28px
+        margin: 0
+        padding: 5px 20px
+        font-size: 80%
+        font-weight: 300
+        border-radius: 0 $button-radius $button-radius 0
+
+  .quick-links
+    ul
+      list-style: none
+      li a
+        text-transform: uppercase
+
+  .subfooter
+    text-align: center
+    margin-top: +emCalc(20px)
+    padding-top: +emCalc(20px)
+    border-top: 1px dashed $footer-border-color
+    color: $subfooter-color
+
+    p
+      font-size: 80%
+
+    a.logo
+      display: inline-block
+      width: 181px
+      height: 46px
+      text-indent: -99999em
+      background: image-url('Logo_Dune_Export_AI.png') center no-repeat
+      background: image-url('Logo_Dune_Export_AI.png') center no-repeat\9 // It will apply to all ie from 8 and below
+      background-size: 120px
+      margin-bottom: +emCalc(20px)
+
+    @media #{$medium}
+      text-align: left
+      a.logo
+        margin-bottom: 0
+      p
+        text-align: right
+
+.uv-icon
+  -webkit-transform: translateZ(0)

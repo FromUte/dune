@@ -1,0 +1,5 @@
+fr:
+  projects:
+    matches:
+      match_summary: "Votre %{base_value} vaut %{worth_value} à partir de maintenant et jusqu'au %{date}"
+      match_description: "%{user_name} s'est engagé à prêter %{value_unit} pour chaque %{base_value} levée jusqu'à %{limit}."

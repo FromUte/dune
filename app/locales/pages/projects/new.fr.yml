@@ -1,0 +1,38 @@
+fr:
+  projects:
+    new:
+      titles:
+        site: 'Soumettez nous votre projet'
+        header: 'Proposer un projet'
+        sub: "Chacun peut proposer son projet gratuitement. Commencez dès aujourd'hui !"
+      joyride:
+        next: 'Suivant'
+        done: 'Fin'
+        start:
+          title: 'Vous présentez une idée.'
+          description: 'Les informations fournies ici peuvent être modifiées ultérieurement.'
+        category:
+          title: 'Choisissez une catégorie'
+          description: 'Quelle catégorie décrit le mieux votre projet ? Vous pouvez la changer plus tard.'
+        name:
+          title: 'Titre de votre projet'
+          description: 'Comment voudriez-vous l’appeler ? Un titre court, accrocheur, et partageable fonctionne bien mieux !'
+        campaign_type:
+          title: 'Type de projet'
+          description: "Quel modèle de financement souhaitez-vous utiliser ? <br /><br/> <strong>Chaque euro compte :</strong> Le projet est financé que l’objectif soit atteint ou non. <br /> <strong>Tout ou rien :</strong> Vous devez atteindre votre objectif d'ici la fin de votre campagne afin de recevoir les fonds."
+        goal:
+          title: 'Objectif de la campagne de financement.'
+          description: 'De combien avez-vous besoin pour réaliser votre projet ? Merci d’entrer un numéro sans virgule.'
+        location:
+          title: 'Ville, région'
+          description: 'Dans quelle ville votre projet prendra forme ?'
+        headline:
+          title: 'Résumé'
+          description: 'Décrivez votre projet en 140 caractères.'
+        about:
+          title: "L'histoire"
+          description: "Parlez nous de votre projet. Pourquoi avez-vous besoin de l'aide de la communauté ?"
+        organization_type:
+          title: "Type d'organisation"
+          description: "S'il vous plaît, sélectionnez le type qui décrit le mieux l'entité qui recevra les fonds."
+      accept_terms_html: 'En soumettant votre projet, vous acceptez les %{link}.'

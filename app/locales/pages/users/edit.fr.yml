@@ -1,0 +1,10 @@
+fr:
+  users:
+    edit:
+      tabs:
+        edit: "Profil"
+        my_campaigns: "Mes prêts en cours"
+        ive_contributed: "Projets auxquels j’ai prêté"
+        credits: 'Crédits'
+        payments: 'Info paiements'
+        settings: 'Paramètres'

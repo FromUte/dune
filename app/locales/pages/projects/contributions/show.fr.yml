@@ -1,0 +1,15 @@
+fr:
+  projects:
+    contributions:
+      show:
+        title: 'Merci !'
+        one_more_step: "Plus qu'une étape ! S'il vous plaît vérifier votre compte afin de compléter votre prêt."
+        thank_you: "Merci ! %{project_name} n'est possible qu'avec le soutien d'investisseurs tel que vous."
+        share: 'Vous pouvez encore aider %{project_owner_name} en parlant à votre réseau de votre investissement !'
+        twitter-text: "Je viens de réaliser un invesstissement d'un montant de %{value} à %{name} sur @dune: %{project_url}"
+        bankaccount:
+          title: "Vous avez réalisé votre investissement à l'aide d'un nouveau compte bancaire. S'il vous plaît vérifier votre compte afin de compléter votre prêt."
+          steps:
+            first: "Nous allons faire deux petits dépôts (chacun de moins de 1,00€) sur ce compte. Les dépôts peuvent prendre 1-2 jours ouvrables avant d'apparaître."
+            second: 'Une fois que les dépôts effectués, vous recevrez un e-mail avec un lien afin de vérifier votre compte en utilisant les deux montants de dépôt.'
+            third: 'Une fois votre compte vérifié, votre prêt sera traité et automatiquement ajouté à la campagne à laquelle vous avez contribué.'

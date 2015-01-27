@@ -1,0 +1,10 @@
+fr:
+  projects:
+    project:
+      get_involved: 'Impliquez-vous !'
+      completed: 'Terminé'
+      soon: 'À venir'
+      share:
+        twitter-text: "Découvrez le projet %{name} #%{hash_tag} que j'appuie sur @Dune"
+        twitter: 'Tweet'
+        facebook: 'Partager'

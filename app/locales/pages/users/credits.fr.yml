@@ -1,0 +1,19 @@
+fr:
+  users:
+    credits:
+      back_date: "Date de contribution"
+      current_credits_html: "Votre solde actuel est de <span class=\"current-credits\">%{credits}</span> crédits."
+      important_html: "Si vous demandez un remboursement, la valeur de votre paiement sera déduite de vos crédits."
+      project: Projet
+      refund_expiration_date_html: "Date limite de demande de remboursement"
+      refunded: "Demande de remboursement réalisée avec succès. Notre équipe vous contactera dans les deux jours ouvrables."
+      insufficient_credits: "Vous n’avez pas assez de crédits pour demander ce remboursement."
+      refunds_title: "Les paiements pouvant être remboursés"
+      request_refund: "Demande de remboursement"
+      requested_refund: "Remboursement demandé"
+      status: Statut
+      title: "Mes crédits"
+      value: Valeur
+      modal:
+        title: "Voulez-vous confirmer votre demande de remboursement ?"
+        confirm: "Je veux demander le remboursement"

@@ -1,0 +1,18 @@
+fr:
+  static:
+    faq:
+      title: "Questions fréquentes"
+    privacy:
+      title: "Politique de confidentialité"
+    terms:
+      title: "Conditions d'utilisation"
+    how_it_works:
+      title: 'Comment ça marche ?'
+    start_terms:
+      title: 'Conditions'
+      explore_curious: "Je jette un coup d’oeil"
+      explore_projects: "Je veux explorer les projets."
+      submit: "Prochaine étape !"
+      send_project: "Je veux présenter mon projet."
+    base:
+      title: "Ceci est la base d'une page statique"

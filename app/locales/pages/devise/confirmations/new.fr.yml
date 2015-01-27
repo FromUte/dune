@@ -1,0 +1,15 @@
+fr:
+  devise:
+    confirmations:
+      new:
+        no_account_html: "Besoin d'un compte Dune ? <strong>%{link}</strong>"
+        titles:
+          site: 'Renvoyer les instructions de confirmation'
+          header: 'Renvoyer les instructions'
+        links:
+          register: "S'inscrire <i class='icon-et-right-circled'></i>"
+        form:
+          labels:
+            email: 'Votre adresse e-mail'
+          inputs:
+            submit: 'Renvoyer les instructions'

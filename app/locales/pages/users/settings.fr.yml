@@ -1,0 +1,12 @@
+fr:
+  users:
+    settings:
+      change_password: "Changer Mot De Passe"
+      password_info: "Nous avons besoin de votre mot de passe actuel pour confirmer vos modifications."
+      save_password: 'Sauver mon nouveau mot de passe'
+      communication_preferences: 'Préférences de communication'
+      update_communication_preferences: 'Mettre à jour mes préférences de communication'
+      unsubscribes:
+        title: 'Notifications des mises à jour de projet'
+        updates: 'Je veux recevoir les mises à jour des projets'
+        submit: 'Enregistrer mes préférences de communication'

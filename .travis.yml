@@ -1,0 +1,10 @@
+language: ruby
+cache: bundler
+env: RAILS_ENV=test DISPLAY=:99.0
+script:
+  - bundle exec rspec --colour --format d
+before_script:
+  - 'sh -e /etc/init.d/xvfb start'
+  - './bin/bootstrap'
+notifications:
+  webhooks: https://ci.neighbor.ly/projects/b907bc8d-129e-415d-a185-dfe434b5bd15/status

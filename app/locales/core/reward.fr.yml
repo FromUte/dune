@@ -1,0 +1,12 @@
+fr:
+  activerecord:
+    models:
+      reward: 'Récompenses'
+    attributes:
+      reward:
+        title: 'Créez un titre court et accrocheur qui résume votre récompenses.'
+        description: "Décrivez votre récompense de manière à attirer les prêteurs."
+        maximum_contributions: "Limitez le nombre de récompenses à ce niveau."
+        minimum_value: "Le montant minimal de prêt pour pourvoir à cette récompense"
+        days_to_delivery: "Temps d'attente estimé pour envoi des récompenses suite à une campagne réussie."
+        soon: 'Bientôt une récompense ?'

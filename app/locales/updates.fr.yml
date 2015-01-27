@@ -1,0 +1,3 @@
+fr:
+  updates:
+    match_became_active: "![Créateur image de match](%{image})\n\nUn nouveau match a été créé par %{matcher_name} pour %{project_name}. Depuis %{match_start_date} jusqu'à %{match_end_date}, %{matcher_name} prêtera %{value_unit} pour chaque euro prêté, jusqu'à %{value}! Faites circuler l'informations !"

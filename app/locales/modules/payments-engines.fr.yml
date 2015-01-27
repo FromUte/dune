@@ -1,0 +1,10 @@
+fr:
+  payments:
+    common:
+      terms: "En contribuant à ce projet, je suis d'accord avec le %{link}."
+      terms-link: "Conditions générales d'utilisation"
+      confirm: 'Confirmer le paiement'
+      proccessing: 'Traitement en cours...'
+      error:
+        title: "Nous sommes désolés, une erreur s'est produite."
+        name: "S'il vous plaît recharger cette page et réessayez."

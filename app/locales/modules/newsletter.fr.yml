@@ -1,0 +1,6 @@
+fr:
+  layouts:
+    newsletter:
+      newsletter: "S'inscrire à la newsletter"
+      email: 'your@email.com'
+      submit: 'Rejoindre'

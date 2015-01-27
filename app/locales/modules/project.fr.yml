@@ -1,0 +1,19 @@
+fr:
+  project:
+    display_status:
+      expired: 'expiré'
+      failed: 'non financé'
+      successful: 'Financé !'
+      waiting_confirmation: 'En attente de confirmation'
+      waiting_funds: 'En attente de financement'
+      not_reached_goal: 'En attente'
+      draft: 'brouillon'
+    organization_type:
+      municipality: 'Municipalité'
+      neighborhood_organization: 'Organisation de quartier'
+      cid_bid: 'CID / BID'
+      registered_nonprofit: 'Organisme à but non lucratif'
+      public_private_partnership: 'Partenariat public-privé'
+      nonprofit_501c3: '501c3 Organisme à but non lucratif'
+      other: 'Autres'
+      not_sure: "Je ne suis pas sûr"

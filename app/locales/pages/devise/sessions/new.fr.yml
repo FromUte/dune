@@ -1,0 +1,18 @@
+fr:
+  devise:
+    sessions:
+      new:
+        no_account_html: "Vous n'êtes pas encore monté sur notre Dune d'investisseurs ? <strong>%{link}</strong>"
+        titles:
+          site: "S'identifier"
+          header: "S'identifier"
+        links:
+          register: "Rejoindre <i class='icon-et-right-circled'></i>"
+          forgot_password: "Vous avez oublié votre mot de passe ?"
+          new_user_confirmation: "Vous n'avez pas reçu le mail de confirmation ?"
+        form:
+          labels:
+            remember_me: 'Se souvenir de moi'
+          inputs:
+            submit: "S'identifier"
+            facebook: "S'identifier avec Facebook"

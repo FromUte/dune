@@ -1,0 +1,45 @@
+fr:
+  projects:
+    start:
+      title: "Un moyen collaboratif de construire votre projet."
+      get-started: 'Commencer'
+      steps:
+        first:
+          title: '1. Soumettre un projet'
+          description: "La première étape est de décrire votre projet. Nous l’étudierons minutieusement afin de vous accompagner et de nous assurer que celui-ci est viable."
+        second:
+          title: '2. Planifiez votre projet'
+          description: "Il est important de planifier votre campagne. Prenez un peu de temps afin de réfléchir à une stratégie."
+        third:
+          title: '3. Lancez votre campagne'
+          description: "Une fois votre projet élaboré et approuvé, vous serez prêt à faire vivre votre campagne de levé de fonds !"
+      who:
+        title: 'Qui peut mener une campagne sur Dune ?'
+        local-governments: 'Entreprise en création'
+        nonprofits: 'Entreprise existante'
+        neighborhood-organizations: 'Organisation à but non lucratif'
+        description: "Un prêt vous implique et doit être remboursé, nous ne pouvons nous permettre de présenter à notre communauté des prêts risqués c’est pourquoi nous nous assurerons de la bonne santé de votre entreprise avant de présenter votre campagne de levé de fonds."
+      work:
+        title: 'La réussite de votre campagne dépend de votre engagement.'
+        subtitle: "Voici ce dont vous aurez besoin :"
+        team:
+          title: 'Une équipe solide'
+          description: "Afin de tirer profit de votre campagne, vous aurez besoin d'une équipe active et engagée soutenue par une bonne organisation et un esprit civique."
+        imagery:
+          title: 'Un rendu sympa'
+          description: 'Une image vaut parfois mille mots. Engagez vos futurs prêteurs avec des images qui captent leur attention.'
+        video:
+          title: 'Une vidéo bien penser'
+          description: 'Une vidéo est le meilleur moyen de présenter votre projet et permet à la communauté d’obtenir un aperçu de votre entreprise.'
+        detailed:
+          title: 'Un projet détaillé'
+          description: 'Expliquez votre projet en détail. Plus les prêteurs en savent sur votre projet, votre entreprise, plus ils sont susceptibles de vous prêter une partie de leur épargne.'
+        rewards:
+          title: 'Une récompense intéressante'
+          description: 'Inciter les prêteurs à vous prêter plus en proposant des avantages intéressants.'
+        engagement:
+          title: 'Un engagement continu'
+          description: "Restez connecté avec vos prêteurs actuels tout en diffusant des nouveautés sur votre projet. L'engagement est la clé d'une campagne réussie."
+      inspiration:
+        title: "Besoin d'inspiration?"
+        subtitle: 'Découvrez ces campagnes financées avec succès :'
