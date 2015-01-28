@@ -10,7 +10,7 @@ Neighborly.SearchCities = (searchInputSelctor, mapCanvasSelector) ->
     searchInput = $(searchInputSelctor)[0]
     mapCanvas = $(mapCanvasSelector)[0]
     mapOptions =
-      center: new google.maps.LatLng(37.09024, -95.712891)
+      center: new google.maps.LatLng(48.8566140, 2.3522219)
       zoom: 3
       disableDefaultUI: true
       mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -18,7 +18,7 @@ Neighborly.SearchCities = (searchInputSelctor, mapCanvasSelector) ->
     autocomplete = new google.maps.places.Autocomplete(searchInput,
       types: ['(cities)']
       componentRestrictions:
-        country: 'us'
+        country: 'fr'
     )
     map = new google.maps.Map(mapCanvas, mapOptions)
     marker = new google.maps.Marker(map: map)

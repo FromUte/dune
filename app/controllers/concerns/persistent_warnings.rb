@@ -31,7 +31,7 @@ module Concerns
     end
 
     def complete_profile
-      if user_signed_in? && current_user.completeness_progress.to_i < 100
+      if user_signed_in? && current_user.completeness_progress.to_i < 20
         { message: t('controllers.users.completeness_progress',
                      link: main_app.edit_user_path(current_user)),
           dismissible: false }

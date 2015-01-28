@@ -43,7 +43,7 @@ fr:
         password: 'Nouveau Mot de Passe'
         newsletter: 'Recevoir des e-mails occasionel de Dune-crowdFunding'
         new_project: 'Envoyez-moi des e-mails lorsque de nouveaux projets sont ajoutés à Dune-crowdfunding'
-        profile_type: 'Afficher moi comme un'
+        profile_type: 'Afficher moi comme (un/une)'
         phone_number: 'Numéro de téléphone'
         location: 'Ville, Région'
         address_street: 'Adresse de la rue'
