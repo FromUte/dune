@@ -6,7 +6,7 @@ fr:
       near: 'Projets proche'
       channels: 'Partenaire'
       ending_soon: 'En phase final'
-      successful: 'Campagne terminé'
+      successful: 'Campagne terminée'
       coming_soon: 'En approche'
       with_active_matches: 'Actifs'
       join:
