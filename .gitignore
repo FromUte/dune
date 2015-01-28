@@ -13,8 +13,8 @@ db/seeds/my-seeds-heroku.rb
 coverage
 *.tmproj
 .DS_Store
-public/uploads/*chromedriver.log
-public/uploads/
+#public/uploads/*chromedriver.log
+#public/uploads/
 chromedriver.log
 .use_capybara_webkit
 config/locales/.wti

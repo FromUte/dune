@@ -27,10 +27,10 @@ def generate_project(fields = {})
                      online_date: Time.now,
                      online_days: [50, 90, 43, 87, 34].shuffle.first,
                      how_know: Faker::Lorem.sentence,
-                     video_url: 'http://vimeo.com/79833901',
+                     video_url: 'https://www.youtube.com/watch?v=TalUWNmJVgk',
                      home_page: true,
-                     address_city: Faker::Address.city,
-                     address_state: Faker::AddressUS.state_abbr,
+                     address_city: Faker::AddressFR.city,
+                     address_state: Faker::AddressFR.state_abbr,
                      remote_uploaded_image_url: lorem_pixel_url('500/400', 'city'),
                      remote_hero_image_url: lorem_pixel_url('1280/600', 'city')
     }.merge!(fields))
