@@ -8,10 +8,10 @@ fr:
           title: '1. Soumettre un projet'
           description: "La première étape est de décrire votre projet. Nous l’étudierons minutieusement afin de vous accompagner et de nous assurer que celui-ci est viable."
         second:
-          title: '2. Planifiez votre projet'
+          title: '2. Planifier votre projet'
           description: "Il est important de planifier votre campagne. Prenez un peu de temps afin de réfléchir à une stratégie."
         third:
-          title: '3. Lancez votre campagne'
+          title: '3. Lancer votre campagne'
           description: "Une fois votre projet élaboré et approuvé, vous serez prêt à faire vivre votre campagne de levé de fonds !"
       who:
         title: 'Qui peut mener une campagne sur Dune ?'
