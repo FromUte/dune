@@ -146,3 +146,6 @@ gem 'nprogress-rails'
 gem 'pjax_rails'
 gem 'initjs', '~> 2.1.2'
 gem 'remotipart', '~> 1.2.1'
+
+# a retirer pour la prodction réel
+gem 'ffaker'
