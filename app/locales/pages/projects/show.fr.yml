@@ -2,7 +2,7 @@ fr:
   projects:
     show:
       anonymous_contribution: "Prêteurs anonymes"
-      neighbors_behind_this: "Duneur en charge"
+      neighbors_behind_this: "Duneur actif"
       display_status:
         all_or_none:
           reached_goal: "Ce projet sera couronné de succès et financé le %{date}"
