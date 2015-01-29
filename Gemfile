@@ -5,10 +5,14 @@ ruby IO.read(ruby_version_file).strip
 
 gem 'rails', '4.1.7'
 
+#like java listners
 gem 'rails-observers', '~> 0.1.2'
-gem 'active_model_serializers', '0.8.1'
+# serializer json
+gem 'active_model_serializers', '0.8.3'
 
+#background processor
 gem 'sidekiq', '~> 3.2.2'
+# DSL routing
 gem 'sinatra', '~> 1.4.5', require: false # required by sidekiq web interface mounted on /sidekiq
 
 # Javascript runtime
@@ -89,7 +93,7 @@ group :production do
 
   # Gem used to handle image uploading
   gem 'unf'
-  gem 'fog', '>= 1.20.0'
+  gem 'fog', '>= 1.27.0'
 
   # Workers, forks and all that jazz
   gem 'unicorn'
