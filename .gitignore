@@ -36,3 +36,5 @@ config/database.yml
 
 # Secrets
 .env
+
+.idea/dune.iml
