@@ -6,10 +6,10 @@
       header.title-information
         .row
           .small-12.columns
-            h2 Comment ça marche
+            h2 Mode d'emploi
         .row
           .small-12.columns
-            strong.subtitle Trouver des projets proche de vous
+            strong.subtitle Unissons-nous
       .row
         .small-12.columns
           = link_to '#how-it-works', class: 'expand-section' do
@@ -20,15 +20,15 @@
       .row
         .small-12.columns
           p
-            | Chez <strong>Dune investissement</strong> notre mission est de connecter les entreprises de notre pays avec une communauté d’épargnant qui se soucie d'elle.
+            | Chez <strong>Dune investissement</strong> notre mission est de connecter les entreprises de notre pays avec une communauté d’épargnants qui se soucie d'elles.
       .row.text-center
         .medium-6.columns
           h3 Pour les Entreprises
-          p TPE / PME en bonne santé cherchant à se financer tout en marquetant leurs idées.
+          p Entreprises dynamiques cherchant à se financer tout en marquetant leurs idées.
           = link_to 'Commencer', start_path, class: 'button'
         .medium-6.columns
           h3 Pour les Citoyens
-          p Épargnant cherchant à s’investir dans l’économie locale, souhaitant reprendre le contrôle de leur épargne à la recherche de placement à faible risque et à rendement intéressant.
+          p Citoyens éclairés cherchant à investir avec intérêts vers l’économie réelle.
           = link_to 'Parcourir les projets', discover_path, class: 'button'
 
   section.main-section.section-with-hero-header
@@ -36,10 +36,10 @@
       header.title-information
         .row
           .small-12.columns
-            h2 Pour commencer
+            h2 Nous-rejoindre
         .row
           .small-12.columns
-            strong.subtitle Des financements répondant à vos besoins
+            strong.subtitle Évoluons ensemble
       .row
         .small-12.columns
           = link_to '#pricing', class: 'expand-section' do
@@ -94,20 +94,22 @@
         header.title-information.text-center.row
           .row
             .small-12.columns
-              h2 Rencontrez-nous
+              h2 Notre équipe
         .row
           .small-12.columns
-            p Nous sommes une équipe de passionnés de geeks civiques, de courtiers, de comptables, de personne ayant fait leur preuve dans la finance, et surtout de courageux entrepreneurs. Notre mission est d'aider les entreprises à se financer. Nous aimons notre pays et les milliers d’entreprises qui le peuplent.
+            p Nous sommes une équipe de passionnés.
+            p Analystes financiers, experts-comptables, architecte du numérique, chefs d’entreprises, et surtout de courageux entrepreneurs.
+            p Notre mission est d’aider les entreprises à se financer et de proposer des placements aux risques maitrisés. Nous aimons notre pays, et pensons que de l’union des citoyens naitra l’évolution de nos entreprises.
 
         .team-members
-          = render 'team_member', nickname: :jase, name: 'Pierre Legrand', role: 'Ingénieur Concepteur Développeur et autres',
-            description: 'Chevauche les lignes de codes comme il chevauche les poneys.',
+          = render 'team_member', nickname: :jase, name: 'Pierre Legrand', role: 'Co-fondateur, développeur',
+            description: "L'évolution économique passe par la révoltuion numérique",
             social_networks: { linkedin: 'http://linkedin.com/', twitter: 'http://twitter.com/' }
-          = render 'team_member', nickname: :patrick, name: 'Christian Micale', role: 'Big Boss',
-            description: 'Saute de marché financier en courtage particulier comme il prépare son petit déjeuner',
+          = render 'team_member', nickname: :patrick, name: 'Christian Micale', role: 'Co-fondateur, Financier',
+            description: "12 années dans le financement pour comprendre que l'économie réelle c'est vous",
             social_networks: { linkedin: 'http://linkedin.com/', twitter: 'http://twitter.com/' }
-          = render 'team_member', nickname: :sean, name: 'Sandra Bougaret', role: 'Jedi Master',
-            description: 'Maître Jedi, accompagne chef dentreprise et entrepreneur sur le chemin de la Force',
+          = render 'team_member', nickname: :sean, name: 'Sandra Bougaret', role: 'Co-fondateur, Relation professionnelle',
+            description: "Créer l'harmonie entre les idées et les fonds",
             social_networks: { linkedin: 'http://linkedin.com/pub/', twitter: 'http://twitter.com/', github: 'https://github.com/' }
 
   section#supporters.main-section.full-width-row

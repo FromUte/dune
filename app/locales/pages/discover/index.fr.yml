@@ -4,9 +4,9 @@ fr:
       title: 'Découvrez des projets étonnants'
       empty: 'Aucun projet ne correspond à vos critères de recherches.'
       tags: 'Mots clés populaires: '
-      near: 'Position'
-      category: 'Catégorie'
-      state: 'Statut'
+      near: 'Localisation'
+      category: 'Secteur activité'
+      state: 'Avancement'
       showing_results_for: 'Affichage des résultats pour : '
       states:
         active: 'Actif'

@@ -64,7 +64,7 @@ class Project < ActiveRecord::Base
     },
     using: {
       tsearch: {
-        dictionary: 'english'
+        dictionary: 'french'
       }
     },
     ignoring: :accents

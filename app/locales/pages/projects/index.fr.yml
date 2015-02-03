@@ -4,7 +4,7 @@ fr:
       title: "De l'union née l'évolution"
       recommended: 'Projets que nous'
       near: 'Projets proche'
-      channels: 'Partenaire'
+      channels: 'Partenaires'
       ending_soon: 'En phase final'
       successful: 'Campagne terminée'
       coming_soon: 'En approche'
@@ -14,8 +14,8 @@ fr:
         already_joined: 'Déjà rejoint ? %{link}.'
         sign_in: 'Se connecter'
       hero:
-        title: 'Soutener votre région'
-        subtitle: "Prêter aux entreprises proches de vous, gagner des intérêts, participer à l'économie local."
+        title: 'Investissez Français'
+        subtitle: "Prêter aux entreprises proches de vous, valoriser vos intérêts, participer à l'économie réelle."
       start-one:
         title: 'Vous avez un projets et vous recherchez des fonds ?'
         button: 'Démarrez votre projet'
