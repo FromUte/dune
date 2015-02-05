@@ -11,7 +11,7 @@ class Users::QuestionsMailer < ActionMailer::Base
       from: "#{::Configuration[:company_name]} <#{::Configuration[:email_system]}>",
       reply_to: "#{asker.display_name} <#{asker.email}>",
       to: @user.email,
-      subject: "Question Regarding #{@project.name}."
+      subject: "Une question concernant le projet  #{@project.name}."
     )
   end
 end

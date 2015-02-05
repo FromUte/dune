@@ -38,3 +38,4 @@ config/database.yml
 .env
 
 .idea/dune.iml
+.env.example
