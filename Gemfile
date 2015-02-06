@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby_version_file = Pathname.new(__FILE__) + '../.ruby-version'
 ruby IO.read(ruby_version_file).strip
 
-gem 'rails', '4.1.7'
+gem 'rails', '4.1.9'
 
 #like java listners
 gem 'rails-observers', '~> 0.1.2'
