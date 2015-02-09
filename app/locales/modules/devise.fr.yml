@@ -33,7 +33,7 @@ fr:
       updated_not_active: "Votre mot de passe a été changé avec succès."
     registrations:
       destroyed: "Bye ! Votre compte a été annulé avec succès. Nous espérons quand même vous revoir très bientôt."
-      signed_up: 'Bienvenue sur notre Dune ! Merci de compléter votre profil afin que nous puissions échanger avec vous, et vous donner les moyens de devenir un acteur important de la Dune-communauté !'
+      signed_up: 'Bienvenue sur notre dune ! Merci de compléter votre profil afin que nous puissions échanger avec vous, et vous donner les moyens de devenir un acteur important de la dune-communauté !'
       signed_up_but_inactive: "Votre inscription a été prise en compte avec succès. Cependant, nous ne pouvons pas vous connecter, car votre compte n'est pas encore actif."
       signed_up_but_locked: "Votre inscription a été prise en compte avec succès. Cependant, nous ne pouvons pas vous connecter, car votre compte est bloqué."
       signed_up_but_unconfirmed: "Un message de confirmation a été envoyé à votre adresse e-mail. S'il vous plaît ouvrer le lien afin d'activer votre compte."
@@ -41,7 +41,7 @@ fr:
       updated: "Votre compte a été mis à jour avec succès."
     sessions:
       signed_in: "Bienvenue sur notre dune !"
-      signed_in_custom: 'Bienvenue sur notre dune ! Merci de <a href="%{link}">compléter votre profil</a> afin que nous puissions échanger avec vous, et vous donner les moyens de devenir un acteur important de la Dune-communauté !'
+      signed_in_custom: 'Bienvenue sur notre dune ! Merci de <a href="%{link}">compléter votre profil</a> afin que nous puissions échanger avec vous, et vous donner les moyens de devenir un acteur important de la dune-communauté !'
       signed_out: "Bonne route et à très bientôt !"
     unlocks:
       send_instructions: "Vous allez recevoir un e-mail contenant les instructions de déblocage de votre compte dans quelques instants."

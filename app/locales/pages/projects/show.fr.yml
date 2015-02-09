@@ -2,7 +2,7 @@ fr:
   projects:
     show:
       anonymous_contribution: "Prêteurs anonymes"
-      neighbors_behind_this: "Duneur actif"
+      neighbors_behind_this: "duneur actif"
       display_status:
         all_or_none:
           reached_goal: "Ce projet sera couronné de succès et financé le %{date}"
@@ -30,14 +30,14 @@ fr:
     video_embed:
       a_project_by_html: "Un projet de %{link} par"
     share:
-      twitter-text: "Découvrez le projet de %{name} #%{hash_tag} sur @Dune: %{project_url}"
+      twitter-text: "Découvrez le projet de %{name} #%{hash_tag} sur @dune: %{project_url}"
       twitter: 'Tweet'
       facebook: 'Partager'
       email: 'E-mail'
       embed: 'Intégrer'
     status_bar:
       goal: 'But : %{value}'
-      total_contributions: '%{value} Duneur'
+      total_contributions: '%{value} duneur'
       contribute: 'Contribuer'
     tabs:
       about: 'À propos'

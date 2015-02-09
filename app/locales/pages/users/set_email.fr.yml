@@ -2,7 +2,7 @@ fr:
   users:
     set_email:
       update_email_title: 'Ajouter votre adresse e-mail'
-      site_title: 'Créez votre compte @Dune'
+      site_title: 'Créez votre compte @dune'
       title: "S'il vous plaît entrez votre adresse e-mail"
       submit: 'Procéder'
-      create: 'Rejoignez la Dune'
+      create: 'Rejoignez la dune'

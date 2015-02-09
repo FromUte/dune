@@ -5,6 +5,6 @@ fr:
       completed: 'Terminé'
       soon: 'À venir'
       share:
-        twitter-text: "Découvrez le projet %{name} #%{hash_tag} que j'appuie sur @Dune"
+        twitter-text: "Découvrez le projet %{name} #%{hash_tag} que j'appuie sur @dune"
         twitter: 'Tweet'
         facebook: 'Partager'

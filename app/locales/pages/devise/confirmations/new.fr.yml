@@ -2,7 +2,7 @@ fr:
   devise:
     confirmations:
       new:
-        no_account_html: "Besoin d'un compte Dune ? <strong>%{link}</strong>"
+        no_account_html: "Besoin d'un compte dune ? <strong>%{link}</strong>"
         titles:
           site: 'Renvoyer les instructions de confirmation'
           header: 'Renvoyer les instructions'

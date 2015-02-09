@@ -5,7 +5,7 @@ fr:
         have_account_html: "Vous avez déjà un compte ? <strong>%{link}</strong>"
         titles:
           site: "S'inscrire"
-          header: "Rejoignez notre Dune d'investisseur !"
+          header: "Rejoignez notre dune d'investisseur !"
         links:
           login: "S'identifier <i class='icon-et-right-circled'></i>"
         form:
@@ -14,5 +14,5 @@ fr:
           hint:
             password_length: '*minimum 6 caractères.'
           inputs:
-            submit: "Rejoignez Dune"
+            submit: "Rejoignez dune"
             facebook: 'Se connecter avec Facebook'

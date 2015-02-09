@@ -13,7 +13,7 @@ fr:
       payment_method: 'Méthode de paiement'
       project_id: 'Projet'
       reward_description: 'Description de la récompense'
-      service_fee: 'Frais Dune'
+      service_fee: 'Frais dune'
       short_note: 'Message'
       user_email: 'Email'
       user_name: 'Contributeur'

@@ -41,8 +41,8 @@ fr:
       user:
         bio: 'Courte biographie'
         password: 'Nouveau Mot de Passe'
-        newsletter: 'Recevoir des e-mails occasionel de Dune-crowdFunding'
-        new_project: 'Envoyez-moi des e-mails lorsque de nouveaux projets sont ajoutés à Dune-crowdfunding'
+        newsletter: 'Recevoir des e-mails occasionel de dune-investissement'
+        new_project: 'Envoyez-moi des e-mails lorsque de nouveaux projets sont ajoutés à dune-investissement'
         profile_type: 'Afficher moi comme (un/une)'
         phone_number: 'Numéro de téléphone'
         location: 'Ville, Région'
@@ -88,7 +88,7 @@ fr:
           about: "Racontez nous l'histoire de votre projet. Soyez fin objectif charmant, présenter à vos lecteurs un texte qui les émeut, tout en étant très transparent sur les attentes de votre projet !"
           category: "Quelle catégorie décrit le mieux votre projet ?"
           expires_at: "Combien de temps va durer votre campagne ? Nos recherches montrent qu'une durée correcte doit être comprise entre 30 et 60 jours."
-          goal: "Quel est le montant nécessaire à la réalisation de votre projet ? Gardez à l'esprit les frais de dossier de Dune. Ne pas mettre de virgule, signe de devise ou décimale."
+          goal: "Quel est le montant nécessaire à la réalisation de votre projet ? Gardez à l'esprit les frais de dossier de dune. Ne pas mettre de virgule, signe de devise ou décimale."
           first_contributions: "Affin d'atteindre votre but, il est indispensable d'engager vos contacts. Si vous avez déjà un panel de contributeurs sur lesquels vous pouvez compter dès le premier jour listé les ici. Si vous n'en n'avez pas, expliquez qui vous pensez cibler afin de mener à bien votre campagne."
           headline: "Résumez votre projet en 130 caractères. Ce paragraphe sera le premier contact entre la communauté et votre projet. Soyez créatif, clair et direct"
           name: "Soyez concis et objectif. 8 mots ou moins."

@@ -5,7 +5,7 @@ fr:
         user:
           attributes:
             email:
-              not_found: "Nous ne connaissons pas cette adresse e-mail. S'il vous plaît essayer à nouveau, ou inscrivez-vous sur Dune."
+              not_found: "Nous ne connaissons pas cette adresse e-mail. S'il vous plaît essayer à nouveau, ou inscrivez-vous sur dune."
               taken: "Nous connaissons déjà cette adresse e-mail. Vous pouvez vous connecter"
               invalid: "e-mail invalide"
             password:
