@@ -1,4 +1,4 @@
-Neighborly::Application.configure do
+Dune::Application.configure do
   Slim::Engine.set_default_options pretty: false
   # Settings specified here will take precedence over those in config/application.rb.
 

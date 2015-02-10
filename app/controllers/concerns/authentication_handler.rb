@@ -57,7 +57,7 @@ module Concerns::AuthenticationHandler
     end
 
     def black_list_domains
-      ['neighborly-staging.herokuapp.com',
+      ['dune-staging.herokuapp.com',
        'invest.neighbor.ly',
        'staging.neighbor.ly',
        'channel.staging.neighbor.ly',

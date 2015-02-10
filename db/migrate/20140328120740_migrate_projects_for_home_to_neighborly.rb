@@ -1,4 +1,4 @@
-class MigrateProjectsForHomeToNeighborly < ActiveRecord::Migration
+class MigrateProjectsForHomeToDune < ActiveRecord::Migration
   def up
     execute <<-SQL
       DROP VIEW projects_for_home;

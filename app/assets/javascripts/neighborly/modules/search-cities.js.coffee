@@ -2,7 +2,7 @@ Neighborly.SearchCities = (searchInputSelctor, mapCanvasSelector) ->
   window.searchInputSelctor = searchInputSelctor
   window.mapCanvasSelector = mapCanvasSelector
 
-  $.getScript('https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&callback=Neighborly.SearchCitiesInitialize')
+  $.getScript('https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&callback=Dune.SearchCitiesInitialize')
 
   Neighborly.SearchCitiesInitialize = ->
     searchInputSelctor = '.search-cities-with-google'  if typeof searchInputSelctor is 'undefined'

@@ -1,7 +1,7 @@
 class MatchFinisher
   def complete!
     matches.each do |match|
-      refund = Neighborly::Balanced::Refund.new(match)
+      refund = Dune::Balanced::Refund.new(match)
       refund.complete!(:match_automatic, self.class.remaining_amount_of(match))
       match.complete!
       match.notify_observers :completed

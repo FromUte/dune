@@ -7,5 +7,5 @@ if defined?(Unicorn::HttpRequest)
   use GC::OOB::UnicornMiddleware
 end
 
-run Neighborly::Application
+run Dune::Application
 

@@ -1,6 +1,6 @@
 require 'sidekiq/web'
 
-Neighborly::Application.routes.draw do
+Dune::Application.routes.draw do
   get '/about', to: redirect('/learn')
 
   devise_for :users, path: '',

@@ -8,5 +8,5 @@
 # require 'securerandom'
 # SecureRandom.hex(64)
 
-Neighborly::Application.config.secret_token = ::Configuration[:secret_token]
-Neighborly::Application.config.secret_key_base = ::Configuration[:secret_key_base]
+Dune::Application.config.secret_token = ::Configuration[:secret_token]
+Dune::Application.config.secret_key_base = ::Configuration[:secret_key_base]

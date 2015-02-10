@@ -38,7 +38,7 @@ describe Concerns::SocialHelpersHandler do
 
   describe '#display_uservoice_sso' do
     before do
-      request = ActionDispatch::Request.new('HTTP_HOST' => 'neighborly.local')
+      request = ActionDispatch::Request.new('HTTP_HOST' => 'dune.local')
       allow(@controller).to receive(:request).and_return(request)
       controller.stub(:current_user).and_return(current_user)
     end

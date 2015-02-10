@@ -56,12 +56,12 @@ describe Channel do
 
   describe '#pg_search' do
     context 'using permalink' do
-      let(:channel) { create(:channel, permalink: 'neighborly') }
+      let(:channel) { create(:channel, permalink: 'dune') }
 
       context 'when channel exists' do
         it 'returns the channel ignoring accents' do
           expect(
-            [described_class.pg_search('neighborly'), described_class.pg_search('néìghbôrly')]
+            [described_class.pg_search('dune'), described_class.pg_search('dûne')]
           ).to eq [[channel], [channel]]
         end
       end

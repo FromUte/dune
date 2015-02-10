@@ -15,7 +15,7 @@ describe MatchFinisher do
 
   describe 'completion' do
     it 'does a refund to appropriate matches' do
-      refund = double('Neighborly::Balanced::Refund')
+      refund = double('Dune::Balanced::Refund')
       Neighborly::Balanced::Refund.stub(:new).with(match).and_return(refund)
       expect(refund).to receive(:complete!).with(:match_automatic, anything)
       subject.complete!

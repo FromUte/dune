@@ -1,7 +1,7 @@
 Neighborly.Map = (mapCanvasSelector) ->
   window.mapCanvasSelector = mapCanvasSelector
 
-  $.getScript('https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=Neighborly.MapInitialize')
+  $.getScript('https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=Dune.MapInitialize')
 
   Neighborly.MapInitialize = ->
     mapCanvasSelector = '.map-canvas' if typeof mapCanvasSelector is 'undefined'
