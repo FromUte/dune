@@ -1,18 +1,48 @@
 = content_for :title, t('.title')
 .faqs-page.static-page
+  header.white
+    .row
+      .large-12.columns
+        .title
+          h1 Questions fréquentes
+          h4
+            | Nous mettons régulièrement à jour cette section du site grâce à vos retours, n’hésitez pas à nous contacter si vous ne trouvez pas de réponse à une de vos questions.
+            |  Via
+            a href='http://twitter.com/dune' Twitter
+            |  ou par
+            a href='mailto:howdy@dune-investissement'  email
+            |.
   .row
-    .large-12.columns
-      .title
-        h1 Questions fréquentes
-        h4 
-          | Nous mettons régulièrement à jour cette section du site grâce à vos retours, n’hésitez pas à nous contacter si vous ne trouvez pas de réponse à une de vos questions.
-          |  Via
-          a href='http://twitter.com/dune' Twitter
-          |  ou par
-          a href='mailto:howdy@dune-investissement'  email
-          |. 
+    .large-3.columns
+      .sidebar.bs-affix
+        strong LES FONDAMENTAUX EMPRUNTEUR
+        ul.side-nav
+          li
+            a[href='#linkE1'] Tour d'horizon emprunteur
+          li
+            a[href='#linkE2'] Réglementation emprunteur
+          li
+            a[href='#linkE3'] Questions financières
+          li
+            a[href='#linkE4'] Création de la demande de financement
+          li
+            a[href='#linkE5'] Collecte des fonds
+          li
+            a[href='#linkE6'] Remboursement du prêt
+          li.divider
+        strong LES FONDAMENTAUX PRETEURS
+        ul.side-nav
+          li
+            a[href='#linkP1'] Tour d'horizon prêteur
+          li
+            a[href='#linkP2'] Prêter sur dune
+          li
+            a[href='#linkP3'] Remboursements
+    .large-9.columns
       .text
         h2 LES FONDAMENTAUX EMPRUNTEUR
+        a[name='linkE1']
+        h3 Tour d'horizon emprunteur
         dl
           dt Qui peut emprunter sur dune ?
           dd Toutes les sociétés domiciliées en France, enregistrées au Registre du Commerce et des sociétés peuvent déposer une demande d’emprunt sur dune. Les projets innovants, les sociétés en création peuvent également déposer un dossier.
@@ -32,6 +62,7 @@
               li Absence de garantie ou de caution personnelle : vous n’avez pas à vous préoccuper de la mise en place des garanties et cautions souvent demandées par les banques, qui constituent des frais et des démarches lourdes dans le cadre d’un emprunt bancaire.
               li Transparence sur les coûts : vous connaissez lors du lancement de votre collecte les coûts réels associés à votre emprunt.
               li Le soutien d’une communauté d’investisseurs engagés : dune réunit une communauté d’épargnants engagés et désireux de prêter directement leur argent aux TPE et PME françaises. Vous êtes soutenu par des hommes et des femmes qui croient en vous et en votre entreprise, qui seront autant d’ambassadeurs ou peut-être de futurs clients ou partenaires.
+        a[name='linkE2']
         h3 Réglementation emprunteur
         dl
           dt À partir de quel montant peut-on emprunter sur dune ?
@@ -41,6 +72,7 @@
           dt Sur quelle durée est-il possible d’emprunter ?
           dd De 24 à 84 mois maximum.
 
+        a[name='linkE3']
         h3 Questions financières
         dl
           dt Quel est le coût d’un emprunt sur dune ?
@@ -53,6 +85,7 @@
                 li 4% pour les prêts d’une durée de 2 à 5 ans notés B
                 li 5% pour les prêts d’une durée de 6 à 7 ans notés A - B et C (création)
               li Des frais de tenue de compte et des flux financiers gérés par XXXXXXXXXX notre partenaire établissement de monnaie électronique agréé bénéficiant d’un passeport européen dont dune est agent prestataire de services de paiement : 1,50% TTC
+        a[name='linkE4']
         h3 Création de la demande de financement
         dl
           dt Qui peut créer une demande d’emprunt pour le compte de la société ?
@@ -114,6 +147,7 @@
         dl
           dt Je n'ai pas d'expert-comptable, où puis-je en contacter un ?
           dd Tous les experts-comptables de France peuvent compléter l'attestation d'informations financières. Vous en trouverez sans doute un près de chez vous sur l'annuaire hébergé par le site de l'Ordre des Experts-Comptables. De plus nous pouvons vous présenter les services de notre partenaire  le cabinet Philippe & Sogeco associés.
+        a[name='linkE5']
         h3 Collecte des fonds
         dl
           dt Combien de temps faut-il pour qu’un projet soit financé ?
@@ -128,6 +162,7 @@
         dl
           dt Est-il possible d’abandonner ma demande d’emprunt ?
           dd Oui. Tant que le montant n’a pas été versé sur votre compte bancaire, vous pouvez abandonner votre demande d’emprunt en le notifiant depuis votre espace d’administration.
+        a[name='linkE6']
         h3 Remboursement du prêt
         dl
           dt Comment sont calculées les échéances ?
@@ -140,6 +175,8 @@
           dt Est-il possible de rembourser de manière anticipée ?
           dd Oui, bien sûr, et c'est gratuit. Il vous suffit de contacter le conseiller qui a suivi votre dossier, ou d'écrire à remboursement_anticipe@dune-investissement.fr pour mettre en place les flux financiers adéquats.
         h2 LES FONDAMENTAUX PRETEURS
+        a[name='linkP1']
+        h3 Tour d'horizon prêteur
         dl
           dt Qui peut devenir prêteur sur dune ?
           dd Pour devenir prêteur sur dune, il suffit d'être majeur, domicilié fiscalement en France, et d'ouvrir un compte gratuit sur notre plateforme.
@@ -167,6 +204,7 @@
         dl
           dt Que fait dune de l'argent déposé sur mon compte ?
           dd L’argent déposé sur votre compte reste votre propriété. Vous pouvez récupérer à tout moment le solde disponible. Votre argent ne transite jamais sur les serveurs ni sur les comptes bancaires de dune. L'argent est géré et garanti par XXXXXXXX, établissement de monnaie électronique agréé et contrôlé par la Banque Nationale de XXX -XXX, et bénéficiant d'un passeport européen.
+        a[name='linkP2']
         h3 Prêter sur dune
         dl
           dt Quel est le coût du service ?
@@ -228,6 +266,7 @@
           dt Quelle est la fiscalité applicable aux intérêts perçus ?
           dd Les intérêts que vous recevez chaque mois sont des “produits de placement à revenu fixe”, comme les intérêts des livrets bancaires ou les coupons d'obligations. Ils sont imposables à l’impôt sur le revenu et sont soumis aux cotisations sociales (CSG-CRDS).
           dd Par ailleurs, pour vous aider à déclarer les revenus perçus sur votre déclaration annuelle, nous vous mettons à disposition un imprimé fiscal unique sur votre espace personnel avant le 15 février suivant la fin de l'année fiscale correspondante.
+        a[name='linkP3']
         h3 Remboursements
         dl
           dt Comment suis-je remboursé par l'entreprise ?

@@ -33,8 +33,8 @@ gem 'neighborly-balanced-bankaccount', '~> 2.0.0'
 gem 'neighborly-balanced', '~> 2.0.0'
 
 # Neigbhor.ly Engines
-gem 'neighborly-admin', '~> 1.2.0'
-gem 'neighborly-api', '~> 1.0.1'
+gem 'dune-admin', '~> 1.2.0'
+gem 'neighborly-api'
 gem 'neighborly-dashboard', '~> 1.0.2'
 
 # Turns every field on a editable one - Admin dependencies
@@ -75,7 +75,7 @@ gem 'dropzonejs-rails', '~> 0.4.14'
 gem 'has_permalink'
 gem 'ranked-model'
 gem 'inherited_resources', '~> 1.4.1'
-gem 'has_scope', '~> 0.6.0.rc'
+gem 'has_scope'
 gem 'video_info', '~> 2.0.2'
 gem 'geocoder'
 # Feature branch still to be merged by original gem author

@@ -23,6 +23,13 @@
       margin-top: +emCalc(25px)
       &:first-child
         margin-top: 0
+    a
+      @media #{$medium}
+        display: block
+        content: " "
+        height: 50px
+        visibility: hidden
+        margin-top: -50px
     h4
       font-weight: 400
     ul, ol
