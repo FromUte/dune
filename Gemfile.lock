@@ -148,7 +148,11 @@ GEM
       request_store (~> 1.0)
     dropzonejs-rails (0.4.16)
       rails (> 3.1)
-    ember-data-source (1.0.0.beta.14.1)
+    dune-admin (1.2.3)
+      best_in_place (~> 3.0.0.rc1)
+      postgres-copy (~> 0.8.0, >= 0.8.0)
+      rails (~> 4.0)
+    ember-data-source (1.0.0.beta.15)
       ember-source (~> 1.8)
     ember-rails (0.16.1)
       active_model_serializers
@@ -166,7 +170,7 @@ GEM
     emblem-source (0.3.18)
     erubis (2.7.0)
     eventmachine (1.0.7)
-    excon (0.44.1)
+    excon (0.44.2)
     execjs (2.3.0)
     ezcrypto (0.7.2)
     factory_girl (4.5.0)
@@ -239,13 +243,13 @@ GEM
     fog-serverlove (0.1.1)
       fog-core
       fog-json
-    fog-softlayer (0.4.0)
+    fog-softlayer (0.4.1)
       fog-core
       fog-json
     fog-storm_on_demand (0.1.0)
       fog-core
       fog-json
-    fog-terremark (0.0.3)
+    fog-terremark (0.0.4)
       fog-core
       fog-xml
     fog-vmfusion (0.0.1)
@@ -309,10 +313,6 @@ GEM
     multi_json (1.10.1)
     multi_xml (0.5.5)
     multipart-post (1.2.0)
-    neighborly-admin (1.2.0)
-      best_in_place (~> 3.0.0.rc1)
-      postgres-copy (~> 0.8.0)
-      rails (~> 4.0)
     neighborly-api (1.0.1)
       active_model_serializers (~> 0.8.0)
       has_scope
@@ -432,7 +432,7 @@ GEM
     ranked-model (0.4.0)
       activerecord (>= 3.1.12)
     redcarpet (3.2.2)
-    redis (3.2.0)
+    redis (3.2.1)
     redis-namespace (1.5.1)
       redis (~> 3.0, >= 3.0.4)
     ref (1.0.5)
@@ -463,7 +463,7 @@ GEM
       sass (~> 3.2.2)
       sprockets (~> 2.8, < 3.0)
       sprockets-rails (~> 2.0)
-    schema_plus (1.8.6)
+    schema_plus (1.8.7)
       activerecord (>= 3.2, < 4.3)
       valuable
     shoulda-matchers (2.8.0)
@@ -495,7 +495,7 @@ GEM
       railties (>= 3.0, < 4.2)
       slim (~> 2.0)
     slop (3.6.0)
-    spring (1.3.1)
+    spring (1.3.2)
     sprockets (2.12.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -572,6 +572,7 @@ DEPENDENCIES
   dotenv-rails
   draper
   dropzonejs-rails (~> 0.4.14)
+  dune-admin (~> 1.2.3)
   ezcrypto
   factory_girl_rails
   fakeweb
@@ -592,7 +593,6 @@ DEPENDENCIES
   launchy
   letter_opener
   minitest
-  neighborly-admin (~> 1.2.0)
   neighborly-api
   neighborly-balanced (~> 2.0.0)
   neighborly-balanced-bankaccount (~> 2.0.0)

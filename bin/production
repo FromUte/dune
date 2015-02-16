@@ -1,2 +1,2 @@
 #!/bin/sh
-HEROKU_APP=neighborly exec heroku "$@"
+HEROKU_APP=dune-investissement exec heroku "$@"

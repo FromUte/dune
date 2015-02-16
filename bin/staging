@@ -1,2 +1,2 @@
 #!/bin/sh
-HEROKU_APP=neighborly-staging exec heroku "$@"
+HEROKU_APP=dune-staging exec heroku "$@"

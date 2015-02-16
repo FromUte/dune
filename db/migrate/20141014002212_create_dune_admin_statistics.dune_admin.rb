@@ -1,8 +1,8 @@
-# This migration comes from neighborly_admin (originally 20141005191509)
-class CreateNeighborlyAdminStatistics < ActiveRecord::Migration
+# This migration comes from dune_admin (originally 20141005191509)
+class CreateDuneAdminStatistics < ActiveRecord::Migration
   def up
     execute <<-SQL
-       CREATE OR REPLACE VIEW neighborly_admin_statistics AS
+       CREATE OR REPLACE VIEW dune_admin_statistics AS
        SELECT
         ( SELECT count(*) AS count FROM users) AS total_users,
         ( SELECT count(*) AS count FROM users WHERE profile_type::text = 'organization'::text ) AS total_organization_users,
@@ -50,7 +50,7 @@ class CreateNeighborlyAdminStatistics < ActiveRecord::Migration
 
   def down
     execute <<-SQL
-       DROP VIEW neighborly_admin_statistics;
+       DROP VIEW dune_admin_statistics;
     SQL
   end
 end

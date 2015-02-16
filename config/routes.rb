@@ -71,7 +71,7 @@ Dune::Application.routes.draw do
     end
   end
 
-  mount Neighborly::Admin::Engine => '/admin/', as: :neighborly_admin
+  mount Dune::Admin::Engine => '/admin/', as: :dune_admin
 
   # Root path should be after channel constraints
   root to: 'projects#index'

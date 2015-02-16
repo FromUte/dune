@@ -708,10 +708,10 @@ ALTER SEQUENCE matchings_id_seq OWNED BY matchings.id;
 
 
 --
--- Name: neighborly_admin_funding_raised_per_project_reports; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: dune_admin_funding_raised_per_project_reports; Type: TABLE; Schema: public; Owner: -; Tablespace:
 --
 
-CREATE TABLE neighborly_admin_funding_raised_per_project_reports (
+CREATE TABLE dune_admin_funding_raised_per_project_reports (
     project_id integer,
     project_name text,
     total_raised numeric,
@@ -775,10 +775,10 @@ CREATE TABLE users (
 
 
 --
--- Name: neighborly_admin_statistics; Type: VIEW; Schema: public; Owner: -
+-- Name: dune_admin_statistics; Type: VIEW; Schema: public; Owner: -
 --
 
-CREATE VIEW neighborly_admin_statistics AS
+CREATE VIEW dune_admin_statistics AS
  SELECT ( SELECT count(*) AS count
            FROM users) AS total_users,
     ( SELECT count(*) AS count
@@ -3192,7 +3192,7 @@ CREATE RULE "_RETURN" AS
 --
 
 CREATE RULE "_RETURN" AS
-    ON SELECT TO neighborly_admin_funding_raised_per_project_reports DO INSTEAD  SELECT project.id AS project_id,
+    ON SELECT TO dune_admin_funding_raised_per_project_reports DO INSTEAD  SELECT project.id AS project_id,
     project.name AS project_name,
     sum(contributions.value) AS total_raised,
     count(*) AS total_backs,

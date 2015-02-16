@@ -33,7 +33,7 @@ gem 'neighborly-balanced-bankaccount', '~> 2.0.0'
 gem 'neighborly-balanced', '~> 2.0.0'
 
 # Neigbhor.ly Engines
-gem 'dune-admin', '~> 1.2.0'
+gem 'dune-admin', '~> 1.2.3'
 gem 'neighborly-api'
 gem 'neighborly-dashboard', '~> 1.0.2'
 
