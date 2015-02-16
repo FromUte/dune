@@ -34,7 +34,7 @@ gem 'neighborly-balanced', '~> 2.0.0'
 
 # Neigbhor.ly Engines
 gem 'dune-admin', '~> 1.2.3'
-gem 'neighborly-api'
+gem 'dune-api'
 gem 'neighborly-dashboard', '~> 1.0.2'
 
 # Turns every field on a editable one - Admin dependencies

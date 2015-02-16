@@ -28,7 +28,7 @@ Dune::Application.routes.draw do
     mount Sidekiq::Web => '/sidekiq'
   end
 
-  mount Neighborly::Api::Engine => '/api/', as: :neighborly_api
+  mount Dune::Api::Engine => '/api/', as: :dune_api
   mount Neighborly::Dashboard::Engine => '/dashboard/', as: :neighborly_dashboard
   mount Neighborly::Balanced::Creditcard::Engine => '/balanced/creditcard/', as: :neighborly_balanced_creditcard
   mount Neighborly::Balanced::Bankaccount::Engine => '/balanced/bankaccount/', as: :neighborly_balanced_bankaccount

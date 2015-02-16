@@ -1,5 +1,5 @@
-# This migration comes from neighborly_api (originally 20140626141415)
-class CreateNeighborlyApiAccessTokens < ActiveRecord::Migration
+# This migration comes from dune_api (originally 20140626141415)
+class CreateDuneApiAccessTokens < ActiveRecord::Migration
   def change
     create_table :api_access_tokens do |t|
       t.string :code, null: false
