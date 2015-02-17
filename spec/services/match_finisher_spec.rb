@@ -4,7 +4,7 @@ describe MatchFinisher do
   include ActiveSupport::Testing::TimeHelpers
 
   before do
-    Neighborly::Balanced::Refund.any_instance.stub(:complete!)
+    Dune::Balanced::Refund.any_instance.stub(:complete!)
   end
 
   let(:match) do
@@ -16,7 +16,7 @@ describe MatchFinisher do
   describe 'completion' do
     it 'does a refund to appropriate matches' do
       refund = double('Dune::Balanced::Refund')
-      Neighborly::Balanced::Refund.stub(:new).with(match).and_return(refund)
+      Dune::Balanced::Refund.stub(:new).with(match).and_return(refund)
       expect(refund).to receive(:complete!).with(:match_automatic, anything)
       subject.complete!
     end
@@ -28,7 +28,7 @@ describe MatchFinisher do
         m
       end
       expect_any_instance_of(
-        Neighborly::Balanced::Refund
+        Dune::Balanced::Refund
       ).to receive(:complete!).with(anything, match.value - 50)
       subject.complete!
     end
@@ -49,7 +49,7 @@ describe MatchFinisher do
 
     context 'with unsuccessful refund' do
       it 'ensures that match wasn\'t set as completed' do
-        Neighborly::Balanced::Refund.any_instance.stub(:complete!).
+        Dune::Balanced::Refund.any_instance.stub(:complete!).
           and_raise { Exception }
         subject.stub(:matches).and_return([match])
         expect(match).to_not receive(:complete!)

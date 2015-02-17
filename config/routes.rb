@@ -19,7 +19,7 @@ Dune::Application.routes.draw do
     post '/sign_up', to: 'devise/registrations#create', as: :sign_up
   end
 
-  get '/thank_you' => "static#thank_you"
+  get '/thank_you' => 'static#thank_you'
 
   check_user_admin = lambda { |request| request.env["warden"].authenticate? and request.env['warden'].user.admin }
 
@@ -29,10 +29,10 @@ Dune::Application.routes.draw do
   end
 
   mount Dune::Api::Engine => '/api/', as: :dune_api
-  mount Neighborly::Dashboard::Engine => '/dashboard/', as: :neighborly_dashboard
-  mount Neighborly::Balanced::Creditcard::Engine => '/balanced/creditcard/', as: :neighborly_balanced_creditcard
-  mount Neighborly::Balanced::Bankaccount::Engine => '/balanced/bankaccount/', as: :neighborly_balanced_bankaccount
-  mount Neighborly::Balanced::Engine => '/balanced/', as: :neighborly_balanced
+  mount Dune::Dashboard::Engine => '/dashboard/', as: :dune_dashboard
+  mount Dune::Balanced::Creditcard::Engine => '/balanced/creditcard/', as: :dune_balanced_creditcard
+  mount Dune::Balanced::Bankaccount::Engine => '/balanced/bankaccount/', as: :dune_balanced_bankaccount
+  mount Dune::Balanced::Engine => '/balanced/', as: :dune_balanced
 
   # Non production routes
   if Rails.env.development?
@@ -79,18 +79,18 @@ Dune::Application.routes.draw do
   # Static Pages
   get '/sitemap',               to: 'static#sitemap',             as: :sitemap
   get '/how-it-works',          to: 'static#how_it_works',        as: :how_it_works
-  get "/faq",                   to: "static#faq",                 as: :faq
-  get "/terms",                 to: "static#terms",               as: :terms
-  get "/privacy",               to: "static#privacy",             as: :privacy
-  get "/start",                 to: "projects#start",             as: :start
+  get '/faq',                   to: 'static#faq',                 as: :faq
+  get '/terms',                 to: 'static#terms',               as: :terms
+  get '/privacy',               to: 'static#privacy',             as: :privacy
+  get '/start',                 to: 'projects#start',             as: :start
   get '/learn',                 to: 'static#learn',               as: :learn
 
   # Only accessible on development
   if Rails.env.development?
-    get "/base",                to: "static#base",              as: :base
+    get '/base',                to: 'static#base',              as: :base
   end
 
-  get "/discover/(:state)(/near/:near)(/category/:category)(/tags/:tags)(/search/:search)", to: "discover#index", as: :discover
+  get '/discover/(:state)(/near/:near)(/category/:category)(/tags/:tags)(/search/:search)', to: 'discover#index', as: :discover
 
   resources :tags, only: [:index]
 
@@ -173,11 +173,11 @@ Dune::Application.routes.draw do
   end
 
   # Redirect from old users url to the new
-  get "/users/:id", to: redirect('neighbors/%{id}')
+  get '/users/:id', to: redirect('neighbors/%{id}')
 
   # Temporary Routes
   get '/projects/57/video_embed', to: redirect('projects/ideagarden/video_embed')
 
-  get "/set_email" => "users#set_email", as: :set_email_users
-  get "/:id", to: redirect('projects/%{id}')
+  get '/set_email' => 'users#set_email', as: :set_email_users
+  get '/:id', to: redirect('projects/%{id}')
 end

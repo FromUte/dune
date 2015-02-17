@@ -28,14 +28,14 @@ gem 'pg_search'
 gem 'schema_plus'
 
 # Payment engines
-gem 'neighborly-balanced-creditcard', '~> 2.0.0'
-gem 'neighborly-balanced-bankaccount', '~> 2.0.0'
-gem 'neighborly-balanced', '~> 2.0.0'
+gem 'dune-balanced-creditcard', '~> 1.0.0'
+gem 'dune-balanced-bankaccount', '~> 1.0.0'
+gem 'dune-balanced', '~> 1.0.0'
 
 # Neigbhor.ly Engines
 gem 'dune-admin', '~> 1.2.3'
-gem 'dune-api'
-gem 'neighborly-dashboard', '~> 1.0.2'
+gem 'dune-api', '~> 1.0.1'
+gem 'dune-dashboard', '~> 1.0.0'
 
 # Turns every field on a editable one - Admin dependencies
 gem 'best_in_place', '~> 3.0.0.rc1'
