@@ -1,4 +1,4 @@
-# This migration comes from neighborly_balanced_bankaccount (originally 20140813180429)
+# This migration comes from dune_balanced_bankaccount (originally 20140813180429)
 class UseHrefsForBalancedResources < ActiveRecord::Migration
   def up
     rename_column :balanced_contributors, :uri, :href
@@ -15,8 +15,8 @@ class UseHrefsForBalancedResources < ActiveRecord::Migration
   private
 
   def migrate_uris(direction)
-    Neighborly::Balanced::Contributor.reset_column_information
-    Neighborly::Balanced::Contributor.all.each do |contributor|
+    Dune::Balanced::Contributor.reset_column_information
+    Dune::Balanced::Contributor.all.each do |contributor|
       migrate_attr(contributor, :bank_account_uri, :bank_account_href, direction)
       migrate_attr(contributor, :uri, :href, direction)
       status = contributor.save(validate: false)

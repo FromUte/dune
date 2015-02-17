@@ -1,4 +1,4 @@
-# This migration comes from neighborly_balanced_creditcard (originally 20140211203335)
+# This migration comes from dune_balanced_creditcard (originally 20140211203335)
 class CreateBalancedContributors < ActiveRecord::Migration
   def change
     create_table :balanced_contributors do |t|

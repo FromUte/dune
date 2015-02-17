@@ -216,7 +216,7 @@ CREATE TABLE projects (
 CREATE FUNCTION expires_at(projects) RETURNS timestamp with time zone
     LANGUAGE sql
     AS $_$
-         SELECT ((($1.online_date AT TIME ZONE 'America/Chicago' + ($1.online_days || ' days')::interval)::date::text || ' 23:59:59')::timestamp AT TIME ZONE 'America/Chicago')
+         SELECT ((($1.online_date AT TIME ZONE 'Europe/Paris' + ($1.online_days || ' days')::interval)::date::text || ' 23:59:59')::timestamp AT TIME ZONE 'Europe/Paris')
         $_$;
 
 
@@ -553,6 +553,163 @@ ALTER SEQUENCE contributions_id_seq OWNED BY contributions.id;
 
 
 --
+-- Name: dune_admin_funding_raised_per_project_reports; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE dune_admin_funding_raised_per_project_reports (
+    project_id integer,
+    project_name text,
+    total_raised numeric,
+    total_backs bigint,
+    total_backers bigint
+);
+
+
+--
+-- Name: users; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE users (
+    id integer NOT NULL,
+    email text,
+    name text,
+    nickname text,
+    bio text,
+    image_url text,
+    newsletter boolean DEFAULT false,
+    project_updates boolean DEFAULT false,
+    created_at timestamp without time zone,
+    updated_at timestamp without time zone,
+    admin boolean DEFAULT false,
+    full_name text,
+    address_street text,
+    address_number text,
+    address_complement text,
+    address_neighborhood text,
+    address_city text,
+    address_state text,
+    address_zip_code text,
+    phone_number text,
+    locale text DEFAULT 'pt'::text NOT NULL,
+    encrypted_password character varying(128) DEFAULT ''::character varying NOT NULL,
+    reset_password_token character varying(255),
+    reset_password_sent_at timestamp without time zone,
+    remember_created_at timestamp without time zone,
+    sign_in_count integer DEFAULT 0,
+    current_sign_in_at timestamp without time zone,
+    last_sign_in_at timestamp without time zone,
+    current_sign_in_ip character varying(255),
+    last_sign_in_ip character varying(255),
+    twitter_url character varying(255),
+    facebook_url character varying(255),
+    other_url character varying(255),
+    uploaded_image text,
+    state_inscription character varying(255),
+    profile_type character varying(255),
+    linkedin_url character varying(255),
+    confirmation_token character varying(255),
+    confirmed_at timestamp without time zone,
+    confirmation_sent_at timestamp without time zone,
+    unconfirmed_email character varying(255),
+    new_project boolean DEFAULT false,
+    latitude double precision,
+    longitude double precision,
+    completeness_progress integer DEFAULT 0,
+    CONSTRAINT users_bio_length_within CHECK (((length(bio) >= 0) AND (length(bio) <= 140)))
+);
+
+
+--
+-- Name: dune_admin_statistics; Type: VIEW; Schema: public; Owner: -
+--
+
+CREATE VIEW dune_admin_statistics AS
+ SELECT ( SELECT count(*) AS count
+           FROM users) AS total_users,
+    ( SELECT count(*) AS count
+           FROM users
+          WHERE ((users.profile_type)::text = 'organization'::text)) AS total_organization_users,
+    ( SELECT count(*) AS count
+           FROM users
+          WHERE ((users.profile_type)::text = 'personal'::text)) AS total_personal_users,
+    ( SELECT count(*) AS count
+           FROM users
+          WHERE ((users.profile_type)::text = 'channel'::text)) AS total_channel_users,
+    ( SELECT count(*) AS count
+           FROM ( SELECT DISTINCT projects.address_city,
+                    projects.address_state
+                   FROM projects) count) AS total_communities,
+    contributions_totals.total_contributions,
+    contributions_totals.total_contributors,
+    contributions_totals.total_contributed,
+    projects_totals.total_projects,
+    projects_totals.total_projects_success,
+    projects_totals.total_projects_online,
+    projects_totals.total_projects_draft,
+    projects_totals.total_projects_soon
+   FROM ( SELECT count(*) AS total_contributions,
+            count(DISTINCT contributions.user_id) AS total_contributors,
+            sum(contributions.value) AS total_contributed
+           FROM contributions
+          WHERE ((contributions.state)::text <> ALL (ARRAY[('waiting_confirmation'::character varying)::text, ('pending'::character varying)::text, ('canceled'::character varying)::text, 'deleted'::text]))) contributions_totals,
+    ( SELECT count(*) AS total_projects,
+            count(
+                CASE
+                    WHEN ((projects.state)::text = 'draft'::text) THEN 1
+                    ELSE NULL::integer
+                END) AS total_projects_draft,
+            count(
+                CASE
+                    WHEN ((projects.state)::text = 'soon'::text) THEN 1
+                    ELSE NULL::integer
+                END) AS total_projects_soon,
+            count(
+                CASE
+                    WHEN ((projects.state)::text = 'successful'::text) THEN 1
+                    ELSE NULL::integer
+                END) AS total_projects_success,
+            count(
+                CASE
+                    WHEN ((projects.state)::text = 'online'::text) THEN 1
+                    ELSE NULL::integer
+                END) AS total_projects_online
+           FROM projects
+          WHERE ((projects.state)::text <> ALL (ARRAY[('deleted'::character varying)::text, ('rejected'::character varying)::text]))) projects_totals;
+
+
+--
+-- Name: dune_balanced_orders; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE dune_balanced_orders (
+    id integer NOT NULL,
+    project_id integer NOT NULL,
+    href character varying(255) NOT NULL,
+    created_at timestamp without time zone,
+    updated_at timestamp without time zone
+);
+
+
+--
+-- Name: dune_balanced_orders_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE dune_balanced_orders_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: dune_balanced_orders_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE dune_balanced_orders_id_seq OWNED BY dune_balanced_orders.id;
+
+
+--
 -- Name: funding_raised_per_project_reports; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -705,163 +862,6 @@ CREATE SEQUENCE matchings_id_seq
 --
 
 ALTER SEQUENCE matchings_id_seq OWNED BY matchings.id;
-
-
---
--- Name: dune_admin_funding_raised_per_project_reports; Type: TABLE; Schema: public; Owner: -; Tablespace:
---
-
-CREATE TABLE dune_admin_funding_raised_per_project_reports (
-    project_id integer,
-    project_name text,
-    total_raised numeric,
-    total_backs bigint,
-    total_backers bigint
-);
-
-
---
--- Name: users; Type: TABLE; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE TABLE users (
-    id integer NOT NULL,
-    email text,
-    name text,
-    nickname text,
-    bio text,
-    image_url text,
-    newsletter boolean DEFAULT false,
-    project_updates boolean DEFAULT false,
-    created_at timestamp without time zone,
-    updated_at timestamp without time zone,
-    admin boolean DEFAULT false,
-    full_name text,
-    address_street text,
-    address_number text,
-    address_complement text,
-    address_neighborhood text,
-    address_city text,
-    address_state text,
-    address_zip_code text,
-    phone_number text,
-    locale text DEFAULT 'pt'::text NOT NULL,
-    encrypted_password character varying(128) DEFAULT ''::character varying NOT NULL,
-    reset_password_token character varying(255),
-    reset_password_sent_at timestamp without time zone,
-    remember_created_at timestamp without time zone,
-    sign_in_count integer DEFAULT 0,
-    current_sign_in_at timestamp without time zone,
-    last_sign_in_at timestamp without time zone,
-    current_sign_in_ip character varying(255),
-    last_sign_in_ip character varying(255),
-    twitter_url character varying(255),
-    facebook_url character varying(255),
-    other_url character varying(255),
-    uploaded_image text,
-    state_inscription character varying(255),
-    profile_type character varying(255),
-    linkedin_url character varying(255),
-    confirmation_token character varying(255),
-    confirmed_at timestamp without time zone,
-    confirmation_sent_at timestamp without time zone,
-    unconfirmed_email character varying(255),
-    new_project boolean DEFAULT false,
-    latitude double precision,
-    longitude double precision,
-    completeness_progress integer DEFAULT 0,
-    CONSTRAINT users_bio_length_within CHECK (((length(bio) >= 0) AND (length(bio) <= 140)))
-);
-
-
---
--- Name: dune_admin_statistics; Type: VIEW; Schema: public; Owner: -
---
-
-CREATE VIEW dune_admin_statistics AS
- SELECT ( SELECT count(*) AS count
-           FROM users) AS total_users,
-    ( SELECT count(*) AS count
-           FROM users
-          WHERE ((users.profile_type)::text = 'organization'::text)) AS total_organization_users,
-    ( SELECT count(*) AS count
-           FROM users
-          WHERE ((users.profile_type)::text = 'personal'::text)) AS total_personal_users,
-    ( SELECT count(*) AS count
-           FROM users
-          WHERE ((users.profile_type)::text = 'channel'::text)) AS total_channel_users,
-    ( SELECT count(*) AS count
-           FROM ( SELECT DISTINCT projects.address_city,
-                    projects.address_state
-                   FROM projects) count) AS total_communities,
-    contributions_totals.total_contributions,
-    contributions_totals.total_contributors,
-    contributions_totals.total_contributed,
-    projects_totals.total_projects,
-    projects_totals.total_projects_success,
-    projects_totals.total_projects_online,
-    projects_totals.total_projects_draft,
-    projects_totals.total_projects_soon
-   FROM ( SELECT count(*) AS total_contributions,
-            count(DISTINCT contributions.user_id) AS total_contributors,
-            sum(contributions.value) AS total_contributed
-           FROM contributions
-          WHERE ((contributions.state)::text <> ALL (ARRAY[('waiting_confirmation'::character varying)::text, ('pending'::character varying)::text, ('canceled'::character varying)::text, 'deleted'::text]))) contributions_totals,
-    ( SELECT count(*) AS total_projects,
-            count(
-                CASE
-                    WHEN ((projects.state)::text = 'draft'::text) THEN 1
-                    ELSE NULL::integer
-                END) AS total_projects_draft,
-            count(
-                CASE
-                    WHEN ((projects.state)::text = 'soon'::text) THEN 1
-                    ELSE NULL::integer
-                END) AS total_projects_soon,
-            count(
-                CASE
-                    WHEN ((projects.state)::text = 'successful'::text) THEN 1
-                    ELSE NULL::integer
-                END) AS total_projects_success,
-            count(
-                CASE
-                    WHEN ((projects.state)::text = 'online'::text) THEN 1
-                    ELSE NULL::integer
-                END) AS total_projects_online
-           FROM projects
-          WHERE ((projects.state)::text <> ALL (ARRAY[('deleted'::character varying)::text, ('rejected'::character varying)::text]))) projects_totals;
-
-
---
--- Name: neighborly_balanced_orders; Type: TABLE; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE TABLE neighborly_balanced_orders (
-    id integer NOT NULL,
-    project_id integer NOT NULL,
-    href character varying(255) NOT NULL,
-    created_at timestamp without time zone,
-    updated_at timestamp without time zone
-);
-
-
---
--- Name: neighborly_balanced_orders_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE neighborly_balanced_orders_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: neighborly_balanced_orders_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
---
-
-ALTER SEQUENCE neighborly_balanced_orders_id_seq OWNED BY neighborly_balanced_orders.id;
 
 
 --
@@ -2165,6 +2165,13 @@ ALTER TABLE ONLY contributions ALTER COLUMN id SET DEFAULT nextval('contribution
 -- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
+ALTER TABLE ONLY dune_balanced_orders ALTER COLUMN id SET DEFAULT nextval('dune_balanced_orders_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
 ALTER TABLE ONLY images ALTER COLUMN id SET DEFAULT nextval('images_id_seq'::regclass);
 
 
@@ -2187,13 +2194,6 @@ ALTER TABLE ONLY matches ALTER COLUMN id SET DEFAULT nextval('matches_id_seq'::r
 --
 
 ALTER TABLE ONLY matchings ALTER COLUMN id SET DEFAULT nextval('matchings_id_seq'::regclass);
-
-
---
--- Name: id; Type: DEFAULT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY neighborly_balanced_orders ALTER COLUMN id SET DEFAULT nextval('neighborly_balanced_orders_id_seq'::regclass);
 
 
 --
@@ -2339,14 +2339,6 @@ ALTER TABLE ONLY authorizations
 
 
 --
--- Name: backers_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
---
-
-ALTER TABLE ONLY contributions
-    ADD CONSTRAINT backers_pkey PRIMARY KEY (id);
-
-
---
 -- Name: balanced_contributors_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -2379,11 +2371,11 @@ ALTER TABLE ONLY channel_members
 
 
 --
--- Name: channel_profiles_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: channels_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY channels
-    ADD CONSTRAINT channel_profiles_pkey PRIMARY KEY (id);
+    ADD CONSTRAINT channels_pkey PRIMARY KEY (id);
 
 
 --
@@ -2403,11 +2395,27 @@ ALTER TABLE ONLY channels_subscribers
 
 
 --
--- Name: company_contacts_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: contacts_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY contacts
-    ADD CONSTRAINT company_contacts_pkey PRIMARY KEY (id);
+    ADD CONSTRAINT contacts_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: contributions_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY contributions
+    ADD CONSTRAINT contributions_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: dune_balanced_orders_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY dune_balanced_orders
+    ADD CONSTRAINT dune_balanced_orders_pkey PRIMARY KEY (id);
 
 
 --
@@ -2440,14 +2448,6 @@ ALTER TABLE ONLY matches
 
 ALTER TABLE ONLY matchings
     ADD CONSTRAINT matchings_pkey PRIMARY KEY (id);
-
-
---
--- Name: neighborly_balanced_orders_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
---
-
-ALTER TABLE ONLY neighborly_balanced_orders
-    ADD CONSTRAINT neighborly_balanced_orders_pkey PRIMARY KEY (id);
 
 
 --
@@ -2619,13 +2619,6 @@ ALTER TABLE ONLY users
 
 
 --
--- Name: fk__api_access_tokens_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__api_access_tokens_user_id ON api_access_tokens USING btree (user_id);
-
-
---
 -- Name: fk__authorizations_oauth_provider_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -2637,27 +2630,6 @@ CREATE INDEX fk__authorizations_oauth_provider_id ON authorizations USING btree 
 --
 
 CREATE INDEX fk__authorizations_user_id ON authorizations USING btree (user_id);
-
-
---
--- Name: fk__balanced_contributors_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__balanced_contributors_user_id ON balanced_contributors USING btree (user_id);
-
-
---
--- Name: fk__channel_members_channel_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__channel_members_channel_id ON channel_members USING btree (channel_id);
-
-
---
--- Name: fk__channel_members_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__channel_members_user_id ON channel_members USING btree (user_id);
 
 
 --
@@ -2682,55 +2654,6 @@ CREATE INDEX fk__channels_user_id ON channels USING btree (user_id);
 
 
 --
--- Name: fk__images_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__images_user_id ON images USING btree (user_id);
-
-
---
--- Name: fk__investment_prospects_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__investment_prospects_user_id ON investment_prospects USING btree (user_id);
-
-
---
--- Name: fk__matches_project_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__matches_project_id ON matches USING btree (project_id);
-
-
---
--- Name: fk__matches_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__matches_user_id ON matches USING btree (user_id);
-
-
---
--- Name: fk__matchings_contribution_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__matchings_contribution_id ON matchings USING btree (contribution_id);
-
-
---
--- Name: fk__matchings_match_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__matchings_match_id ON matchings USING btree (match_id);
-
-
---
--- Name: fk__neighborly_balanced_orders_project_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__neighborly_balanced_orders_project_id ON neighborly_balanced_orders USING btree (project_id);
-
-
---
 -- Name: fk__notifications_channel_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -2742,76 +2665,6 @@ CREATE INDEX fk__notifications_channel_id ON notifications USING btree (channel_
 --
 
 CREATE INDEX fk__notifications_company_contact_id ON notifications USING btree (contact_id);
-
-
---
--- Name: fk__notifications_match_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__notifications_match_id ON notifications USING btree (match_id);
-
-
---
--- Name: fk__organizations_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__organizations_user_id ON organizations USING btree (user_id);
-
-
---
--- Name: fk__payment_notifications_match_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__payment_notifications_match_id ON payment_notifications USING btree (match_id);
-
-
---
--- Name: fk__payouts_project_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__payouts_project_id ON payouts USING btree (project_id);
-
-
---
--- Name: fk__payouts_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__payouts_user_id ON payouts USING btree (user_id);
-
-
---
--- Name: fk__project_documents_project_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__project_documents_project_id ON project_documents USING btree (project_id);
-
-
---
--- Name: fk__project_faqs_project_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__project_faqs_project_id ON project_faqs USING btree (project_id);
-
-
---
--- Name: fk__project_totals_project_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__project_totals_project_id ON project_totals USING btree (project_id);
-
-
---
--- Name: fk__taggings_project_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__taggings_project_id ON taggings USING btree (project_id);
-
-
---
--- Name: fk__taggings_tag_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX fk__taggings_tag_id ON taggings USING btree (tag_id);
 
 
 --
@@ -2850,7 +2703,7 @@ CREATE INDEX index_balanced_contributors_on_user_id ON balanced_contributors USI
 
 
 --
--- Name: index_categories_on_name_fr; Type: INDEX; Schema: public; Owner: -; Tablespace:
+-- Name: index_categories_on_name_fr; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE INDEX index_categories_on_name_fr ON categories USING btree (name_fr);
@@ -2934,6 +2787,13 @@ CREATE INDEX index_contributions_on_user_id ON contributions USING btree (user_i
 
 
 --
+-- Name: index_dune_balanced_orders_on_project_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE INDEX index_dune_balanced_orders_on_project_id ON dune_balanced_orders USING btree (project_id);
+
+
+--
 -- Name: index_images_on_user_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -2973,13 +2833,6 @@ CREATE INDEX index_matchings_on_contribution_id ON matchings USING btree (contri
 --
 
 CREATE INDEX index_matchings_on_match_id ON matchings USING btree (match_id);
-
-
---
--- Name: index_neighborly_balanced_orders_on_project_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
---
-
-CREATE INDEX index_neighborly_balanced_orders_on_project_id ON neighborly_balanced_orders USING btree (project_id);
 
 
 --
@@ -3332,6 +3185,14 @@ ALTER TABLE ONLY contributions
 
 
 --
+-- Name: fk_dune_balanced_orders_project_id; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY dune_balanced_orders
+    ADD CONSTRAINT fk_dune_balanced_orders_project_id FOREIGN KEY (project_id) REFERENCES projects(id);
+
+
+--
 -- Name: fk_images_user_id; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -3377,14 +3238,6 @@ ALTER TABLE ONLY matchings
 
 ALTER TABLE ONLY matchings
     ADD CONSTRAINT fk_matchings_match_id FOREIGN KEY (match_id) REFERENCES matches(id);
-
-
---
--- Name: fk_neighborly_balanced_orders_project_id; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY neighborly_balanced_orders
-    ADD CONSTRAINT fk_neighborly_balanced_orders_project_id FOREIGN KEY (project_id) REFERENCES projects(id);
 
 
 --

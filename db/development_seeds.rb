@@ -30,7 +30,7 @@ def generate_project(fields = {})
                      video_url: 'https://www.youtube.com/watch?v=TalUWNmJVgk',
                      home_page: true,
                      address_city: Faker::AddressFR.city,
-                     address_state: Faker::AddressFR.state_abbr,
+                     address_state: Faker::AddressFR.postal_code,
                      remote_uploaded_image_url: lorem_pixel_url('500/400', 'city'),
                      remote_hero_image_url: lorem_pixel_url('1280/600', 'city')
     }.merge!(fields))
