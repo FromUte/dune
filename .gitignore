@@ -35,7 +35,6 @@ config/database.yml
 
 # Secrets
 .env
-.env.example
 *.idea
 
 README.md.backup
