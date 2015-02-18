@@ -115,7 +115,7 @@ group :development do
   gem 'ffaker'
   gem 'letter_opener'
   gem 'quiet_assets'
-  gem 'spring'
+  gem 'spring', '1.1.2'
   gem 'thin'
 end
 
