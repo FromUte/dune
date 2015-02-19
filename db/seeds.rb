@@ -48,12 +48,12 @@ puts '---------------------------------------------'
 puts 'Done!'
 
 
-# puts 'Creating Category entries...'
-#
-#   categories = %w{Restauration}
-#   categories.each do |c|
-#     Category.create! name_fr: c, name_en: c
-#   end
+puts 'Creating Category entries...'
+
+   categories = %w{Restauration}
+   categories.each do |c|
+     Category.create! name_fr: c, name_en: c
+   end
 
 puts '---------------------------------------------'
 puts 'Done!'

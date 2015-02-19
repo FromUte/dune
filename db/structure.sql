@@ -1822,8 +1822,8 @@ ALTER SEQUENCE rewards_id_seq OWNED BY rewards.id;
 
 CREATE TABLE routing_numbers (
     id integer NOT NULL,
-    number character varying(255),
-    bank_name character varying(255),
+    number character varying(255) NOT NULL,
+    bank_name character varying(255) NOT NULL,
     created_at timestamp without time zone,
     updated_at timestamp without time zone
 );
@@ -3670,8 +3670,6 @@ INSERT INTO schema_migrations (version) VALUES ('20130827184633');
 
 INSERT INTO schema_migrations (version) VALUES ('20130827210414');
 
-INSERT INTO schema_migrations (version) VALUES ('20130827220135');
-
 INSERT INTO schema_migrations (version) VALUES ('20130828160026');
 
 INSERT INTO schema_migrations (version) VALUES ('20130828174723');
@@ -3848,8 +3846,6 @@ INSERT INTO schema_migrations (version) VALUES ('20140228034409');
 
 INSERT INTO schema_migrations (version) VALUES ('20140314202354');
 
-INSERT INTO schema_migrations (version) VALUES ('20140324180104');
-
 INSERT INTO schema_migrations (version) VALUES ('20140325123915');
 
 INSERT INTO schema_migrations (version) VALUES ('20140328010428');
@@ -3922,10 +3918,6 @@ INSERT INTO schema_migrations (version) VALUES ('20140814170158');
 
 INSERT INTO schema_migrations (version) VALUES ('20140815171319');
 
-INSERT INTO schema_migrations (version) VALUES ('20140816212033');
-
-INSERT INTO schema_migrations (version) VALUES ('20140822150920');
-
 INSERT INTO schema_migrations (version) VALUES ('20140827181425');
 
 INSERT INTO schema_migrations (version) VALUES ('20140829195912');
@@ -3936,9 +3928,17 @@ INSERT INTO schema_migrations (version) VALUES ('20141005191635');
 
 INSERT INTO schema_migrations (version) VALUES ('20141007210436');
 
-INSERT INTO schema_migrations (version) VALUES ('20141014002211');
-
-INSERT INTO schema_migrations (version) VALUES ('20141014002212');
-
 INSERT INTO schema_migrations (version) VALUES ('20141105195820');
+
+INSERT INTO schema_migrations (version) VALUES ('20150217161729');
+
+INSERT INTO schema_migrations (version) VALUES ('20150217161730');
+
+INSERT INTO schema_migrations (version) VALUES ('20150217161731');
+
+INSERT INTO schema_migrations (version) VALUES ('20150217161732');
+
+INSERT INTO schema_migrations (version) VALUES ('20150217161733');
+
+INSERT INTO schema_migrations (version) VALUES ('20150217161734');
 
