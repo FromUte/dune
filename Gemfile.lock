@@ -152,7 +152,7 @@ GEM
       best_in_place (~> 3.0.0.rc1)
       postgres-copy (~> 0.8.0, >= 0.8.0)
       rails (~> 4.0)
-    dune-api (1.0.2)
+    dune-api (1.1.0)
       active_model_serializers (~> 0.8.0)
       has_scope
       kaminari
@@ -572,7 +572,7 @@ DEPENDENCIES
   draper
   dropzonejs-rails (~> 0.4.14)
   dune-admin (~> 1.2.3)
-  dune-api (~> 1.0.1)
+  dune-api (~> 1.1.0)
   dune-balanced (~> 1.0.0)
   dune-balanced-bankaccount (~> 1.0.0)
   dune-balanced-creditcard (~> 1.0.0)
