@@ -32,7 +32,7 @@ gem 'dune-balanced-creditcard', '~> 1.0.0'
 gem 'dune-balanced-bankaccount', '~> 1.0.0'
 gem 'dune-balanced', '~> 1.0.0'
 
-# Neigbhor.ly Engines
+# dune Engines
 gem 'dune-admin', '~> 1.2.3'
 gem 'dune-api', '~> 1.1.0'
 gem 'dune-dashboard', '~> 1.0.0'
