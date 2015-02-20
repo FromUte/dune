@@ -173,23 +173,23 @@ GEM
       dune-balanced (~> 1.0)
       rails (~> 4.0)
       slim (~> 2.0)
-    dune-dashboard (1.0.0)
+    dune-dashboard (1.0.1)
       bootstrap-sass
       coffee-rails
-      ember-rails (~> 0.15)
+      ember-rails (~> 0.16.2)
       emblem-rails (~> 0.2)
       font-awesome-sass (~> 4.2)
       rails (~> 4.0)
       sass-rails
     ember-data-source (1.0.0.beta.15)
       ember-source (~> 1.8)
-    ember-rails (0.16.1)
+    ember-rails (0.16.3)
       active_model_serializers
       barber (>= 0.6.0)
       ember-data-source (>= 1.0.0.beta.5)
       ember-source (>= 1.1.0)
       execjs (>= 1.2)
-      handlebars-source (> 1.0.0)
+      handlebars-source (> 1.0.0, < 3)
       jquery-rails (>= 1.0.17)
       railties (>= 3.1)
     ember-source (1.10.0)
@@ -296,7 +296,7 @@ GEM
     gctools (0.2.3)
     geocoder (1.2.7)
     google-analytics-rails (0.0.6)
-    handlebars-source (3.0.0)
+    handlebars-source (2.0.0)
     has_permalink (0.1.6)
     has_scope (0.6.0)
       actionpack (>= 3.2, < 5)
@@ -576,7 +576,7 @@ DEPENDENCIES
   dune-balanced (~> 1.0.0)
   dune-balanced-bankaccount (~> 1.0.0)
   dune-balanced-creditcard (~> 1.0.0)
-  dune-dashboard (~> 1.0.0)
+  dune-dashboard (~> 1.0.1)
   ezcrypto
   factory_girl_rails
   fakeweb

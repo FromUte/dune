@@ -35,7 +35,7 @@ gem 'dune-balanced', '~> 1.0.0'
 # dune Engines
 gem 'dune-admin', '~> 1.2.3'
 gem 'dune-api', '~> 1.1.0'
-gem 'dune-dashboard', '~> 1.0.0'
+gem 'dune-dashboard', '~> 1.0.1'
 
 # Turns every field on a editable one - Admin dependencies
 gem 'best_in_place', '~> 3.0.0.rc1'
