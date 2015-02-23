@@ -1,5 +1,5 @@
 # This migration comes from dune_admin (originally 20141005184741)
-class CreateDuneAdminFundingRaisedPerProjectReports < ActiveRecord::Migration
+class CreateNeighborAdminFundingRaisedPerProjectReports < ActiveRecord::Migration
   def up
     execute <<-SQL
         CREATE OR REPLACE VIEW dune_admin_funding_raised_per_project_reports AS

@@ -35,7 +35,7 @@ gem 'dune-balanced', '~> 1.0.0'
 # dune Engines
 gem 'dune-admin', '~> 1.2.3'
 gem 'dune-api', '~> 1.1.0'
-gem 'dune-dashboard', '~> 1.1.1'
+gem 'dune-dashboard', '~> 1.1.3'
 
 # Turns every field on a editable one - Admin dependencies
 gem 'best_in_place', '~> 3.0.0.rc1'
@@ -153,3 +153,13 @@ gem 'remotipart', '~> 1.2.1'
 
 # a retirer pour la prodction réel
 #gem 'ffaker'
+
+
+gem 'balanced', '1.1.1'
+gem 'handlebars-source', '1.3.0'
+gem 'ember-source', '1.8.0'
+gem 'barber', '0.5.0'
+gem 'emblem-source', '0.3.17'
+gem 'barber-emblem', '0.1.1'
+gem 'bootstrap-sass', '3.3.0.1'
+gem 'emblem-rails', '0.2.1'

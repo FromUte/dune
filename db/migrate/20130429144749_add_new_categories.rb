@@ -1,13 +1,13 @@
 class AddNewCategories < ActiveRecord::Migration
   def up
     execute "
-    INSERT INTO categories (name_fr, name_en, created_at, updated_at) VALUES ('Mobilité et transport', 'Mobility & Transportation', now(), now());
-    INSERT INTO categories (name_fr, name_en, created_at, updated_at) VALUES ('Environnement', 'Environment', now(), now());
-    INSERT INTO categories (name_fr, name_en, created_at, updated_at) VALUES ('Sociale', 'Social Business', now(), now());
-    INSERT INTO categories (name_fr, name_en, created_at, updated_at) VALUES ('Education', 'Education', now(), now());
-    INSERT INTO categories (name_fr, name_en, created_at, updated_at) VALUES ('Films de Fiction', 'Fiction Films', now(), now());
-    INSERT INTO categories (name_fr, name_en, created_at, updated_at) VALUES ('Films Documentaire', 'Documentary Films', now(), now());
-    INSERT INTO categories (name_fr, name_en, created_at, updated_at) VALUES ('Films Universitaire', 'Experimental Films', now(), now());
+    INSERT INTO categories (name_fr, name_en, created_at, updated_at) VALUES ('Mobilidade e Transporte', 'Mobility & Transportation', now(), now());
+    INSERT INTO categories (name_fr, name_en, created_at, updated_at) VALUES ('Meio Ambiente', 'Environment', now(), now());
+    INSERT INTO categories (name_fr, name_en, created_at, updated_at) VALUES ('Negócios Sociais', 'Social Business', now(), now());
+    INSERT INTO categories (name_fr, name_en, created_at, updated_at) VALUES ('Educação', 'Education', now(), now());
+    INSERT INTO categories (name_fr, name_en, created_at, updated_at) VALUES ('Filmes de Ficção', 'Fiction Films', now(), now());
+    INSERT INTO categories (name_fr, name_en, created_at, updated_at) VALUES ('Filmes Documentários', 'Documentary Films', now(), now());
+    INSERT INTO categories (name_fr, name_en, created_at, updated_at) VALUES ('Filmes Universitários', 'Experimental Films', now(), now());
     "
   end
 
