@@ -43,3 +43,4 @@ GandiStandardSSLCA.pem
 dune-investissement.csr
 certificate-dune.crt
 bundle.crt
+.env.example
