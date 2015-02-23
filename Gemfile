@@ -8,7 +8,7 @@ gem 'rails', '4.1.7'
 #like java listners
 gem 'rails-observers', '~> 0.1.2'
 # serializer json
-gem 'active_model_serializers', '0.8.3'
+gem 'active_model_serializers', '0.8.1'
 
 #background processor
 gem 'sidekiq', '~> 3.2.2'
@@ -35,7 +35,7 @@ gem 'dune-balanced', '~> 1.0.0'
 # dune Engines
 gem 'dune-admin', '~> 1.2.3'
 gem 'dune-api', '~> 1.1.0'
-gem 'dune-dashboard', '~> 1.0.1'
+gem 'dune-dashboard', '~> 1.1.1'
 
 # Turns every field on a editable one - Admin dependencies
 gem 'best_in_place', '~> 3.0.0.rc1'
@@ -75,7 +75,7 @@ gem 'dropzonejs-rails', '~> 0.4.14'
 gem 'has_permalink'
 gem 'ranked-model'
 gem 'inherited_resources', '~> 1.4.1'
-gem 'has_scope'
+gem 'has_scope', '~> 0.6.0.rc'
 gem 'video_info', '~> 2.0.2'
 gem 'geocoder'
 # Feature branch still to be merged by original gem author
@@ -93,7 +93,7 @@ group :production do
 
   # Gem used to handle image uploading
   gem 'unf'
-  gem 'fog', '>= 1.27.0'
+  gem 'fog', '>= 1.20.0'
 
   # Workers, forks and all that jazz
   gem 'unicorn'
@@ -115,7 +115,7 @@ group :development do
   gem 'ffaker'
   gem 'letter_opener'
   gem 'quiet_assets'
-#  gem 'spring'
+  gem 'spring'
   gem 'thin'
 end
 
@@ -140,7 +140,7 @@ group :test do
 end
 
 gem 'asset_sync'
-gem 'sass-rails', '~> 4.0.5'
+gem 'sass-rails', '~> 4.0.4'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'uglifier'
 gem 'font-icons-rails', github: 'josemarluedke/font-icons-rails', branch: 'fix-svgz'
