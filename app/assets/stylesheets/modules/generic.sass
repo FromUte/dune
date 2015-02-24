@@ -62,11 +62,24 @@ ul, ol
     p
       display: inline
 
-.affix
-  position: fixed
+@media (min-width: 1000px)
+  .affix
+    position: fixed
+    width: +emCalc(220px)
 
-.affix-bottom
-  position: absolute
+  .affix-bottom
+    position: absolute
+
+@media (max-width: 900px)
+  .affix-top
+    position: static
+
+  .affix
+    position: static
+
+  .affix-bottom
+    position: static
+
 
 .joyride-content-wrapper
   h5

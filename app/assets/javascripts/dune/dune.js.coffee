@@ -43,7 +43,7 @@ window.Dune =
           return (this.bottom = $('footer').outerHeight(true))
       }
     })
-    $('.side-nav').localScroll({offset: -180})
+    $('.side-nav').localScroll({offset: -20})
 
     $.pjax.defaults.scrollTo = false if $.pjax.defaults?
     $.pjax.defaults.timeout = false if $.pjax.defaults?
