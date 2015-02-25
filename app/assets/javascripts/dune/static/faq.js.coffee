@@ -1,6 +1,6 @@
 Dune.Static ?= {}
 
-Dune.Static.Learn =
+Dune.Static.Faq =
   init: Backbone.View.extend
     el: '.faq-page'
 

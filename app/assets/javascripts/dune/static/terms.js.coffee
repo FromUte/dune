@@ -1,6 +1,6 @@
 Dune.Static ?= {}
 
-Dune.Static.Learn =
+Dune.Static.Terms =
   init: Backbone.View.extend
     el: '.terms-page'
 
