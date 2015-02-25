@@ -31,6 +31,8 @@ head
   = javascript_include_tag :application
   = render 'layouts/analytics'
 body#devise
+  = render 'layouts/google_tag_manager'
+  = render 'layouts/analytics'
   = initjs_tag app_name: 'Dune'
   = render 'layouts/loader'
   = yield

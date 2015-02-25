@@ -1,6 +1,14 @@
 require 'sidekiq/web'
 
 Dune::Application.routes.draw do
+
+  unless Rails.env.test?
+    constraints NonValidSubdomainConstraint do
+      get '/', to: redirect('https://www.dune-investissement.fr')
+      get '/*wildcard', to: redirect('https://www.dune-investissement.fr/%{wildcard}')
+    end
+  end
+
   get '/about', to: redirect('/learn')
 
   devise_for :users, path: '',
