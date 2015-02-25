@@ -39,12 +39,12 @@ head
     meta property="fb:app_id"       content=::Configuration[:facebook_app_id]
     meta property="og:description"  content=t('site.ograph.description')
 body.f-topbar-fixed
-  = render 'layouts/google_tag_manager'
   = render 'layouts/analytics'
   = initjs_tag app_name: 'Dune'
   = render_facebook_sdk
   = render 'layouts/loader'
   = render 'layouts/header'
+  = render 'layouts/google_tag_manager'
   = flash_messages
   = yield
   = render 'layouts/footer'
