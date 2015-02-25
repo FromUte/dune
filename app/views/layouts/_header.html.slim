@@ -25,6 +25,10 @@ header.contain-to-grid.fixed
             = link_to main_app.discover_path do
               i.icon-et-map
               = t('.discover')
+          li
+            = link_to main_app.start_path do
+              i.icon-et-paper-plane
+              = t('.start')
 
         ul.right
           - if user_signed_in?
