@@ -2,7 +2,7 @@ require 'sidekiq/web'
 
 Dune::Application.routes.draw do
 
-  unless Rails.env.development? || Rails.env.test?
+  unless Rails.env.development? || Rails.env.test? || Rails.env.production?
     constraints NonValidSubdomainConstraint do
       get '/', to: redirect('https://www.dune-investissement.fr')
       get '/*wildcard', to: redirect('https://www.dune-investissement.fr/%{wildcard}')
