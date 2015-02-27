@@ -32,7 +32,7 @@ fr:
       updated: "Votre mot de passe a été modifié avec succès. Vous êtes à présent connecté."
       updated_not_active: "Votre mot de passe a été changé avec succès."
     registrations:
-      destroyed: "Bye ! Votre compte a été annulé avec succès. Nous espérons quand même vous revoir très bientôt."
+      destroyed: "Bye ! Votre compte a été clôturé avec succès. Nous espérons quand même vous revoir très bientôt."
       signed_up: 'Bienvenue sur notre dune ! Merci de compléter votre profil afin que nous puissions échanger avec vous, et vous donner les moyens de devenir un acteur important de la dune-communauté !'
       signed_up_but_inactive: "Votre inscription a été prise en compte avec succès. Cependant, nous ne pouvons pas vous connecter, car votre compte n'est pas encore actif."
       signed_up_but_locked: "Votre inscription a été prise en compte avec succès. Cependant, nous ne pouvons pas vous connecter, car votre compte est bloqué."
