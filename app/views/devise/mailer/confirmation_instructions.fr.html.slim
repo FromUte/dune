@@ -1,0 +1,15 @@
+|Bonjour, #{@email},
+br
+br
+|Vous êtes bientôt sur notre DUNE ! Merci de confirmer votre e-mail en cliquant sur le lien ci-dessous :
+br
+br
+h1 #{link_to 'confirmer mon e-mail', confirmation_url(@resource, :confirmation_token => @token)}
+br
+br
+|Si vous avez reçu ce message par erreur, merci de ne pas en tenir compte.
+br
+br
+| Sincères salutations,
+br
+| L'équipe #{Configuration[:company_name]}
