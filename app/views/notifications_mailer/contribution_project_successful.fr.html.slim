@@ -1,0 +1,51 @@
+- contribution = @notification.contribution
+br
+|Bonjour, #{contribution.user.name}!
+br
+br
+|Merci à vous et aux #{contribution.project.total_contributions - 1} autres duneurs, #{link_to(contribution.project.name, "#{Configuration[:base_url]}/projects/#{contribution.project.to_param}")} a été financé avec succès sur #{Configuration[:company_name]}. Ensemble, vous avez levé #{contribution.project.display_pledged}, totalisant #{contribution.project.progress}% du but recherché !
+br/
+br/
+|À présent, vous participez activement à l'économie locale. #{contribution.project.user.display_name} assurera le suivi avec vous très rapidement. Si vous avez choisi une récompense qui requiert des informations supplémentaires, le propriétaire du projet entrera en contact avec vous directement, si ce n’est pas le cas n’hésitez pas à nous le faire savoir.
+br
+br
+|Pendant ce temps, vous pouvez partager cette réussite avec le monde entier !
+br
+br
+- fb_img = "<img src=\"#{Configuration[:base_url]}/assets/mails/facebook-icon.png\" title='Facebook' class='social' />".html_safe
+= raw link_to(fb_img, "http://www.facebook.com/share.php?u=#{project_url(contribution.project)}" , target: :blank)
+- twitter_img = "<img src='#{Configuration[:base_url]}/assets/mails/twitter-icon.png' title='Twitter' class='social' />".html_safe
+= raw link_to(twitter_img,"http://twitter.com/?status=#{"Je suis fier d'avoir contribué à la réussite de ce projet ! #{contribution.project.name} sur @#{Configuration[:twitter_username]}! #{project_url(contribution.project)}"}", target: :blank)
+br
+br
+br
+|Informations importantes concernant votre prêt :
+br
+br
+|Montant du prêt :
+strong #{number_to_currency contribution.value, precision: 0}
+br
+br
+- if contribution.reward
+  |Récompense séléctionnée :
+  strong #{number_to_currency contribution.reward.minimum_value, precision: 0}
+  |  &mdash; #{contribution.reward.description}
+  br
+  br
+|Date du prêt :
+strong #{l contribution.created_at.to_date, format: :long}
+br
+br
+|Clé unique du prêt :
+strong #{contribution.key}
+br
+br
+|Si vous souhaitez contacter #{contribution.project.user.name}, voici son adresse e-mail  #{mail_to contribution.project.user.email}
+br
+br
+|Si vous avez d'autres questions, vous pouvez accéder à notre #{link_to('FAQ', "#{Configuration[:base_url]}/faq")}.
+br
+br
+|Sincères salutations,
+br
+|L'équipe #{Configuration[:company_name]}

@@ -1,0 +1,21 @@
+- if @notification.contribution.present?
+  - resource = @notification.contribution
+- else
+  - resource = @notification.match
+
+|Projet: #{resource.project.name}
+br/
+|Clé:
+strong #{resource.key}
+br/
+|ID paiement #:
+strong #{resource.payment_id}
+br/
+|Méthode de paiement:
+strong #{resource.payment_method} 
+br/
+br/
+|Ce  paiement #{resource.class.model_name.human} a été annulé, soit par le prêteur soit par sa banque.
+br/
+|Vous pouvez vérifier le site du monétiseur pour connaitre l'état des transactions.
+

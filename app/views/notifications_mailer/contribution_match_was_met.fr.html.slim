@@ -1,0 +1,10 @@
+- match = @notification.contribution.matchings.first.match
+|Bonjour, #{@notification.user.display_name}!
+br/
+| Merci à vous et aux #{match.original_contributions.with_state(:confirmed).count - 1} autres duneurs, #{match.user.display_name} le défi a été relevé ! Ensemble, vous avez prêté #{number_to_currency match.total_pledged} à #{match.project.name}.
+br/
+br/
+| Sincères salutations,
+br
+|L'équipe #{Configuration[:company_name]}
+

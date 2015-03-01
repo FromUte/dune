@@ -1,0 +1,33 @@
+- contribution = @notification.contribution
+|Bonjour, #{contribution.user.name}.
+br
+br
+|Malheureusement, le projet #{link_to(contribution.project.name, "#{Configuration[:base_url]}/projects/#{contribution.project.to_param}")} n'a pas atteint son objectif et n'a donc pas été financé sur #{Configuration[:company_name]}. En tant que contributeur sur ce projet, vous avez reçu automatiquement #{contribution.display_value} sur votre porte-feuille #{Configuration[:company_name]}, vous pouvez participer à un nouveau projet ou récupérer vos fonds.
+br
+br
+|Vous pouvez #{link_to "visualiser d'autres projets", "#{Configuration[:base_url]}/explore"} ici. Nous pensons que ces projets pourraient vous intéresser :
+br
+br
+-contribution.user.recommended_projects.limit(3).each do |project|
+  |#{link_to(project.name, "#{Configuration[:base_url]}/projects/#{project.to_param}")}
+  br
+  |#{project.headline}
+  br
+  br
+|Si vous préférez, vous pouvez demander un remboursement en cliquant #{link_to("ici", "#{Configuration[:base_url]}/users/#{contribution.user.to_param}#credits")}. Vous aurez besoin de vous connecter à votre compte et demander un remboursement de votre porte-feuille.
+br
+br
+|Si vous choisissez un remboursement, n'oubliez pas que, comme indiqué dans les #{link_to(" #{Configuration[:company_name]} CGU","#{Configuration[:base_url]}/terms")}, le montant du remboursement exclura tous les frais de paiement encourus avec votre transaction. Si vous avez des questions sur le processus, n'hésitez surtout pas à nous contacter par mail à l'adresse suivante #{mail_to Configuration[:email_payments]} avec le sujet “Remboursements de mes crédits”.
+br
+br
+|Si, pour une raison quelconque, vous souhaitez contacter #{contribution.project.user.display_name}, envoyer un e-mail directement à #{mail_to contribution.project.user.email}. Si vous avez des questions, vous pouvez consulter nos #{link_to('FAQ',"#{Configuration[:base_url]}/faq")} ou nous contacter par e-mail #{mail_to Configuration[:email_payments]}.
+br
+br
+|Merci beaucoup,
+br
+|L'équipe #{Configuration[:company_name]}
+br
+br
+br
+br
+|Id de votre contribution: #{contribution.key}

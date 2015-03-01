@@ -1,0 +1,38 @@
+- project = @notification.project
+- channel = @notification.channel
+
+br
+| Un nouveau projet a été crée, sur le flux #{channel.name} par #{link_to project.user.name, user_url(project.user)}.
+br
+| E-mail du référent projet : #{mail_to project.user.email}
+br
+br
+| Détails du projet:
+br
+br
+b Titre :
+= " #{project.name}"
+br
+b Fonds nécessaires :
+= " #{project.display_goal}"
+br
+b Résumé :
+= " #{project.headline}"
+br
+b Catégorie:
+br
+= project.category.to_s
+br
+b Ville/région :
+br
+= project.address
+br
+b Type d'organisation :
+br
+= project.display_organization_type
+br
+br
+= link_to "Voir le projet ", project_url(project, subdomain: channel.permalink)
+br
+br
+| L'équipe de #{channel.name}

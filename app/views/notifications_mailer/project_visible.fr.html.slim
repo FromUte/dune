@@ -1,0 +1,61 @@
+- project = @notification.project
+|Bonne nouvelle, #{project.user.display_name}.
+br
+br
+|Votre projet est à présent en ligne. La campagne de financement est à présent lancée !
+br
+|Voici le lien vous permettant de partager votre projet autour de vous :
+br
+br
+= link_to(project.name, project_url(project))
+br
+br
+strong Voici quelques conseils, afin de maximiser les chances de réussites de votre campagne :
+ol
+  li 
+    |S’engager rapidement, s’engager souvent, les quatre clés du succès :
+    br
+    br
+    strong Mise à jour
+    br
+    | Utilisez l'onglet «Mise à jour» de votre page projet afin de proposer des nouvelles fraiches à la communauté. Nos statistiques prouvent que les projets effectuant des mises à jour régulières ont beaucoup plus de chances d’être financés.
+    br
+    br
+    strong Commentaires
+    br
+    | Suivez le fil de commentaires de votre projet régulièrement, engagez la discussion ou répondez à la communauté. Attendez-vous à recevoir des questions, des idées, des conseils et des liens vers d'autres pages Web dans cette section. Il peut être intéressant également de demander l’aide de la communauté sur des sujets divers. Il est probable que vous tombiez sur une personne possédant les compétences que vous recherchez.
+    br
+    br
+    strong Intégration
+    br
+    | Il vous est possible d’intégrer la page de votre campagne de financement sur d’autres supports (site internet pro, de partenaires, campagne de mail).N’hésitez pas à utiliser notre fonctionnalité d’intégration. Vous trouverez cette fonctionnalité sur la page de votre projet.
+    br
+    br
+    strong Réseaux sociaux
+    br
+    | Les réseaux sociaux ont une importance capitale de nos jours, partagez votre projet sur twitter et Facebook, mais ne vous arrêtez pas là ! Rédigez des tweets et intégrez l’URL de votre projet afin de générer du trafic. Amener votre famille, amis à faire de même. Si votre projet est bon, vous verrez que vos prêteurs en feront autant et vous vous retrouverez rapidement sur la route du succès.
+    br
+    br
+  li
+    |Vous pouvez également améliorer certains aspects de votre projet :
+    ul
+      li Mettre à jour la vidéo de campagne
+      li Modifier la description au fur et à mesure de vos échanges
+      li Créer une récompenses
+      li Modifiez la limite nécessaire à récompense
+      li Modifiez les récompenses ayant le moins de succès
+      li Effectuer des modifications esthétiques
+      li 
+        |Vous ne pouvez pas :
+        ul
+          li Modifier la durée de campagne
+          li Modifier le montant de la levée de fonds
+          li Modifier une récompense qui aurait déjà été sélectionnée
+      li Attention: pour effectuer une modification, vous devez être connecté avec le compte créateur du projet
+    li Nous aimons vous accompagner et vous aider à présenter votre projet sur les réseaux sociaux. Si vous avez besoin d’aide afin de promouvoir votre campagne ou des idées à nous soumettre, n’hésitez pas à nous contacter par e-mail : #{mail_to Configuration[:email_contact]}. Veuillez noter que le succès de votre campagne réside dans votre volonté à vous engager dans celle-ci et votre capacité à communiquer sur votre projet.
+br
+|Vous remerciant, et vous souhaitant bonne chance !
+br
+| Sincères salutations,
+br
+| L'équipe #{Configuration[:company_name]}

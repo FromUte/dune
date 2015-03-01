@@ -1,0 +1,21 @@
+- project = @notification.project
+|Bonjour, #{project.user.display_name},
+br
+br
+| Malheureusement, votre campagne de prêt vient de se terminer et n’a pas atteint l’objectif fixé.
+br
+br
+|Nous allons entrer en contact avec vous, afin de vous accompagner dans la suite du processus. Nous souhaitons avant tout la réussite de votre projet et pour cela nous allons essayer de vous proposer d’autres solutions de financement.
+br
+|Sachez également que vos commentaires sont précieux car nous nous efforçons d'améliorer constamment notre service. Pourriez vous répondre aux deux questions suivantes par e-mail #{mail_to Configuration[:email_contact]} ?
+br
+ol 
+  li Quelles ont été les deux plus grandes difficultés que vous avez rencontrées lors de votre campagne  #{Configuration[:company_name]} ?
+  li Qu'est-ce qui vous a le plus manqué sur #{Configuration[:company_name]}?
+br
+|Merci beaucoup.
+br
+br
+| Sincères salutations,
+br
+| L'équipe #{Configuration[:company_name]}

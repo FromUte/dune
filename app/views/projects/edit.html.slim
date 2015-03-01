@@ -5,12 +5,12 @@
     = simple_form_for @project do |form|
       - if current_user.admin
         .admin-fields
-          .section-header Admin fields
+          .section-header Champs administration
           = form.input :user_id, required: true
           = form.input :permalink, as: :string
           = form.input :campaign_type, as: :select, collection: [['All or None', 'all_or_none'], ['Flexible', 'flexible']], include_blank: false
           = form.input :foundation_widget, as: :boolean
-      .section-header #1. Project Overview
+      .section-header #1. Aperçu du projet
       - if policy(@project).permitted_for?(:name, :update)
         = form.input :name, as: :string
       - if policy(@project).permitted_for?(:category, :update)
@@ -23,7 +23,7 @@
         .tags-path[data-url=tags_path]
         = form.input :tag_list, as: :string
 
-      .section-header #2. Project Location
+      .section-header #2. Position géographique du projet
       - if policy(@project).permitted_for?(:location, :update)
         .location
           .location-coordinates.pin-img[data-longitude=@project.longitude data-latitude=@project.latitude data-url=image_url('pin.png')]
@@ -31,7 +31,7 @@
           .map-canvas
       - if policy(@project).permitted_for?(:address_neighborhood, :update)
         = form.input :address_neighborhood
-      .section-header #3. Supporting Media
+      .section-header #3. Média
       - if policy(@project).permitted_for?(:video_url, :update)
         = form.input :video_url, as: :string
       .row
@@ -52,7 +52,7 @@
         = form.input :site
       - if policy(@project).permitted_for?(:site, :update)
         = form.input :hash_tag
-      .section-header #4. Budget & Timeline
+      .section-header #4. BUDGET & CALENDRIER
       - if policy(@project).permitted_for?(:goal, :update)
         = form.input :goal, as: :integer
       - if policy(@project).permitted_for?(:online_days, :update)

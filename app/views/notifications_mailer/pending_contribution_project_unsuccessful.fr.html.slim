@@ -1,0 +1,34 @@
+- contribution = @notification.contribution
+|Bonjour, #{contribution.user.name}!
+br
+br
+|Malheureusement, le projet #{link_to(contribution.project.name, "#{Configuration[:base_url]}/projects/#{contribution.project.to_param}")} n'a pas atteint son but et ne sera donc pas financé sur #{Configuration[:company_name]}.
+br
+br
+|Nous savons que vous avez commencé votre processus de contribution il y a quelques jours. Si vous <strong>n'avez pas</strong> achever le processus de prêt, vous pouvez ignorer cet e-mail.
+br
+br
+| Si vous avez finalisé votre prêt, mais n’avez pas encore reçu un e-mail de confirmation, vous devriez le recevoir sous peu.
+br
+
+br
+|Lorsque nous recevrons la confirmation de votre contribution, vous recevrez l’équivalent en crédit dune d’un montant de #{contribution.display_value} que vous pourrez prêter à d'autres projets si vous le désirez.
+br
+br
+|Si vous préférez, vous pouvez demander un remboursement de votre contribution en cliquant #{link_to("ici", "#{Configuration[:base_url]}/users/#{contribution.user.to_param}#credits")}.
+|  Si un problème intervient lors de ce processus, n’hésitez pas à nous contacter par e-mail #{mail_to Configuration[:email_payments]} en utilisant le sujet "Problème lors du remboursement"
+br
+br
+|Si pour une quelconque raison vous souhaitez contacter #{contribution.project.user.display_name}, vous pouvez lui envoyer un e-mail à l'adresse #{mail_to contribution.project.user.email}.
+br
+br
+|Si vous avez d'autres questions, vous pouvez visiter nos #{link_to 'FAQ', "#{Configuration[:base_url]}/faq"}.
+
+br
+|Clé de votre contribution:
+strong #{contribution.key}
+br
+br
+|Sincères salutations,
+br
+|L'équipe #{Configuration[:company_name]}

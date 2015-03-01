@@ -1,0 +1,33 @@
+- contact = @notification.contact
+|Une nouvelle demande de démonstration a été faite par #{contact.first_name} #{contact.last_name}.
+br/
+h3 Informations:
+strong Prénom:
+|  #{contact.first_name}
+br/
+strong Nom de Famille:
+|  #{contact.last_name}
+br/
+strong Adresse e-mail:
+|  #{contact.email}
+br/
+- if contact.phone.present?
+  strong Téléphone:
+  |  #{contact.phone}
+br/
+strong Entreprise:
+|  #{contact.organization_name}
+br/
+- if contact.organization_website.present?
+  strong Site internet professionel:
+  |  #{contact.organization_website}
+  br/
+
+- if contact.message.present?
+  strong Message:
+  p #{contact.message}
+br/
+br/
+|Sincères salutations,
+br
+|L'équipe #{Configuration[:company_name]}

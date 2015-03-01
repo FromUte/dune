@@ -1,0 +1,27 @@
+h4 Questions fréquentes
+ul
+  li
+    a href="#"
+      i.icon-et-down-circled
+      | Comment contribuer ?
+    p.hide Facile! Il vous suffit d’entrer le montant de votre prêt. Choisissez ensuite une récompense si possible et si vous en souhaitez une. Vous pouvez également saisir un message à afficher avec votre prêt, ou choisir de rester anonyme. Il vous reste ensuite à effectuer le paiement.
+  li
+    a href="#"
+      i.icon-et-down-circled
+      | Quand le paiement est-il effectif ?
+    p.hide Peu de temps après la validation de votre paiement par votre banque. Habituellement, vous recevez une confirmation par e-mail en moins de cinq minutes. Si vous avez réalisé un virement bancaire, la confirmation peut mettre jusqu’à trois jours ouvrés.
+  li
+    a href="#"
+      i.icon-et-down-circled
+      | Suis-je remboursé si le projet n'est pas financé ?
+    p.hide Oui. Votre compte recevra automatiquement les crédits correspondant sur votre compte, vous pourrez si vous les souhaitez les utiliser pour un autre projet de #{Configuration[:company_name]}.
+  li
+    a href="#"
+      i.icon-et-down-circled
+      | Que faire si je ne veux pas de crédits sur #{Configuration[:company_name]}?
+    p.hide Aucun problème. Vous visitez le lien suivant #{link_to t('words.credits'), user_path(current_user, anchor: :credits), target: :blank} dans la semaine suivant la fin du projet, et vous pourrez demander un remboursement.
+  li
+    a href="#"
+      i.icon-et-down-circled
+      | Quand et comment puis-je obtenir ma récompense ?
+    p.hide Peu de temps après la fin de campagne, #{link_to @project.user.display_name, user_path(@project.user)} vous contactera, afin de procéder à la livraison.
