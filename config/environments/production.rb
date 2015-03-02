@@ -98,4 +98,14 @@ Dune::Application.configure do
   config.action_dispatch.default_headers = {
     'X-Frame-Options' => 'ALLOWALL'
   }
+
+  config.action_mailer.smtp_settings = {
+      :address   => "smtp.mandrillapp.com",
+      :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
+      :enable_starttls_auto => true, # detects and uses STARTTLS
+      :user_name => Configuration[:mandrill_user_name],
+      :password  => Configuration[:mandrill], # SMTP password is any valid API key
+      :authentication => 'plain', # Mandrill supports 'plain' or 'login'
+      :domain => 'dune-investissement.fr', # your domain to identify your server when connecting
+    }
 end
