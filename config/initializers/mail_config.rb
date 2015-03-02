@@ -8,7 +8,7 @@ begin
         authentication: :plain,
         user_name: Configuration[:MANDRILL_USERNAME],
         password: Configuration[:MANDRILL_APIKEY],
-        domain: 'dune-investissement.fr'
+        domain: 'www.dune-investissement.fr'
     }
     ActionMailer::Base.delivery_method = :smtp
   end
