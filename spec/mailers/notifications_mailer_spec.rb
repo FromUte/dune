@@ -17,7 +17,7 @@ describe NotificationsMailer do
         described_class.any_instance.should_receive(:mail).with({
           from: 'Catarse <contact@foo.bar>',
           to: notification.user.email,
-          subject: 'Thank you for your contribution to Foo bar!',
+          subject: 'Merci pour le prêt que vous avez effectué sur Foo bar!',
           template_name: 'payment_confirmed'
         })
       end
@@ -39,7 +39,7 @@ describe NotificationsMailer do
         described_class.any_instance.should_receive(:mail).with({
           from: 'Catarse <contact@foo.bar>',
           to: notification.user.email,
-          subject: 'Thank you for your contribution to Foo bar!',
+          subject: 'Merci pour le prêt que vous avez effectué sur Foo bar!',
           template_name: 'payment_confirmed',
           bcc: 'test@bcc.com'
         })
