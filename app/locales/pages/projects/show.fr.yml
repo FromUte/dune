@@ -20,7 +20,7 @@ fr:
           draft: "Ce projet est en mode brouillon et n’est pas encore ouvert aux prêteurs."
       contribute: 'Contribuer'
       create_match: 'Créer un Match'
-      edit: 'Modifier le campagne'
+      edit: 'Modifier ma campagne'
       share:
         title: 'Impliquez vos amis'
       no-neighbors: "Pas encore de prêteur, soyez le premier !"
