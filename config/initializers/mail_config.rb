@@ -5,7 +5,7 @@ begin
     ActionMailer::Base.smtp_settings = {
         address: 'smtp.mandrillapp.com',
         port: '587',
-        authentication: :plain,
+        authentication: :login,
         user_name: Configuration[:mandrill_user_name],
         password: Configuration[:mandrill],
         domain: 'heroku.com'
