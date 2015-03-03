@@ -106,6 +106,6 @@ Dune::Application.configure do
       :user_name => Configuration[:MANDRILL_USERNAME],
       :password  => Configuration[:MANDRILL_APIKEY], # SMTP password is any valid API key
       :authentication => 'plain', # Mandrill supports 'plain' or 'login'
-      :domain => 'dune-investissement.fr', # your domain to identify your server when connecting
+      :domain => 'www.dune-investissement.fr', # your domain to identify your server when connecting
     }
 end
