@@ -6,4 +6,5 @@ Disallow: /*.jpg$
 Disallow: /*.png$
 Disallow: /*.gif$
 Disallow: /users/
+Disallow: /projects/
 Allow: /
