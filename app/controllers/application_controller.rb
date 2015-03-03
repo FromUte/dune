@@ -8,10 +8,10 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   helper_method :channel, :referral_url
-  before_action :referral_it!
+  before_action :ensure_domain, :referral_it!
 
   before_filter do
-    if current_user and (current_user.email =~ /change-your-email\+[0-9]+@neighbor\.ly/)
+    if current_user and (current_user.email =~ /change-your-email\+[0-9]+@dune-investissement\.fr/)
       redirect_to set_email_users_path unless controller_name =~ /users|confirmations/
     end
   end
@@ -29,4 +29,14 @@ class ApplicationController < ActionController::Base
   def referral_it!
     session[:referral_url] = params[:ref] if params[:ref].present?
   end
+
+  # Redirect to the appropriate domain i.e. example.com
+  def ensure_domain
+    domain_to_redirect_to = 'www.dune-investissement.fr'
+    domain_exceptions = ['www.dune-investissement.fr']
+    should_redirect = !(domain_exceptions.include? request.host)
+    new_url = "#{request.protocol}#{domain_to_redirect_to}#{request.fullpath if request.fullpath != '/'}"
+    redirect_to new_url, status: :moved_permanently if should_redirect
+  end
+
 end
