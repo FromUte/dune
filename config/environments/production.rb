@@ -1,7 +1,7 @@
 Dune::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  Rails.application.routes.default_url_options[:host] = 'dune-investissement.fr'
+  Rails.application.routes.default_url_options[:host] = 'www.dune-investissement.fr'
 
   # Code is not reloaded between requests.
   config.cache_classes = true
