@@ -74,14 +74,14 @@ Dune.Users.Edit =
         this.dropzone.on "error", this.onUploadFail
 
     onFileAdded: (file)->
-      this.$('.info').text 'Drop an image here'
+      this.$('.info').text 'Déposer une image ici'
       this.$el.removeClass('upload-complete upload-fail').addClass 'upload-started'
 
     onUploadProgress: (file, progress)->
-      this.$('.info').text 'Drop an image here'
+      this.$('.info').text 'Déposer une image ici'
 
     onUploadComplete: (file, response)->
-      this.$('.info').text 'Drop an image here'
+      this.$('.info').text 'Déposer une image ici'
       this.$el.removeClass('upload-started').addClass 'upload-complete'
       this.$image_previewer.attr 'src', response[this.param_name]
 

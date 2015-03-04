@@ -19,7 +19,7 @@ fr:
           description: 'Comment voudriez-vous l’appeler ? Un titre court, accrocheur, et partageable fonctionne bien mieux !'
         campaign_type:
           title: 'Type de projet'
-          description: "Quel modèle de financement souhaitez-vous utiliser ? <br /><br/> <strong>Chaque euro compte :</strong> Le projet est financé que l’objectif soit atteint ou non. <br /> <strong>Tout ou rien :</strong> Vous devez atteindre votre objectif d'ici la fin de votre campagne afin de recevoir les fonds."
+          description: "Quel modèle de financement souhaitez-vous utiliser ? <br /><br/> <strong>Complément :</strong> Le projet est financé que l’objectif soit atteint ou non. <br /> <strong>Tout ou rien :</strong> Vous devez atteindre votre objectif d'ici la fin de votre campagne afin de recevoir les fonds."
         goal:
           title: 'Objectif de la campagne de financement.'
           description: 'De combien avez-vous besoin pour réaliser votre projet ? Merci d’entrer un numéro sans virgule.'

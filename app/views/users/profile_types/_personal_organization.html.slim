@@ -11,7 +11,7 @@
   .large-4.medium-4.columns
     #personal-images.profile-type-images.personal style="#{"display: none;" unless @user.personal?}"
       .usr-upld-img.usr-upld-pctr data-param="uploaded_image"
-        span.info Drop an image here
+        span.info Déposer une image ici
         = image_tag @user.uploaded_image_url(:thumb_avatar), class: "uploaded-image"
 
       = f.input :uploaded_image, as: :file, input_html: { class: 'fallback' }
@@ -20,7 +20,7 @@
   .large-4.medium-4.columns
     #organization-images.profile-type-images.organization style="#{"display: none;" unless @user.organization?}"
       .usr-upld-img.usr-upld-cp data-param="organization_attributes[image]"
-        span.info Drop an image here
+        span.info Déposer une image ici
         = image_tag @user.organization.image_url(:thumb), class: "uploaded-image"
 
       = f.fields_for :organization, include_id: true do |o|

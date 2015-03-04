@@ -34,7 +34,7 @@ describe Category do
   describe '.array' do
     it 'returns an array with categories' do
       category = create(:category)
-      expect(described_class.array).to eq [['Select an option', ''],
+      expect(described_class.array).to eq [['Choisissez', ''],
                                            [category.name_en, category.id]]
     end
   end

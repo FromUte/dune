@@ -10,7 +10,7 @@ fr:
     placeholders:
       user:
         name: 'nom et prénom'
-        email: 'Email'
+        email: 'E-mail'
         password: 'Mot de passe'
         current_password: 'Mot de passe actuel'
         bio: '140 caractères ou moins ...'
@@ -39,6 +39,8 @@ fr:
           start_primary_content: 'Contenu primaire'
           start_secondary_content: 'Contenu secondaire'
       user:
+        name: 'Nom/prénom'
+        email: 'E-mail'
         bio: 'Biographie'
         password: 'Nouveau mot de passe'
         current_password: 'Mot de passe actuel'
@@ -52,6 +54,9 @@ fr:
         address_zip_code: 'Code Postale'
         other_url: 'Votre site web'
         update_address: "Mettre à jour mon adresse."
+      organization:
+              name: 'Raison sociale'
+              email: 'E-mail'
       project:
         name: 'Titre du projet'
         campaign_type: 'Type de projet'

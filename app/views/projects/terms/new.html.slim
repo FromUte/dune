@@ -1,5 +1,5 @@
 = simple_form_for ProjectDocument.new, url: project_terms_path(@project) do |f|
   h3 = 'Soumettre des documents'
-  = f.input :name
+  = f.input :name, label: 'Nom du fichier'
   = f.input :document, as: :file, label: false
   = f.button :submit, 'Soumettre fichier'

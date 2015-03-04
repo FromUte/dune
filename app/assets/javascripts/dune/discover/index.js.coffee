@@ -61,7 +61,7 @@ Dune.Discover.Index =
         tags = _.map $tags, (t) -> $(t).data('name')
         url += "/tags/#{tags.join()}"
 
-      if $search.val() != '' && $search.val() != 'Search...'
+      if $search.val() != '' && $search.val() != 'Rechercher...'
         url += "/search/#{$search.val()}"
         this.addResultFor('search', $search.val())
       else

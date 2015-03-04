@@ -17,6 +17,6 @@ describe State do
       create(:state, name: 'Missouri', acronym: 'MO')
     end
 
-    it { expect(State.array).to eq [['Select an option', ''], ['California - CA', 'CA'], ['Missouri - MO', 'MO']] }
+    it { expect(State.array).to eq [['Choisissez', ''], ['California - CA', 'CA'], ['Missouri - MO', 'MO']] }
   end
 end

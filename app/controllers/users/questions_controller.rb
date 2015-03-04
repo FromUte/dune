@@ -21,7 +21,7 @@ class Users::QuestionsController < ApplicationController
     end
 
     Users::QuestionsMailer.new(params[:question][:body], parent, project, current_user).deliver
-    flash.notice = "#{parent.display_name} received your question and will be in touch shortly."
+    flash.notice = "#{parent.display_name} a reçu votre question."
     redirect_to project_path(project)
   end
 end

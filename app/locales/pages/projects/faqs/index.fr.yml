@@ -2,4 +2,5 @@ fr:
   projects:
     faqs:
       index:
-        empty: 'Nos F.A.Q sont en cours de rédaction, garder un œil, elles seront bientôt en ligne.'
+        empty: 'Posez vos questions au porteur de projet.'
+        title: 'Titre'

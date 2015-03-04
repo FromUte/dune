@@ -21,7 +21,7 @@ fr:
           no_credits: "Vous n'avez pas assez de crédits pour financer ce projet."
           success: "Vous avez contribué avec succès. Merci !"
     users:
-      completeness_progress: "S'il vous plaît <a href=\"%{link}\">compléter votre profil</a> afin que nous puissions échanger avec vous, et vous donner les moyens de devenir un acteur important de notre communauté !"
+      completeness_progress: "S'il vous plaît, <a href=\"%{link}\">complétez votre profil</a> afin que nous puissions échanger avec vous, et vous donner les moyens de devenir un acteur important de notre communauté !"
       update:
         success: 'Vos informations ont été mises à jour !'
       contributions:

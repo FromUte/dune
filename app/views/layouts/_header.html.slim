@@ -77,7 +77,7 @@ header.contain-to-grid.fixed
 
           li.search-box
             = form_tag main_app.discover_path, method: 'GET', class: 'discover-form' do
-              = text_field_tag :search, nil, autocomplete: "off", value: params[:search], class: "discover-form-input #{'show' if params[:search].present?}", placeholder: 'Search...'
+              = text_field_tag :search, nil, autocomplete: "off", value: params[:search], class: "discover-form-input #{'show' if params[:search].present?}", placeholder: 'Rechercher...'
               = submit_tag
               = link_to '#search', class: 'search-button' do
                 i.icon-et-search

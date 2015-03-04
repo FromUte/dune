@@ -3,4 +3,4 @@
   p = resource.answer
 
   - if policy(@project).update?
-    = link_to 'Delete FAQ', project_faq_path(@project, resource), confirm: 'You are sure?', method: :delete, class: 'button secondary small'
+    = link_to 'Supprimer', project_faq_path(@project, resource), confirm: 'Vous êtes sur ?', method: :delete, class: 'button secondary small'
