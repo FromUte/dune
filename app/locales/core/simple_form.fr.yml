@@ -40,7 +40,8 @@ fr:
           start_secondary_content: 'Contenu secondaire'
       user:
         bio: 'Biographie'
-        password: 'Nouveau Mot de Passe'
+        password: 'Nouveau mot de passe'
+        current_password: 'Mot de passe actuel'
         newsletter: 'Recevoir des e-mails occasionel de dune-investissement'
         new_project: 'Envoyez-moi des e-mails lorsque de nouveaux projets sont ajoutés à dune-investissement'
         profile_type: 'Afficher moi comme (un/une)'

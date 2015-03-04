@@ -37,7 +37,7 @@ header.contain-to-grid.fixed
                 = image_tag current_user.display_image, size: "18x18", class: 'profile-picture', alt: ''
                 |  Bonjour, #{ current_user.first_name }!
 
-              ul#user-dropdown.f-dropdown.hide-for-medium-down[data-dropdown-content]
+              ul#user-dropdown.f-dropdown[data-dropdown-content]
                 li = link_to current_user.display_name, main_app.user_path(current_user)
                 li = link_to main_app.edit_user_path(current_user)
                   i.icon-et-user
