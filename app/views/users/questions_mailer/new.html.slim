@@ -1,17 +1,17 @@
-| Hi, #{@user.display_name},
+| Bonjour, #{@user.display_name},
 br/
 br/
 
-| #{@asker.display_name} has a question for you regarding your project on Neighbor.ly. Simply reply to this email to contact #{mail_to @asker.email, @asker.display_name} directly.
+| #{@asker.display_name} à une question concernant le projet que vous avez déposé sur dune-investissement. Vous n'avez qu'a répondre à cet e-mail pour contacter #{mail_to @asker.email, @asker.display_name} directement.
 br/
 br/
 strong Question:
 = simple_format(@question)
 br/
 br/
-| Tip: To answer general questions, be sure to check out the #{link_to 'FAQ tool', project_faqs_url(@project)}. Answering common questions here will help users understand your project better and will lessen the need to contact you directly.
+| Astuce : Vous pourrez répercuter la réponse à cette question sur votre page projet, pour cela n'oubliez pas de consulter l'onglet #{link_to 'Questions', project_faqs_url(@project)}. Répondre aux questions communes sur cet onglet aidera les utilisateurs à comprendre votre projet et réduira les prises de contact direct.
 br/
 br/
-| High Fives,
+| Salutations sincères,
 br/
-| The #{::Configuration[:company_name]} Team
+| L'équipe #{::Configuration[:company_name]}

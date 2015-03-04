@@ -7,7 +7,7 @@ fr:
         all_or_none:
           reached_goal: "Ce projet sera couronné de succès et financé le %{date}"
           not_reached_goal: "Ce projet sera financé si au moins %{goal} sont prêté d'ici le %{date}"
-          failed: "Ce projet n'a pas atteint l'objectif de %{goal} jusqu'au %{date} et n'est donc pas financé"
+          failed: "Ce projet n'a pas atteint l'objectif de %{goal} à la date du %{date} et n'est donc pas financé"
           successful: "Ce projet a été un succès et a été financé entièrement le %{date}"
           waiting_funds: "En attente de confirmation de paiements afin de savoir si ce projet est financé."
           draft: "Ce projet est en mode brouillon et n’est pas encore ouvert aux prêteurs."
@@ -50,8 +50,8 @@ fr:
       reports: 'Rapports'
     header:
       subtitle:
-        all_or_none: "Un projet %{category_name}, dans %{city}, par %{author}"
-        flexible: "<span data-tooltip class='has-tip' title='Chaque euro compte ! <br /><br />Dans ce type de campagne, ce projet est financé que l'objectif soit atteint ou non.'>flexible</span> %{category_name} projet par %{author} dans %{city}"
+        all_or_none: "Financement tout ou rien dans la catégorie %{category_name}, situé à %{city}, créer par %{author}"
+        flexible: "<span data-tooltip class='has-tip' title='Chaque euro compte ! <br /><br />Ce projet est financé que l'objectif soit atteint ou non.'>Financement flexible dans la catégorie</span> %{category_name}, situé à %{city}, créer par %{author}"
       so_far: "&nbsp; jusqu'à présent des &nbsp; "
       reached_goal_small_separator_html: '&nbsp; / &nbsp; '
       contribute: 'Prêter'

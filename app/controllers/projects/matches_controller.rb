@@ -17,10 +17,10 @@ class Projects::MatchesController < ApplicationController
     authorize @match
 
     @match.starts_at   = Date.strptime(
-      match_params[:starts_at], '%m/%d/%y'
+      match_params[:starts_at], '%d/%m/%y'
     ).in_time_zone
     @match.finishes_at = Date.strptime(
-      match_params[:finishes_at], '%m/%d/%y'
+      match_params[:finishes_at], '%d/%m/%y'
     ).in_time_zone
 
     if @match.save

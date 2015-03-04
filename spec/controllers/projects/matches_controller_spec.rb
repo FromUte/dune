@@ -7,8 +7,8 @@ describe Projects::MatchesController do
     {
       'match' => {
         'value_unit'  => '3',
-        'starts_at'   => Date.tomorrow.to_time.strftime('%m/%d/%y'),
-        'finishes_at' => (Date.tomorrow + 2.days).to_time.strftime('%m/%d/%y'),
+        'starts_at'   => Date.tomorrow.to_time.strftime('%d/%m/%y'),
+        'finishes_at' => (Date.tomorrow + 2.days).to_time.strftime('%d/%m/%y'),
         'value'       => '9999'
       }
     }

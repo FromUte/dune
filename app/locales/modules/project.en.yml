@@ -9,11 +9,13 @@ en:
       not_reached_goal: 'waiting'
       draft: 'draft'
     organization_type:
+      sarl: 'S.A.R.L'
+      sa: 'S.A'
+      eurl: 'E.U.R.L'
+      sas: 'S.A.S'
       municipality: 'Municipality'
       neighborhood_organization: 'Neighborhood Organization'
-      cid_bid: 'CID / BID'
       registered_nonprofit: 'Registered Nonprofit'
       public_private_partnership: 'Public-Private Partnership'
-      nonprofit_501c3: '501c3 Nonprofit'
       other: 'Other'
       not_sure: "I'm Not Sure"
