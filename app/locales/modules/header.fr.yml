@@ -2,7 +2,7 @@ fr:
   layouts:
     header:
       discover: 'Découvrir'
-      about: 'Fonctionnement'
+      about: 'Ensemble'
       sign-out: 'Déconnexion'
       sign-up: "Inscription"
       sign-in: 'Connexion'
