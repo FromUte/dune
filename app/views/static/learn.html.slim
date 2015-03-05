@@ -102,13 +102,13 @@
             p Notre mission est d’aider les entreprises à se financer et de proposer des placements aux risques maitrisés. Nous aimons notre pays, et pensons que de l’union des citoyens naitra l’évolution de nos entreprises.
 
         .team-members
-          = render 'team_member', nickname: :jase, name: 'Pierre Legrand', role: 'Co-fondateur, développeur',
+          = render 'team_member', nickname: :pierre, name: 'Pierre Legrand', role: 'Co-fondateur, développeur',
             description: "L'évolution économique passe par la révoltuion numérique",
             social_networks: { linkedin: 'http://linkedin.com/', twitter: 'http://twitter.com/' }
-          = render 'team_member', nickname: :patrick, name: 'Christian Micale', role: 'Co-fondateur, Financier',
+          = render 'team_member', nickname: :christian, name: 'Christian Micale', role: 'Co-fondateur, Financier',
             description: "12 années dans le financement pour comprendre que l'économie réelle c'est vous",
             social_networks: { linkedin: 'http://linkedin.com/', twitter: 'http://twitter.com/' }
-          = render 'team_member', nickname: :sean, name: 'Sandra Bougaret', role: 'Co-fondateur, Relation professionnelle',
+          = render 'team_member', nickname: :sandra, name: 'Sandra Bougaret', role: 'Co-fondateur, Relation professionnelle',
             description: "Créer l'harmonie entre les idées et les fonds",
             social_networks: { linkedin: 'http://linkedin.com/pub/', twitter: 'http://twitter.com/', github: 'https://github.com/' }
 
@@ -126,8 +126,8 @@
         li.supporter.small-6.medium-3.columns
           = image_tag 'learn/Logo-Sogeco.png', alt: 'Sogeco logo', title: "Cabinet d'expertise comptable"
           strong
-            span @KnightFdn
-            span Backed
+            /span @KnightFdn
+            /span Backed
         /li.supporter.small-6.medium-3.columns
         /  = image_tag 'learn/civicx.png', alt: 'The Points of Light Civic Accelerator\'s logo',  title: 'CivicX'
         /  strong
