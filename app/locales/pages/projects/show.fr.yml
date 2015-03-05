@@ -46,12 +46,12 @@ fr:
       comments: 'Commentaires'
       contributions: 'DuNeur'
       budget: 'Budget'
-      terms: 'Conditions'
+      terms: 'Documents'
       reports: 'Rapports'
     header:
       subtitle:
-        all_or_none: "Financement tout ou rien dans la catégorie %{category_name}, situé à %{city}, créer par %{author}"
-        flexible: "<span data-tooltip class='has-tip' title='Chaque euro compte ! <br /><br />Ce projet est financé que l'objectif soit atteint ou non.'>Financement flexible dans la catégorie</span> %{category_name}, situé à %{city}, créer par %{author}"
+        all_or_none: "Financement tout ou rien dans la catégorie %{category_name}, situé à %{city}, crée par %{author}"
+        flexible: "<span data-tooltip class='has-tip' title='Chaque euro compte ! <br /><br />Ce projet est financé que l'objectif soit atteint ou non.'>Financement flexible dans la catégorie</span> %{category_name}, situé à %{city}, crée par %{author}"
       so_far: "&nbsp; jusqu'à présent des &nbsp; "
       reached_goal_small_separator_html: '&nbsp; / &nbsp; '
       contribute: 'Prêter'
