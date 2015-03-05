@@ -44,7 +44,7 @@ fr:
         bio: 'Biographie'
         password: 'Nouveau mot de passe'
         current_password: 'Mot de passe actuel'
-        newsletter: 'Recevoir des e-mails occasionel de dune-investissement'
+        newsletter: 'Recevoir des e-mails occasionnels de dune-investissement'
         new_project: 'Envoyez-moi des e-mails lorsque de nouveaux projets sont ajoutés à dune-investissement'
         profile_type: 'Afficher moi comme (un/une)'
         phone_number: 'Numéro de téléphone'

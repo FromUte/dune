@@ -3,7 +3,7 @@ fr:
     edit:
       tabs:
         edit: "Profil"
-        my_campaigns: "Mes prêts en cours"
+        my_campaigns: "Mes projets"
         ive_contributed: "Projets auxquels j’ai prêté"
         credits: 'Crédits'
         payments: 'Info paiements'
