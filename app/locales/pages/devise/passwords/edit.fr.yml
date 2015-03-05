@@ -3,7 +3,7 @@ fr:
     passwords:
       edit:
         titles:
-          site: "Définition de votre mot de passe"
+          site: "Définition de votre mot de passe Dune"
           header: 'Réinitialiser votre mot de passe'
         form:
           hint:

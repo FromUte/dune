@@ -4,7 +4,7 @@ fr:
       new:
         have_account_html: "Vous avez déjà un compte ? <strong>%{link}</strong>"
         titles:
-          site: "S'inscrire"
+          site: "S'inscrire sur Dune"
           header: "Rejoignez notre dune d'investisseur !"
         links:
           login: "S'identifier <i class='icon-et-right-circled'></i>"

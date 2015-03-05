@@ -4,7 +4,7 @@ fr:
       new:
         no_account_html: "Vous n'êtes pas encore monté sur notre dune d'investisseurs ? <strong>%{link}</strong>"
         titles:
-          site: "S'identifier"
+          site: "S'identifier sur Dune"
           header: "S'identifier"
         links:
           register: "Rejoindre <i class='icon-et-right-circled'></i>"
