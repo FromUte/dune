@@ -2,5 +2,5 @@ fr:
   layouts:
     newsletter:
       newsletter: "S'inscrire à la newsletter"
-      email: 'your@email.com'
-      submit: 'Rejoindre'
+      email: 'Votre-Email@email.com'
+      submit: "S'abonner"
