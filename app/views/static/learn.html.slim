@@ -20,16 +20,17 @@
       .row
         .small-12.columns
           p
-            | Chez <strong>Dune investissement</strong> notre mission est de connecter les entreprises de notre pays avec une communauté d’épargnants qui se soucie d'elles.
+            | Chez <strong>Dune investissement</strong> notre mission est de créer le lien entre un besoin et une action solidaire.
+          p Ensemble, développons une économie participative.
       .row.text-center
         .medium-6.columns
-          h3 Pour les Entreprises
-          p Entreprises dynamiques cherchant à se financer tout en marquetant leurs idées.
-          = link_to 'Commencer', start_path, class: 'button'
+          h3 Épurer vos dettes
+          p Votre patrimoine immobilier vous aide à retrouver un équilibre financier.
+          = link_to 'Déposer un besoin', start_path, class: 'button'
         .medium-6.columns
-          h3 Pour les Citoyens
-          p Citoyens éclairés cherchant à investir avec intérêts vers l’économie réelle.
-          = link_to 'Parcourir les projets', discover_path, class: 'button'
+          h3 Investissez solidaire
+          p Particuliers, fondations, institutionnelles, investissez avec intérêts.
+          = link_to 'Parcourir les besoins', discover_path, class: 'button'
 
   section.main-section.section-with-hero-header
     = hero_header_tag @presenter, { class: 'text-center' }, @presenter.pricing_image do
@@ -98,8 +99,8 @@
         .row
           .small-12.columns
             p Nous sommes une équipe de passionnés.
-            p Analystes financiers, experts-comptables, architecte du numérique, chefs d’entreprises, et surtout de courageux entrepreneurs.
-            p Notre mission est d’aider les entreprises à se financer et de proposer des placements aux risques maitrisés. Nous aimons notre pays, et pensons que de l’union des citoyens naitra l’évolution de nos entreprises.
+            p Analystes financiers, architecte du numérique, chefs d’entreprises, et surtout de courageux entrepreneurs.
+            p Notre mission est d’aider les particuliers en difficulté à retrouver un <span style="text-decoration:underline;">équilibre financier</span> et à proposer un financement participatif aux <span style="text-decoration:underline;">risques garantis</span>. Nous aimons notre pays, et pensons que de <cite>l’union des citoyens naitra l’évolution de notre économie</cite>.
 
         .team-members
           = render 'team_member', nickname: :pierre, name: 'Pierre Legrand', role: 'Co-fondateur, développeur',
@@ -156,10 +157,10 @@
         header.title-information.text-center.row
           .row
             .small-12.columns
-              h2 Oui, nous sommes ouverts !
-          .row
-            .small-12.columns
-              strong.subtitle De l'union naît l'évolution
+              h2 De l'union est née l'évolution
+          /.row
+          /  .small-12.columns
+          /    strong.subtitle De l'union est née l'évolution
       /.open-type.small-12.medium-4.columns.text-center
       /  .open-type-image
       /    = image_tag 'learn/github.png', alt: 'GitHub\'s logo', title: 'GitHub', class: 'github-logo'

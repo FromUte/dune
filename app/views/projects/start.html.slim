@@ -1,4 +1,4 @@
-- content_for :title, t('.title')
+- content_for :title, t('.title').html_safe
 
 .start-page
   header.hero[data-image-url="#{ (channel && channel.start_hero_image.present?) ? channel.start_hero_image_url(:blur) : image_path('start/hero.jpg')}"]
@@ -17,9 +17,9 @@
         - if channel
           - steps = channel.start
         - else
-          - steps = OpenStruct.new first_step_icon: 'et-paper-plane', first_step_title: t('.steps.first.title'), first_step_description: t('.steps.first.description'),
-                                   second_step_icon: 'et-clock', second_step_title: t('.steps.second.title'), second_step_description: t('.steps.second.description'),
-                                   third_step_icon: 'et-rocket', third_step_title: t('.steps.third.title'), third_step_description: t('.steps.third.description')
+          - steps = OpenStruct.new first_step_icon: 'et-heart', first_step_title: t('.steps.first.title'), first_step_description: t('.steps.first.description'),
+                                   second_step_icon: 'et-lock', second_step_title: t('.steps.second.title'), second_step_description: t('.steps.second.description'),
+                                   third_step_icon: 'et-users', third_step_title: t('.steps.third.title'), third_step_description: t('.steps.third.description')
 
         - for step in [:first, :second, :third]
           .large-4.medium-4.columns
@@ -38,15 +38,11 @@
         - unless channel
           .large-12.columns
             h2 = t('.who.title')
-          .large-4.medium-4.columns
+          .large-6.medium-6.columns
             .large-10.columns.large-centered
               i.icon-fa-building
               h5 = t('.who.local-governments')
-          .large-4.medium-4.columns
-            .large-10.columns.large-centered
-              i.icon-fa-heart
-              h5 = t('.who.nonprofits')
-          .large-4.medium-4.columns
+          .large-6.medium-6.columns
             .large-10.columns.large-centered
               i.icon-fa-home
               h5 = t('.who.neighborhood-organizations')
@@ -56,12 +52,22 @@
               - if channel
                 = channel.start_primary_content_html
               - else
-                p = t('.who.description')
+                p = t('.who.description').html_safe
+                ul
+                  li = t('.who.description1')
+                  li = t('.who.description2')
+                  li = t('.who.description3')
+                  li = t('.who.description4')
+                  li = t('.who.description5')
+                  li = t('.who.description6')
+                  li = t('.who.description7')
+                  li = t('.who.description8')
+                  li = t('.who.description9')
 
               - if channel && channel.application_url
                 = link_to t('.get-started'), channel.application_url, class: 'button large large-5 medium-5 columns large-centered'
               - else
-                = link_to t('.get-started'), new_project_path, class: 'button large large-5 medium-5 columns large-centered'
+                = link_to "déposer mon dossier gratuitement", new_project_path, class: 'button large large-5 medium-5 columns large-centered'
 
               - if channel
                 .row

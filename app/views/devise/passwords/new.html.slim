@@ -7,7 +7,7 @@
     .login-box.animated.fadeIn
       h3.text-center= t '.titles.header'
       p.text-center.register_link
-        = t '.no_account_html', link: link_to(t('.links.register'), new_user_registration_path)
+        = t '.no_account_html', link: link_to(t('.links.register').html_safe, new_user_registration_path)
       hr
 
       .large-11.large-centered.columns

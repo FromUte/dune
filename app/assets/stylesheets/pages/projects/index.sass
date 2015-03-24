@@ -6,10 +6,74 @@
       font-weight: 400
       text-transform: uppercase
     h3.subtitle
-      text-transform: none
+      text-transform: uppercase
       font-size: 140%
       font-weight: 300
-
+  h5
+    font-weight: bold
+    text-transform: uppercase
+  .hero
+    min-height: +emCalc(185px)
+    padding: +emCalc(50px, 0)h
+    text-transform: uppercase
+    h2
+      font-size: 180%
+      font-weight: 500
+  .steps
+    z-index: 1
+    position: relative
+    text-align: center
+    padding-bottom: +emCalc(30px)
+    .rounded-top
+      position: relative
+      &:before
+        width: 70%
+        margin: auto
+        display: block
+        content: ' '
+        background: white
+        height: +emCalc(150px)
+    @media #{$medium}
+      margin-top: +emCalc(-45px)
+      .rounded-top
+        &:before
+          border-radius: 100%
+    .step
+      margin-top: +emCalc(-120px)
+      i
+        display: inline-block
+        font-size: 280%
+        padding: +emCalc(5px, 0)
+      p
+        font-size: 75%
+        color: $secondary-color
+  .who
+    text-align: center
+    i
+      display: inline-block
+      font-size: 400%
+      padding: +emCalc(5px, 0)
+    p
+      padding: +emCalc(10px, 0)
+      color: $secondary-color
+      font-size: 95%
+  .what
+    text-align: center
+    h3
+      text-align: center
+    i
+      display: inline-block
+      font-size: 400%
+      padding: +emCalc(5px, 0)
+    p
+      padding: +emCalc(10px, 0)
+      color: $secondary-color
+      font-size: 95%
+    ol
+      text-align: left
+      font-size: 95%
+      li
+        padding: +emCalc(10px, 0)
   section.projects
     padding: +emCalc(25px) 0
 

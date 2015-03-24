@@ -2,21 +2,21 @@ fr:
   projects:
     new:
       titles:
-        site: 'Soumettez nous votre projet Dune'
-        header: 'Proposer un projet'
-        sub: "Chacun peut proposer son projet gratuitement. Commencez dès aujourd'hui !"
+        site: 'Soumettez nous votre dossier Dune'
+        header: 'Déposer votre dossier'
+        sub: "Chacun peut déposer son dossier gratuitement. Commencez dès aujourd'hui !"
       joyride:
         next: 'Suivant'
         done: 'Fin'
         start:
-          title: 'Vous présentez une idée.'
+          title: 'Déposez votre dossier'
           description: 'Les informations fournies ici peuvent être modifiées ultérieurement.'
         category:
-          title: 'Choisissez une catégorie'
-          description: 'Quelle catégorie décrit le mieux votre projet ? Vous pouvez la changer plus tard.'
+          title: 'Choisissez une civilité'
+          description: "Déposez-vous un dossier en tant que particulier ou chef d'entreprise"
         name:
-          title: 'Titre de votre projet'
-          description: 'Comment voudriez-vous l’appeler ? Un titre court, accrocheur, et partageable fonctionne bien mieux !'
+          title: 'Titre de votre dossier'
+          description: 'Comment voudriez-vous l’appeler ? Un titre court, accrocheur, et partageable fonctionne bien !'
         campaign_type:
           title: 'Type de projet'
           description: "Quel modèle de financement souhaitez-vous utiliser ? <br /><br/> <strong>Complément :</strong> Le projet est financé que l’objectif soit atteint ou non. <br /> <strong>Tout ou rien :</strong> Vous devez atteindre votre objectif d'ici la fin de votre campagne afin de recevoir les fonds."
@@ -30,7 +30,7 @@ fr:
           title: 'Résumé'
           description: 'Décrivez votre projet en 140 caractères.'
         about:
-          title: "L'histoire"
+          title: "Votre histoire"
           description: "Parlez nous de votre projet. Pourquoi avez-vous besoin de l'aide de la communauté ?"
         organization_type:
           title: "Type d'organisation"
