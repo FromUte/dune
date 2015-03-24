@@ -21,7 +21,7 @@ describe Authorization do
           link: "http://www.facebook.com/diogo.biazus",
           locale: "pt_BR",
           name: "Diogo, Biazus",
-          timezone: -3,
+          timezone: +1,
           updated_time: "2012-08-01T18:22:50+0000",
           username: "diogo.biazus",
           verified: true
