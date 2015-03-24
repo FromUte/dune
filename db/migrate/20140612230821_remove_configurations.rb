@@ -35,7 +35,7 @@ class RemoveConfigurations < ActiveRecord::Migration
       CREATE FUNCTION expires_at(projects) RETURNS timestamp with time zone
         LANGUAGE sql
         AS $_$
-         SELECT ((((($1.online_date AT TIME ZONE coalesce((SELECT value FROM configurations WHERE name = 'timezone'), 'America/Sao_Paulo') + ($1.online_days || ' days')::interval)  )::date::text || ' 23:59:59')::timestamp AT TIME ZONE coalesce((SELECT value FROM configurations WHERE name = 'timezone'), 'America/Sao_Paulo'))::timestamptz )               
+         SELECT ((((($1.online_date AT TIME ZONE coalesce((SELECT value FROM configurations WHERE name = 'timezone'), 'Europe/Paris') + ($1.online_days || ' days')::interval)  )::date::text || ' 23:59:59')::timestamp AT TIME ZONE coalesce((SELECT value FROM configurations WHERE name = 'timezone'), 'Europe/Paris'))::timestamptz )
         $_$
     SQL
 

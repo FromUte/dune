@@ -86,8 +86,8 @@ extra: !ruby/hash:OmniAuth::AuthHash
       type: College
     gender: male
     email: juquinha@neighbor.ly
-    timezone: -3
-    locale: en_US
+    timezone: +1
+    locale: fr_FR
     verified: true
     updated_time: '2014-03-28T10:55:34+0000'
     username: juquinhadasilva

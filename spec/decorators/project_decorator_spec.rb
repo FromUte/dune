@@ -13,12 +13,12 @@ describe ProjectDecorator do
 
     context "when there is more than 1 day to go" do
       let(:expires_at){ Time.zone.now + 2.days }
-      it{ should == {:time=>2, :unit=>"days"} }
+      it{ should == {:time=>2, :unit=>"jours"} }
     end
 
     context "when there is less than 1 day to go" do
       let(:expires_at){ Time.zone.now + 13.hours }
-      it{ should == {:time=>13, :unit=>"hours"} }
+      it{ should == {:time=>13, :unit=>"heures"} }
     end
 
     context "when there is less than 1 hour to go" do
@@ -29,7 +29,7 @@ describe ProjectDecorator do
 
   describe '#display_organization_type' do
     before { project.update_column :organization_type, :municipality}
-    it { expect(project.reload.display_organization_type).to eq 'Municipality' }
+    it { expect(project.reload.display_organization_type).to eq 'Municipalité' }
   end
 
   describe "#display_expires_at" do
@@ -218,7 +218,7 @@ describe ProjectDecorator do
       it "should return a successful image flag when the project is successful" do
         project.stub(:successful?).and_return(true)
 
-        expect(project.successful_flag).to eq('<div class="successful_flag"><img alt="Successful.en" src="/assets/successful.en.png" /></div>')
+        expect(project.successful_flag).to eq('<div class="successful_flag"><img alt="Successful.fr" src="/assets/successful.fr.png" /></div>')
       end
     end
 

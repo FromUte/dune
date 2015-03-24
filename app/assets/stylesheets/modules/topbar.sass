@@ -17,17 +17,17 @@
       a
         display: block
         text-indent: -99999em
-        width: 194px
+        width: 200px
         height: 54px
         background: image-url('logo-white@2x.png') center no-repeat
         background: image-url('logo-white.png') center no-repeat\9 // It will apply to all ie from 8 and below
-        background-size: cover
+        background-size: contain
         padding-left: 0
 
   .top-bar-section
     .main-menu a:not(.button)
       @media #{$medium}
-        padding: +emCalc(0, 20px)
+        padding: +emCalc(0, 25px)
 
       i
         color: $topbar-icon-color

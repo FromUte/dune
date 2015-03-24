@@ -1,24 +1,33 @@
 fr:
   projects:
     start:
-      title: "Un moyen collaboratif de construire votre projet"
+      title: "Un moyen solidaire d'épurer vos dettes"
       get-started: 'Commencer'
       steps:
         first:
-          title: '1. Soumettre un projet'
-          description: "La première étape est de décrire votre projet. Nous étudions minutieusement votre projet dans les 72h afin de vous accompagner et de nous assurer de sa faisabilité."
+          title: '1. Une situation'
+          description: "La première étape est de décrire votre situation financière. Nous réceptionnerons celle-ci dans la plus grande discrétion."
         second:
-          title: '2. Planifier votre projet'
-          description: "Il est important de planifier votre campagne. Nous vous accompagnons lors de l'élaboration de votre stratégie."
+          title: '2. Un cadre sécurisé'
+          description: "Il nous est essentiel de vous fournir un cadre sécurisé via l'expertise d'un notaire et d'un avocat."
         third:
-          title: '3. Lancer votre campagne'
-          description: "Une fois votre projet élaboré et approuvé, vous serez prêt à faire vivre votre campagne de levée de fonds !"
+          title: "3. Un accompagnement"
+          description: "Nous étudions minutieusement votre besoin dans les 72h afin de vous accompagner et de nous assurer de sa faisabilité."
       who:
-        title: 'Qui peut mener une campagne sur dune ?'
-        local-governments: 'Entreprise existante'
-        nonprofits: 'Entreprise en création'
-        neighborhood-organizations: 'Immobilier Vente à réméré'
-        description: "Un prêt vous implique et doit être remboursé. Nous présentons à notre communauté des projets expertisées. C’est pourquoi la santé de votre entreprise fait l’objet d’une étude avant toute mise en ligne."
+        title: 'Vous êtes concernés'
+        local-governments: 'Entrepreneur'
+        nonprofits: 'Un besoin'
+        neighborhood-organizations: 'Particuliers'
+        description: "Particuliers et chefs d'entreprise peuvent faire appel au système <strong> Dune </strong> afin de dégager des fonds propres ou retrouver un équilibre financier."
+        description1: "J'ai payé au moins 50% de mon patrimoine immobilier"
+        description2: "l'ensemble des dettes ne dépasse pas 50% du patrimoine immobilier"
+        description3: "J'ai des revenus mais plus assez pour toutes mes charges de crédits"
+        description4: "Je souhaite sauver ma résidence principale et éviter la saisie immobilière"
+        description5: "J'ai besoin de temps pour repartir financièrement"
+        description6: "J'accepte de rencontrer un Conseiller dune et discuter de la solution de cession avec faculté de rachat"
+        description7: "J'accepte de monter un dossier réglementaire avec tous les documents juridiques devant avocat"
+        description8: "J'accepte de payer mes indemnités d'occupation aux investisseurs solidaires qui ont acheté mon bien immobilier"
+        description9: "J'accepte d'être suivi pendant toute la durée du processus par un conseiller dune"
       work:
         title: 'La réussite de votre campagne dépend de votre engagement.'
         subtitle: "Voici ce dont vous aurez besoin :"

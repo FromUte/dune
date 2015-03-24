@@ -66,7 +66,7 @@ fr:
         goal: 'Budget du projet'
         headline: 'Résumé'
         organization_type: "Type d'organisation"
-        about: "L'histoire"
+        about: "Expliquez votre situation"
         expires_at: 'Durée'
         online_days: 'Durée en ligne'
         video_url: 'Vidéo URL'
@@ -81,9 +81,9 @@ fr:
         address_state: 'Région'
         budget: 'Détail du budget'
         tag_list: 'Mots clés'
-        street_address: 'Adresse de la rue'
+        street_address: 'Adresse, rue'
         new:
-          category_id: 'Catégorie du projet'
+          category_id: 'Civilité'
       contribution:
         new:
           anonymous: 'Facultatif: réaliser un prêt anonyme.'
@@ -126,5 +126,5 @@ fr:
       user:
         update: 'Enregistrer les modifications'
       project:
-        create: 'Soumettez votre projet'
+        create: 'Décrivez votre projet'
         update: 'Mettez à jour votre projet'

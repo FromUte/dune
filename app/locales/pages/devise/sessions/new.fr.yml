@@ -2,7 +2,7 @@ fr:
   devise:
     sessions:
       new:
-        no_account_html: "Vous n'êtes pas encore monté sur notre dune d'investisseurs ? <strong>%{link}</strong>"
+        no_account_html: "Vous n'êtes pas encore monté sur notre Dune ?<br /> <strong>%{link}</strong>"
         titles:
           site: "S'identifier sur Dune"
           header: "S'identifier"

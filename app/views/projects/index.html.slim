@@ -1,11 +1,93 @@
 - content_for :title, t(".title").html_safe
 
 .home-page
-  header.hero[ data-image-url=image_path('home-hero-beta.jpg') ]
+  header.hero[ data-image-url=image_path('home-hero.jpg') ]
     .row
       .small-12.medium-9.medium-centered.columns.text-center
         h2 = t('.hero.title')
-        h3.subtitle.text-center = t('.hero.subtitle')
+        /h4.subtitle.text-center = t('.hero.subtitle')
+        h3.subtitle.text-center = t('.hero.subtitle1')
+        h3.subtitle.text-center = t('.hero.subtitle2')
+  .white
+    section.steps
+      .row
+        - if channel
+          - steps = channel.start
+        - else
+          - steps = OpenStruct.new first_step_icon: 'et-heart', first_step_title: t('.steps.first.title'), first_step_description: t('.steps.first.description'),
+                                   second_step_icon: 'et-lock', second_step_title: t('.steps.second.title'), second_step_description: t('.steps.second.description'),
+                                   third_step_icon: 'et-users', third_step_title: t('.steps.third.title'), third_step_description: t('.steps.third.description')
+
+        - for step in [:first, :second, :third]
+          .large-4.medium-4.columns
+            .large-11.columns.large-centered.rounded-top
+              .step
+                i[class="icon-#{steps.send("#{step}_step_icon")}"]
+                h5 = steps.send("#{step}_step_title")
+                p = steps.send("#{step}_step_description")
+  .row
+    .large-10.columns.large-centered
+      hr
+  section.what
+    .row
+      .large-12.columns
+        h2 = t('.what.title')
+        h3 = t('.what.titleSecond')
+      .large-6.medium-6.columns
+        .large-10.columns.large-centered
+          i.icon-fa-key
+          h5 = t('.what.proprietaire')
+          ol
+            li Je vends mon bien sans déménager et règle un loyer au porteur Dune.
+            li Mon bien est évalué par un professionnel et garantie sans décote annoncée.
+            li L’argent de la vente me permet de solder mes dettes, de faire lever mes fichages bancaires ou de financer un projet personnel.
+            li Mon équilibre financier retrouvé, je rachète mon bien grâce à la faculté de rachat certifié devant notaire, dans le délai et au prix convenu dès la vente initiale.
+        = link_to 'Etude gratuite', start_path, class: 'button'
+      .large-6.medium-6.columns
+        .large-10.columns.large-centered
+          i.icon-fa-eur
+          h5 = t('.what.investisseur')
+          ol
+            li J’investis à partir de 10.000€, seul ou avec d’autres Porteurs, et deviens propriétaire d’un bien immobilier immédiatement loué au précédent propriétaire.
+            li Je perçois des loyers mensuels, représentant le rendement de mon investissement.
+            li Je revends le bien au propriétaire initial, dans le délai prévu et au prix convenu, et retrouve mon capital que je peux de nouveau investir.
+            li Un capital garantie, un rendement de 5%, une action solidaire.
+        = link_to 'Parcourir les investissements', discover_path, class: 'button'
+      .large-12.columns
+        h3 = t('.what.titleThird')
+  .row
+    .large-10.columns.large-centered
+      hr
+
+  /section.who
+  /  .row
+  /    .large-12.columns
+  /      h2 = t('.who.title')
+  /    .large-6.medium-6.columns
+  /      .large-10.columns.large-centered
+  /        i.icon-fa-building
+  /        h5 = t('.who.local-governments')
+  /    .large-6.medium-6.columns
+  /      .large-10.columns.large-centered
+  /        i.icon-fa-home
+  /        h5 = t('.who.neighborhood-organizations')
+  /  .large-11.columns.large-centered
+  /    .row
+  /      .large-12.columns
+  /        p = t('.who.description').html_safe
+  /        ul
+  /          li = t('.who.description1')
+  /          li = t('.who.description2')
+  /          li = t('.who.description3')
+  /          li = t('.who.description4')
+  /          li = t('.who.description5')
+  /          li = t('.who.description6')
+  /          li = t('.who.description7')
+  /          li = t('.who.description8')
+  /          li = t('.who.description9')
+  .row
+    .large-10.columns.large-centered
+      hr
 
   section.projects
     .row
