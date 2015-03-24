@@ -6,7 +6,7 @@ fr:
       send_instructions: "Vous recevrez un e-mail de confirmation sous peu."
       send_paranoid_instructions: "Si votre adresse électronique existe dans notre base de données, vous recevrez un e-mail avec les instructions de confirmation sous peu."
     failure:
-      already_authenticated: "Vous êtes déjà connecté."
+      already_authenticated: "Vous êtes connecté."
       inactive: "Votre compte n'est pas encore activé."
       invalid: "E-mail ou mot de passe invalide."
       locked: "Votre compte est verrouillé. Contacter nous afin que l'on puisse le débloquer ensemble"
