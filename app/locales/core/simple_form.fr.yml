@@ -65,7 +65,7 @@ fr:
         permalink: 'Lien permanent'
         goal: 'Budget du projet'
         headline: 'Résumé'
-        organization_type: "Type d'organisation"
+        organization_type: "Statut du/des propriétaires"
         about: "Expliquez votre situation"
         expires_at: 'Durée'
         online_days: 'Durée en ligne'

@@ -8,7 +8,7 @@ module Project::OrganizationType
       end
 
       def organization_types
-        [:sarl, :sa, :eurl, :sas, :municipality, :neighborhood_organization, :registered_nonprofit, :public_private_partnership, :other, :not_sure]
+        [:celibataire, :mariee, :pacs, :indivision, :sci, :municipality, :neighborhood_organization, :registered_nonprofit,:other, :not_sure]
       end
     end
   end

@@ -25,14 +25,14 @@ fr:
           description: 'De combien avez-vous besoin pour réaliser votre projet ? Merci d’entrer un numéro sans virgule.'
         location:
           title: 'Ville, région'
-          description: 'Dans quelle ville votre projet prendra forme ?'
+          description: 'Où est situé votre bien ?'
         headline:
           title: 'Résumé'
-          description: 'Décrivez votre projet en 140 caractères.'
+          description: 'Décrivez votre situation en 140 caractères.'
         about:
           title: "Votre histoire"
-          description: "Parlez nous de votre projet. Pourquoi avez-vous besoin de l'aide de la communauté ?"
+          description: "Parlez nous de votre besoin. Pourquoi avez-vous besoin de l'aide de la communauté ?"
         organization_type:
-          title: "Type d'organisation"
-          description: "S'il vous plaît, sélectionnez le type qui décrit le mieux l'entité qui recevra les fonds."
+          title: "Statut du/des propriétaires"
+          description: "S'il vous plaît, sélectionnez le statuts du/des propriétaires."
       accept_terms_html: 'En soumettant votre projet, vous acceptez les %{link}.'
