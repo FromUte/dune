@@ -145,7 +145,7 @@ describe Project::StateMachineHandler do
 
         context "when campaign type is flexible" do
           before do
-            main_project.update_attributes campaign_type: 'flexible'
+            main_project.update_attributes campaign_type: 'public'
             subject.finish
           end
 
@@ -170,7 +170,7 @@ describe Project::StateMachineHandler do
 
         context "when project is flexible" do
           before do
-            main_project.update_attributes campaign_type: 'flexible'
+            main_project.update_attributes campaign_type: 'public'
             subject.finish
           end
 
@@ -204,7 +204,7 @@ describe Project::StateMachineHandler do
 
         context "when project is flexible" do
           before do
-            subject.update_attributes campaign_type: 'flexible'
+            subject.update_attributes campaign_type: 'public'
             subject.finish
           end
 

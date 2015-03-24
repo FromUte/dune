@@ -2,9 +2,9 @@ module Project::StateMachineHandler
   extend ActiveSupport::Concern
 
   included do
-     state_machine :campaign_type, initial: :flexible do
-      state :all_or_none
-      state :flexible
+     state_machine :campaign_type, initial: :public do
+      state :private
+      state :public
     end
 
     state_machine :state, initial: :draft do

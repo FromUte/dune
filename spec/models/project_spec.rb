@@ -466,7 +466,7 @@ describe Project do
   end
 
   describe "campaign types" do
-    let(:project) { create(:project, campaign_type: 'all_or_none') }
+    let(:project) { create(:project, campaign_type: 'public') }
 
     describe "#all_or_none?" do
       subject { project.all_or_none? }
@@ -477,7 +477,7 @@ describe Project do
     end
 
     describe "#flexible?" do
-      let(:project) { create(:project, campaign_type: 'flexible') }
+      let(:project) { create(:project, campaign_type: 'private') }
 
       subject { project.flexible? }
 

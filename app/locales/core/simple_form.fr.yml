@@ -59,7 +59,7 @@ fr:
               email: 'E-mail'
       project:
         name: 'Titre du projet'
-        campaign_type: 'Type de projet'
+        campaign_type: 'Type de campagne'
         category_id: 'Catégorie'
         category: 'Catégorie'
         permalink: 'Lien permanent'
@@ -105,7 +105,7 @@ fr:
           hash_tag: 'Un hashtag concis qui peut être ajouté aux tweets et mises à jour Facebook.'
           site: "Collez le lien complet du site de votre projet, si vous en possédez un."
           foundation_widget: "Si vous voulez utiliser le nouveau widget d'intégration, cochez la case !"
-          campaign_type: "Tout ou rien : les fonds ne sont versés que si l'objectif est atteint avant la date limite. <br> Chaque euro compte : gardez les fonds, que l'objectif soit atteint ou non."
+          campaign_type: "Public : Vos informations sont publiées et les personnes inscrites peuvent les consulter. <br> Privée : Vos informations sont confidentielles, seules les informations financières, nécessaires aux investisseurs sont publiées."
           budget: 'Il est nécessaire de présenter un business plan cohérent à vos prêteurs afin de les rassurer. Expliquez clairement comment les fonds seront utilisés.'
           permalink: 'Généré automatiquement. Vous pourrez modifier ce champ plus tard.'
           headlinet: "Titre de l'astuce"
