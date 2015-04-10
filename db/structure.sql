@@ -203,6 +203,16 @@ CREATE TABLE projects (
     sent_to_analysis_at timestamp without time zone,
     organization_type character varying(255),
     street_address character varying(255),
+    pret_immo numeric DEFAULT 0 NOT NULL,
+    autre_dette numeric DEFAULT 0 NOT NULL,
+    pret_conso numeric DEFAULT 0 NOT NULL,
+    type_estimation text DEFAULT 'client'::text,
+    nature_bien text,
+    descriptif_bien text,
+    question_vente text,
+    question_rachat text,
+    loyer text,
+    mensualite text,
     CONSTRAINT projects_about_not_blank CHECK ((length(btrim(about)) > 0)),
     CONSTRAINT projects_headline_length_within CHECK (((length(headline) >= 1) AND (length(headline) <= 140))),
     CONSTRAINT projects_headline_not_blank CHECK ((length(btrim(headline)) > 0))
@@ -1741,6 +1751,48 @@ ALTER SEQUENCE projects_id_seq OWNED BY projects.id;
 
 
 --
+-- Name: proprietaires; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE proprietaires (
+    id integer NOT NULL,
+    project_id integer,
+    nom text,
+    prenom text,
+    date_naissance date,
+    lieu_naissance text,
+    situation_famille text DEFAULT 'celibataire'::text,
+    phone_mobile text,
+    profession text,
+    anciennete_profession text,
+    salaire_net integer,
+    type_contrat text,
+    autres_revenus integer,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL
+);
+
+
+--
+-- Name: proprietaires_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE proprietaires_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: proprietaires_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE proprietaires_id_seq OWNED BY proprietaires.id;
+
+
+--
 -- Name: recommendations; Type: VIEW; Schema: public; Owner: -
 --
 
@@ -2270,6 +2322,13 @@ ALTER TABLE ONLY projects ALTER COLUMN id SET DEFAULT nextval('projects_id_seq':
 -- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
+ALTER TABLE ONLY proprietaires ALTER COLUMN id SET DEFAULT nextval('proprietaires_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
 ALTER TABLE ONLY rewards ALTER COLUMN id SET DEFAULT nextval('rewards_id_seq'::regclass);
 
 
@@ -2536,6 +2595,14 @@ ALTER TABLE ONLY project_totals
 
 ALTER TABLE ONLY projects
     ADD CONSTRAINT projects_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: proprietaires_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY proprietaires
+    ADD CONSTRAINT proprietaires_pkey PRIMARY KEY (id);
 
 
 --
@@ -2941,6 +3008,13 @@ CREATE INDEX index_projects_on_user_id ON projects USING btree (user_id);
 
 
 --
+-- Name: index_proprietaires_on_project_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE INDEX index_proprietaires_on_project_id ON proprietaires USING btree (project_id);
+
+
+--
 -- Name: index_rewards_on_project_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -3321,6 +3395,14 @@ ALTER TABLE ONLY project_totals
 
 
 --
+-- Name: fk_proprietaires_project_id; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY proprietaires
+    ADD CONSTRAINT fk_proprietaires_project_id FOREIGN KEY (project_id) REFERENCES projects(id);
+
+
+--
 -- Name: fk_taggings_project_id; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -3436,7 +3518,7 @@ ALTER TABLE ONLY updates
 -- PostgreSQL database dump complete
 --
 
-SET search_path TO public, pg_catalog;
+SET search_path TO "$user",public;
 
 INSERT INTO schema_migrations (version) VALUES ('20121226120921');
 
@@ -3941,4 +4023,6 @@ INSERT INTO schema_migrations (version) VALUES ('20141014002211');
 INSERT INTO schema_migrations (version) VALUES ('20141014002212');
 
 INSERT INTO schema_migrations (version) VALUES ('20141105195820');
+
+INSERT INTO schema_migrations (version) VALUES ('20150324172624');
 
