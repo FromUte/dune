@@ -3,7 +3,7 @@ class ProjectDecorator < Draper::Decorator
   include Draper::LazyHelpers
 
   def remaining_text
-    pluralize_without_number(time_to_go[:time], I18n.t('words.remaining_singular'), I18n.t('words.remaining_plural'))
+    pluralize_without_number(time_to_go[:time], I18n.t('words.remaininge_singular'), I18n.t('words.remaininge_plural'))
   end
 
   def time_to_go

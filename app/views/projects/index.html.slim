@@ -32,33 +32,47 @@
     .row
       .large-12.columns
         h2 = t('.what.title')
+        h4 Une idée solidaire, un concept social, un cadre légal
+      .row
+        .large-10.columns.large-centered
+          hr
+        h4 Éviter la saisie immobilière, lever votre interdit bancaire, diminuer vos mensualités.
+        h4 Le financement participatif vous aide à sauvegarder votre patrimoine et apurer vos dettes
+        p
+          ' Le dispositif Dune repose sur la loi de vente avec faculté de rachat ou vente à réméré régi par
+          a target='_blank' title='loi vente remere' href="http://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=7A9CB9DB7E21315C6C6DA588CC55D08C.tpdila08v_1?idArticle=LEGIARTI000020616218&cidTexte=LEGITEXT000006070721&categorieLien=id&dateTexte=20150403" L'ARTICLE 1659 DU CODE CIVIL
+      .row
+        .large-10.columns.large-centered
+          hr
         h3 = t('.what.titleSecond')
+
       .large-6.medium-6.columns
         .large-10.columns.large-centered
           i.icon-fa-key
-          h5 = t('.what.proprietaire')
+          h3 = t('.what.proprietaire')
           ol
-            li Je vends mon bien sans déménager et règle un loyer au porteur Dune.
-            li Mon bien est évalué par un professionnel et garantie sans décote annoncée.
-            li L’argent de la vente me permet de solder mes dettes, de faire lever mes fichages bancaires ou de financer un projet personnel.
-            li Mon équilibre financier retrouvé, je rachète mon bien grâce à la faculté de rachat certifié devant notaire, dans le délai et au prix convenu dès la vente initiale.
-        = link_to 'Etude gratuite', start_path, class: 'button'
+            li J'ai contracté trop de dettes, aucune solution financière ne peut me restructurer, je risque la saisie immobilière. Ma famille est en danger.
+            li Je vends mon bien sans déménager et règle une indémnité d'occupation aux porteur Dune pour une durée maximale de 5ans.
+            li Mon bien est évalué par un professionnel et garantie sans décote annoncée. Un notaire garantie le cadre de la transaction.
+            li L’argent de la vente me permet d'apurer mes dettes. Je lève mes fichages et interdits bancaires. Je rétablie une situation saine.
+            li Mon équilibre financier retrouvé, je rachète mon bien au prix de vente initial grâce à la VFR ou je profite de la hausse du marché immobilier pour réaliser une plus-value.
+          = link_to 'Etude gratuite', start_path, class: 'button'
       .large-6.medium-6.columns
         .large-10.columns.large-centered
           i.icon-fa-eur
-          h5 = t('.what.investisseur')
+          h3 = t('.what.investisseur')
           ol
-            li J’investis à partir de 10.000€, seul ou avec d’autres Porteurs, et deviens propriétaire d’un bien immobilier immédiatement loué au précédent propriétaire.
-            li Je perçois des loyers mensuels, représentant le rendement de mon investissement.
-            li Je revends le bien au propriétaire initial, dans le délai prévu et au prix convenu, et retrouve mon capital que je peux de nouveau investir.
-            li Un capital garantie, un rendement de 5%, une action solidaire.
-        = link_to 'Parcourir les investissements', discover_path, class: 'button'
-      .large-12.columns
-        h3 = t('.what.titleThird')
-  .row
+            li Je souhaite investir mon épargne dans un dispositif solidaire et sociale. Mes investissements sont utiles, garantis et attractifs.
+            li J’investis à partir de 1.000€, sur une durée maximale de 5 ans. Je deviens investisseur participatif et maintient une famille dans son lieu d'habitation.
+            li Mon épargne est garantie par la valeur du bien et mes intérêts par l'indemnité d'occupation notifiée dans l'acte notarié.
+            li Un capital garantie, un rendement de 5% minimum, une action solidaire, une famille à l'équilibre budgétaire.
+            li Le bien est revendu au propriétaire initial, dans le délai prévu et au prix convenu. Je retrouve mon capital de départ que je peux de nouveau investir.
+            br
+          = link_to 'Parcourir les investissements', discover_path, class: 'button'
     .large-10.columns.large-centered
       hr
-
+    h3 = t('.what.titleThird')
+    = link_to 'Informations', start_path, class: 'button'
   /section.who
   /  .row
   /    .large-12.columns

@@ -468,8 +468,8 @@ describe Project do
   describe "campaign types" do
     let(:project) { create(:project, campaign_type: 'public') }
 
-    describe "#all_or_none?" do
-      subject { project.all_or_none? }
+    describe "#private?" do
+      subject { project.private? }
 
       context "when project is new" do
         it { should be_true }

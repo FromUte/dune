@@ -16,22 +16,22 @@
                   = t('.to_be_matched_by')
                   br/
                   = @project.matches.active.map { |m| m.user.display_name }.uniq.to_sentence
-              .who-pay-fees
-                = check_box_tag 'pay_payment_fees', 1, true
-                = label_tag 'pay_payment_fees', t('.i_want_pay_fees')
-                - if browser.mobile? || browser.tablet?
-                  = link_to '#', class: 'fees-info-button', data: { reveal_id: 'pay-fees-modal' } do
-                    i.icon-et-info-circled
-
-                  #pay-fees-modal.reveal-modal.small
-                    a.close-reveal-modal ×
-                    p = t('.tooltip-text', project_name: @project.name).html_safe
-                - else
-                  .custom-tooltip
-                    = link_to '#', class: 'fees-info-button' do
-                      i.icon-et-info-circled
-                    .tooltip-content.hide
-                      p = t('.tooltip-text', project_name: @project.name).html_safe
+              /.who-pay-fees
+              /  = check_box_tag 'pay_payment_fees', 1, true
+              /  = label_tag 'pay_payment_fees', t('.i_want_pay_fees')
+              /  - if browser.mobile? || browser.tablet?
+              /    = link_to '#', class: 'fees-info-button', data: { reveal_id: 'pay-fees-modal' } do
+              /      i.icon-et-info-circled
+              /
+              /    #pay-fees-modal.reveal-modal.small
+              /      a.close-reveal-modal ×
+              /      p = t('.tooltip-text', project_name: @project.name).html_safe
+              /  - else
+              /    .custom-tooltip
+              /      = link_to '#', class: 'fees-info-button' do
+              /        i.icon-et-info-circled
+              /      .tooltip-content.hide
+              /        p = t('.tooltip-text', project_name: @project.name).html_safe
 
 
   .row

@@ -43,7 +43,7 @@ class UserPolicy < ApplicationPolicy
   def additional_user_attributes_white_list
     attrs = [:location, :current_password, :password]
     attrs += organization_attributes
-    attrs += channel_attributes if record.channel?
+    #attrs += channel_attributes if record.channel?
     attrs += [investment_prospect_attributes: [:value]]
     attrs
   end

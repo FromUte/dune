@@ -1,5 +1,6 @@
 nav.tabs[data-target-container=".project-page section.content"]
   ul
+    li = tab_link_to t('.proprietaires'), project_proprietaires_path(@project) if @project.proprietaires.any? || policy(@project).update?
     li = tab_link_to t('.about'), project_path(@project)
 
     - if policy(@project).update? || @project.updates.size > 0

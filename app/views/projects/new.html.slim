@@ -8,14 +8,33 @@
         h5 = t('.joyride.start.title')
         p = t('.joyride.start.description')
 
-      - joyride = [{id: 'project_category_id',            name: :category},
-                   {id: 'project_name',                   name: :name},
+      - joyride = [{id: 'project_user_name',                      name: :name_user},
+                   {id: 'project_user_date_naissance',         name: :date_naissance},
+                   {id: 'project_user_lieu_naissance',            name: :lieu_naissance},
+                   {id: 'project_user_situation_famille',         name: :situation_famille},
+                   {id: 'project_user_phone_number',              name: :phone_number},
+                   {id: 'project_user_phone_mobile',              name: :phone_mobile},
+                   {id: 'project_user_profession',                name: :profession},
+                   {id: 'project_user_anciennete_profession',     name: :anciennete_profession},
+                   {id: 'project_user_type_contrat',              name: :type_contrat},
+                   {id: 'project_user_salaire_net',               name: :salaire_net},
+                   {id: 'project_user_autres_revenus',            name: :autres_revenus},
+                   {id: 'project_category_id',            name: :category},
+                   {id: 'project_organization_type',      name: :organization_type},
+                   {id: 'project_name',                   name: :name_project},
                    {id: 'project_campaign_type',          name: :campaign_type},
                    {id: 'project_goal',                   name: :goal},
-                   {id: 'project_location',               name: :location},
+                   {id: 'project_type_estimation',                   name: :type_estimation},
+                   {id: 'project_nature_bien',                   name: :nature_bien},
+                   {id: 'project_descriptif_bien',                   name: :descriptif_bien},
+                   {id: 'project_location',                   name: :location},
+                   {id: 'project_pret_immo',              name: :pret_immo},
+                   {id: 'project_pret_conso',              name: :pret_conso},
+                   {id: 'project_autre_dette',              name: :autre_dette},
                    {id: 'project_headline',               name: :headline},
-                   {id: 'project_about',                  name: :about},
-                   {id: 'project_organization_type',      name: :organization_type}]
+                   {id: 'project_about',               name: :about},
+                   {id: 'project_question_vente',               name: :question_vente},
+                   {id: 'project_question_rachat',                  name: :question_rachat}]
 
       - for joy in joyride
         li data-id=joy[:id] data-text=t('.joyride.next')
@@ -32,7 +51,26 @@
         .row
           .large-10.small-11.columns.large-centered.small-centered
             = simple_form_for @project do |f|
+              /h3 = t('.titles.part_civil')
+              /= f.fields_for @project.user do |us|
+                /= us.input :name, as: :string, :readonly => true
+                /= us.label :date_naissance
+                /= us.date_field :date_naissance
+                /= us.input :lieu_naissance, as: :string, maxlength: 100
+                /= us.label :situation_famille
+                /= us.select :situation_famille, [['Célibataire', 'celibataire'],['Marié', 'marie'],['Concubin', 'concubin']]
+                /= us.input :phone_number, as: :string, maxlength: 100
+                /= us.input :phone_mobile, as: :string, maxlength: 100
+                /= us.input :profession, as: :string, maxlength: 100
+                /= us.input :anciennete_profession, as: :string, maxlength: 100
+                /= us.label :type_contrat
+                /= us.select :type_contrat, [['CDI', 'cdi'],['CDD', 'cdd'],['Autre', 'autre']]
+                /= us.input :salaire_net, as: :string, maxlength: 100
+                /= us.input :autres_revenus, as: :string, maxlength: 100
+
+              h3 = t('.titles.part_bien')
               = f.input :category_id, collection: Category.array, selected: @project.category_id, include_blank: false, required: true
+              = f.input :organization_type, as: :select, collection: Project.organization_type_array, prompt: :translate, input_html: { required: true }
               = f.input :name, as: :string, maxlength: 100
               = f.label :campaign_type
               = f.select :campaign_type, [['Publique', 'public'],['Privée', 'private']]
@@ -49,15 +87,58 @@
                 -  if @project.errors[:goal].present?
                   small.error = @project.errors[:goal].to_sentence
 
+              = f.label :type_estimation
+              = f.select :type_estimation, [['Agence immobilière', 'agence'], ['Client', 'client'], ['Notaire', 'notaire']]
+              = f.input :nature_bien, as: :string, maxlength: 100
+              = f.input :descriptif_bien
               = f.input :street_address
 
               .location.location-coordinates.pin-img[data-longitude=@project.longitude data-latitude=@project.latitude data-image-url=image_url('pin.png')]
-                = f.input :location, input_html: { class: 'search-cities-with-google', autocomplete: :off }
+                = f.input :location, input_html: {class: 'search-cities-with-google', autocomplete: :off}
                 .map-canvas
 
+              h3 = t('.titles.part_dette')
+              .input[class="#{'error' if @project.errors[:pret_immo].present?}"]
+                .row.collapse
+                  = f.label :pret_immo
+                  .large-1.small-2.columns
+                    span.prefix €
+                  .large-10.small-8.columns
+                    = f.number_field :pret_immo, class: 'with-prefix with-postfix'
+                  .large-1.small-2.columns
+                    span.postfix .00
+                - if @project.errors[:pret_immo].present?
+                  small.error = @project.errors[:pret_immo].to_sentence
+
+              .input[class="#{'error' if @project.errors[:pret_conso].present?}"]
+                .row.collapse
+                  = f.label :pret_conso
+                  .large-1.small-2.columns
+                    span.prefix €
+                  .large-10.small-8.columns
+                    = f.number_field :pret_conso, class: 'with-prefix with-postfix'
+                  .large-1.small-2.columns
+                    span.postfix .00
+                - if @project.errors[:pret_conso].present?
+                  small.error = @project.errors[:pret_conso].to_sentence
+
+              .input[class="#{'error' if @project.errors[:autre_dette].present?}"]
+                .row.collapse
+                  = f.label :autre_dette
+                  .large-1.small-2.columns
+                    span.prefix €
+                  .large-10.small-8.columns
+                    = f.number_field :autre_dette, class: 'with-prefix with-postfix'
+                  .large-1.small-2.columns
+                    span.postfix .00
+                - if @project.errors[:autre_dette].present?
+                  small.error = @project.errors[:autre_dette].to_sentence
+
+              h3 = t('.titles.part_conseil')
               = f.input :headline, as: :string, maxlength: 140
               = f.input :about
-              = f.input :organization_type, as: :select, collection: Project.organization_type_array, prompt: :translate, input_html: { required: true }
+              = f.input :question_vente
+              = f.input :question_rachat
 
               p.terms = t('.accept_terms_html', link: link_to(t('words.terms'), terms_path, target: :blank))
               = f.button :submit

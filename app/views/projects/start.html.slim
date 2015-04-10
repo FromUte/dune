@@ -28,7 +28,9 @@
                 i[class="icon-#{steps.send("#{step}_step_icon")}"]
                 h5 = steps.send("#{step}_step_title")
                 p = steps.send("#{step}_step_description")
-
+      .row
+        .large-2.columns.large-centered
+        h3 Une réponse instantanée à vos questions
     .row
       .large-10.columns.large-centered
         hr
@@ -54,11 +56,13 @@
               - else
                 p = t('.who.description').html_safe
                 ul
+                  li = t('.who.description0')
                   li = t('.who.description1')
                   li = t('.who.description2')
                   li = t('.who.description3')
                   li = t('.who.description4')
                   li = t('.who.description5')
+                  hr
                   li = t('.who.description6')
                   li = t('.who.description7')
                   li = t('.who.description8')
@@ -67,7 +71,7 @@
               - if channel && channel.application_url
                 = link_to t('.get-started'), channel.application_url, class: 'button large large-5 medium-5 columns large-centered'
               - else
-                = link_to "déposer mon dossier gratuitement", new_project_path, class: 'button large large-5 medium-5 columns large-centered'
+                = link_to "Je dépose mon dossier gratuitement", new_project_path, class: 'button large large-5 medium-5 columns large-centered'
 
               - if channel
                 .row
@@ -85,32 +89,33 @@
       .row
         .large-12.columns
           h2 = t('.work.title')
-          h3 = t('.work.subtitle')
+          //h3 = t('.work.subtitle')
       .row
         .large-4.small-6.columns
           i.icon-fa-group
           h5 = t('.work.team.title')
           p = t('.work.team.description')
         .large-4.small-6.columns
-          i.icon-et-picture
-          h5 = t('.work.imagery.title')
-          p = t('.work.imagery.description')
-        .large-4.small-6.columns
-          i.icon-et-video
-          h5 = t('.work.video.title')
-          p = t('.work.video.description')
+          i.icon-et-link
+          h5 = t('.work.engagement.title')
+          p = t('.work.engagement.description')
         .large-4.small-6.columns
           i.icon-et-book-open
           h5 = t('.work.detailed.title')
           p = t('.work.detailed.description')
-        .large-4.small-6.columns
-          i.icon-fa-gift
-          h5 = t('.work.rewards.title')
-          p = t('.work.rewards.description')
-        .large-4.small-6.columns
-          i.icon-et-link
-          h5 = t('.work.engagement.title')
-          p = t('.work.engagement.description')
+        /.large-4.small-6.columns
+        /  i.icon-et-picture
+        /  h5 = t('.work.imagery.title')
+        /  p = t('.work.imagery.description')
+        /.large-4.small-6.columns
+        /  i.icon-et-video
+        /  h5 = t('.work.video.title')
+        /  p = t('.work.video.description')
+        /.large-4.small-6.columns
+        /  i.icon-fa-gift
+        /  h5 = t('.work.rewards.title')
+        /  p = t('.work.rewards.description')
+
 
   - unless channel
     section.inspiration

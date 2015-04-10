@@ -58,9 +58,7 @@ class ProjectPolicy < ApplicationPolicy
                   :hero_image,    :headline,             :budget,
                   :terms,         :address_neighborhood, :location,
                   :address_city,  :address_state,        :hash_tag,
-                  :site, :tag_list] }
-
-
+                  :site, :tag_list]}
     end
   end
 

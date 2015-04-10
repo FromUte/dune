@@ -8,11 +8,11 @@
           .section-header Champs administration
           = form.input :user_id, required: true
           = form.input :permalink, as: :string
-          = form.input :campaign_type, as: :select, collection: [['Publique', 'public'], ['Privée', 'private']], include_blank: false
           = form.input :foundation_widget, as: :boolean
       .section-header #1. Aperçu du projet
       - if policy(@project).permitted_for?(:name, :update)
         = form.input :name, as: :string
+        = form.input :campaign_type, as: :select, collection: [['Publique', 'public'], ['Privée', 'private']], include_blank: false
       - if policy(@project).permitted_for?(:category, :update)
         = form.association :category, include_blank: false
       - if policy(@project).permitted_for?(:headline, :update)

@@ -31,6 +31,10 @@ module Dune
     config.time_zone = 'Europe/Paris'
     config.active_record.default_timezone = :local
 
+    # if Rails.env.development?
+    # config.action_controller.action_on_unpermitted_parameters = :raise
+    # end
+
     # Do not generate specs for views and requests. Also, do not generate assets.
     config.generators do |g|
       g.javascripts false

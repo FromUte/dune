@@ -3,7 +3,7 @@
     .large-12.columns
       .name
         h3 = @project.name
-    .large-8.medium-8.columns.no-padding-for-small
+    .large-7.medium-7.columns.no-padding-for-small
       .flex-video.widescreen.vimeo
         iframe src="#{@project.display_video_embed_url}" width="636 " height="358" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
       .row.hide-for-medium-down
@@ -13,9 +13,11 @@
           i.icon-et-clock
           = remaining_days(@project)
 
-    .large-4.medium-4.columns
+    .large-5.medium-5.columns.test
       .subtitle
-        h5= t(".subtitle.#{@project.campaign_type}", category_name: link_to(@project.category, discover_path(category: @project.category.to_s.downcase)), city: @project.display_address_formated, author: link_to(@project.user.display_name, user_path(@project.user))).html_safe
+        h5= t(".subtitle.#{@project.campaign_type}", category_name: link_to(@project.category, discover_path(category: @project.category.to_s.downcase)), city: link_to(@project.display_address_formated, user_path(@project.display_address_formated)), author: link_to(@project.user.display_name, user_path(@project.user))).html_safe
+        h5= t(".subtitle.loyer", loyer: @project.loyer)
+        h5= t(".subtitle.mensualite", mensualite: @project.mensualite)
       hr
       .headline
         p = @project.headline
