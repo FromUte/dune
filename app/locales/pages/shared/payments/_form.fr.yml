@@ -2,7 +2,7 @@ fr:
   shared:
     payments:
       form:
-        title: "S'il vous plaît sélectionner un mode de paiement"
+        title: "Nous nous joignons aux propriétaires afin de vous remercier pour votre démarche solidaire"
         payment-method:
           fees: 'Frais :'
           balanced-creditcard:

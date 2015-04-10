@@ -38,8 +38,11 @@ fr:
         start_content:
           start_primary_content: 'Contenu primaire'
           start_secondary_content: 'Contenu secondaire'
-      user:
-        name: 'Nom/prénom'
+      proprietaire:
+        name: 'Nom et prénom'
+        date_naissance: 'Date de naissance'
+        lieu_naissance: 'Ville de naissance'
+        situation_famille: 'Situation familiale'
         email: 'E-mail'
         bio: 'Biographie'
         password: 'Nouveau mot de passe'
@@ -48,6 +51,11 @@ fr:
         new_project: 'Envoyez-moi des e-mails lorsque de nouveaux projets sont ajoutés à dune-investissement'
         profile_type: 'Afficher moi comme (un/une)'
         phone_number: 'Numéro de téléphone'
+        phone_mobile: 'Numéro de téléphone portable'
+        anciennete_profession: 'Ancienneté dans la profession'
+        salaire_net: 'Salaire net annuel'
+        type_contrat: 'Type de contrat de travail'
+        autres_revenus: 'Totaux autres revenus mensuels'
         location: 'Ville, Région'
         address_street: 'Adresse, rue'
         address_neighborhood: 'Nom du quartier'
@@ -58,15 +66,15 @@ fr:
               name: 'Raison sociale'
               email: 'E-mail'
       project:
-        name: 'Titre du projet'
+        name: 'Titre de votre dossier'
         campaign_type: 'Type de campagne'
         category_id: 'Catégorie'
         category: 'Catégorie'
         permalink: 'Lien permanent'
-        goal: 'Budget du projet'
-        headline: 'Résumé'
+        goal: 'Valeur estimée du bien immobilier'
+        headline: 'Résumé de votre dossier'
         organization_type: "Statut du/des propriétaires"
-        about: "Expliquez votre situation"
+        about: "Comment expliquez-vous votre situation actuelle ?"
         expires_at: 'Durée'
         online_days: 'Durée en ligne'
         video_url: 'Vidéo URL'
@@ -75,15 +83,23 @@ fr:
         site: 'Site Web'
         hash_tag: 'Hashtag'
         foundation_widget: 'Utilisez widget de nouvelle entreprise ?'
-        address_neighborhood: "Nom de la zone d'activité"
-        location: 'Ville, Région'
+        address_neighborhood: "Nom du quartier"
+        location: 'Ville'
         address_city: 'Ville'
         address_state: 'Région'
         budget: 'Détail du budget'
         tag_list: 'Mots clés'
         street_address: 'Adresse, rue'
+        type_estimation: "Estimé par"
+        nature_bien: "Nature du bien (maison, appartement, bail commercial)"
+        pret_immo: "Prêt immobilier (CRD + IRA)"
+        autre_dette: "Autre dette"
+        pret_conso: "Prêt consommation (CRD + IRA)"
+        descriptif_bien: "Descriptif du bien (surface, prestations, situation, assainissement)"
+        question_vente: "Pourquoi n'avez-vous pas envisagé de vendre votre bien ?"
+        question_rachat: "Souhaitez vous racheter votre bien par un financement immobilier et dans quelles conditions pensez-vous le faire ?"
         new:
-          category_id: 'Civilité'
+          category_id: "Type de bien"
       contribution:
         new:
           anonymous: 'Facultatif: réaliser un prêt anonyme.'
@@ -98,10 +114,10 @@ fr:
           goal: "Quel est le montant nécessaire à la réalisation de votre projet ? Gardez à l'esprit les frais de dossier de dune. Ne pas mettre de virgule, signe de devise ou décimale."
           first_contributions: "Affin d'atteindre votre but, il est indispensable d'engager vos contacts. Si vous avez déjà un panel de contributeurs sur lesquels vous pouvez compter dès le premier jour listé les ici. Si vous n'en n'avez pas, expliquez qui vous pensez cibler afin de mener à bien votre campagne."
           headline: "Résumez votre projet en 130 caractères. Ce paragraphe sera le premier contact entre la communauté et votre projet. Soyez créatif, clair et direct"
-          name: "Soyez concis et objectif. 8 mots ou moins."
+          name: "Soyez concis. 8 mots ou moins."
           uploaded_image: "Ajouter une image de 500x340 minimum (.jpg ou .png)."
           hero_image: "Ajouter une image de 1600x600 minimum (.jpg or .png)."
-          video_url: "Collez le lien de votre vidéo YouTube ou Viméo. Votre vidéo doit être concise afin de ne pas perdre de prêteur en chemin, mais suffisamment descriptive pour que les prêteurs puissent comprendre clairement votre projet."
+          video_url: "Collez le lien de votre vidéo YouTube ou Viméo. Il n'est pas obligatoire de présenter un vidéo, mais si vous le souhaitez, vous pouvez réaliser une vidéo de votre bien immobilier ou une vidéo familiale, tout dépend de votre envie ou non de vous exposer publiquement."
           hash_tag: 'Un hashtag concis qui peut être ajouté aux tweets et mises à jour Facebook.'
           site: "Collez le lien complet du site de votre projet, si vous en possédez un."
           foundation_widget: "Si vous voulez utiliser le nouveau widget d'intégration, cochez la case !"
@@ -126,5 +142,5 @@ fr:
       user:
         update: 'Enregistrer les modifications'
       project:
-        create: 'Décrivez votre projet'
+        create: 'Soumettre votre projet'
         update: 'Mettez à jour votre projet'

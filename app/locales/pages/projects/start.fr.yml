@@ -1,39 +1,40 @@
 fr:
   projects:
     start:
-      title: "Un moyen solidaire d'épurer vos dettes"
+      title: "Un moyen solidaire d'apurer vos dettes"
       get-started: 'Commencer'
       steps:
         first:
           title: '1. Une situation'
-          description: "La première étape est de décrire votre situation financière. Nous réceptionnerons celle-ci dans la plus grande discrétion."
+          description: "Décrivez votre situation financière et patrimoniale. Nous réceptionnerons celle-ci dans la plus grande discrétion."
         second:
           title: '2. Un cadre sécurisé'
-          description: "Il nous est essentiel de vous fournir un cadre sécurisé via l'expertise d'un notaire et d'un avocat."
+          description: "Il nous est essentiel de vous fournir un cadre sécurisé par une transaction devant notaire et l'expertise d'un avocat."
         third:
           title: "3. Un accompagnement"
-          description: "Nous étudions minutieusement votre besoin dans les 72h afin de vous accompagner et de nous assurer de sa faisabilité."
+          description: "Jamais seul, nous vous accompagnons durant toutes la durée du dispositif. Une étude minutieuse de votre dossier dans les 3 jours."
       who:
         title: 'Vous êtes concernés'
-        local-governments: 'Entrepreneur'
+        local-governments: "Entrepreneurs"
         nonprofits: 'Un besoin'
         neighborhood-organizations: 'Particuliers'
-        description: "Particuliers et chefs d'entreprise peuvent faire appel au système <strong> Dune </strong> afin de dégager des fonds propres ou retrouver un équilibre financier."
+        description: "Particuliers et entrepreneurs peuvent faire appel au dispositif <strong> Dune </strong> afin de dégager de la trésories et retrouver un équilibre financier."
+        description0: "Aucune solution financière ne m'est offerte"
         description1: "J'ai payé au moins 50% de mon patrimoine immobilier"
-        description2: "l'ensemble des dettes ne dépasse pas 50% du patrimoine immobilier"
-        description3: "J'ai des revenus mais plus assez pour toutes mes charges de crédits"
-        description4: "Je souhaite sauver ma résidence principale et éviter la saisie immobilière"
-        description5: "J'ai besoin de temps pour repartir financièrement"
-        description6: "J'accepte de rencontrer un Conseiller dune et discuter de la solution de cession avec faculté de rachat"
-        description7: "J'accepte de monter un dossier réglementaire avec tous les documents juridiques devant avocat"
-        description8: "J'accepte de payer mes indemnités d'occupation aux investisseurs solidaires qui ont acheté mon bien immobilier"
-        description9: "J'accepte d'être suivi pendant toute la durée du processus par un conseiller dune"
+        description2: "Mes dettes ne dépassent pas 50% de mon patrimoine immobilier"
+        description3: "J'ai des revenus insuffisants pour toutes mes charges de crédits"
+        description4: "Je souhaite sauvegarder ma résidence principale et éviter la saisie immobilière"
+        description5: "J'ai besoin d'apurer mes dettes, de lever mon interdit bancaire ou de dégager de la trésorerie"
+        description6: "J'accepte de rencontrer un conseiller Dune et d'étudier la solution de Vente avec Faculté de Rachat"
+        description7: "J'accepte de monter un dossier réglementaire avec tous les documents juridiques validé par un notaire ou un avocat"
+        description8: "J'accepte de payer mes indemnités d'occupation aux investisseurs solidaires qui ont financé mon bien immobilier"
+        description9: "J'accepte d'être accompagné le temps du processus par un conseiller Dune jusqu'au rachat ou la vente de mon bien"
       work:
-        title: 'La réussite de votre campagne dépend de votre engagement.'
-        subtitle: "Voici ce dont vous aurez besoin :"
+        title: "De l'union née l'évolution"
+        subtitle: "Nous sommes à vos cotés"
         team:
           title: 'Une équipe solide'
-          description: "Afin de tirer profit de votre campagne, vous aurez besoin d'une équipe active et engagée soutenue par une bonne organisation et un esprit civique."
+          description: "En nous soumettant votre dossier, vous êtes sûr d'avoir une équipe compétente à vos côtés. "
         imagery:
           title: 'Un rendu sympa'
           description: 'Une image vaut parfois mille mots. Engagez vos futurs prêteurs avec des images qui captent leur attention.'
@@ -41,14 +42,14 @@ fr:
           title: 'Une vidéo bien penser'
           description: 'Une vidéo est le meilleur moyen de présenter votre projet et permet à la communauté d’obtenir un aperçu de votre entreprise.'
         detailed:
-          title: 'Un projet détaillé'
-          description: 'Expliquez votre projet en détail. Plus les prêteurs en savent sur votre projet, votre entreprise, plus ils sont susceptibles de vous prêter une partie de leur épargne.'
+          title: 'Une démarche transparente'
+          description: 'Aucun frais caché. Nous pensons que la transparence est mère de confiance.'
         rewards:
           title: 'Une récompense intéressante'
           description: 'Inciter les prêteurs à investir davantage en offrant des bénéfices personnels ou à vocation caritative.'
         engagement:
-          title: 'Un engagement continu'
-          description: "Restez connecté avec vos prêteurs actuels tout en diffusant des nouveautés sur votre projet. L'engagement est la clé d'une campagne réussie."
+          title: 'Un engagement sécurisant'
+          description: "Des réponses adaptées à vos besoins dans un cadre juridique établi."
       inspiration:
-        title: "Besoin d'inspiration?"
+        title: "Ces personnes nous on fait confiance"
         subtitle: 'Découvrez ces campagnes financées avec succès :'
