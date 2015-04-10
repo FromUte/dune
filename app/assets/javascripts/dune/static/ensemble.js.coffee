@@ -1,8 +1,8 @@
 Dune.Static ?= {}
 
-Dune.Static.Learn =
+Dune.Static.Ensemble =
   init: Backbone.View.extend
-    el: '.learn-page'
+    el: '.ensemble-page'
 
     initialize: ->
       if window.innerWidth < 1000
