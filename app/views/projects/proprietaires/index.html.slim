@@ -1,0 +1,17 @@
+- content_for :page_content do
+  .proprietaires
+    - if policy(@project).update?
+      = render template: 'projects/proprietaires/new'
+
+    .list
+      - if collection.any?
+        - for proprietaire in collection
+          = render 'projects/proprietaires/proprietaire', resource: proprietaire, user: current_user
+
+      - else
+        p = "Aucun propriétaire pour le moment. <br /> Il est important de remplir cette section sans quoi nous ne serons pas en mesure d'étudier correctement votre dossier".html_safe
+
+- if request.xhr?
+  = yield :page_content
+- else
+  = render template: 'projects/show' 

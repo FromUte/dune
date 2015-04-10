@@ -1,0 +1,20 @@
+.row
+  .large-6.medium-7.columns.large-centered
+    h3 Déclaration propriétaire
+    p Ces informations ne seront visibles en ligne que si vous avez sélectionné un type de campagne <span style="text-decoration:underline;">public<span/>.
+    = simple_form_for @project.proprietaires.new, url: project_proprietaires_path(@project) do |form|
+      = form.input :nom, as: :string
+      = form.input :prenom, as: :string
+      = form.label :date_naissance
+      = form.date_field :date_naissance
+      = form.input :lieu_naissance, as: :string, maxlength: 100,  label: 'Lieu de naissance'
+      = form.label :situation_famille
+      = form.select :situation_famille, [['Célibataire', 'celibataire'],['Marié', 'marie'],['Concubin', 'concubin']]
+      = form.input :phone_mobile, as: :string, maxlength: 100, label: 'Téléphone mobile (Jamais visible en ligne)'
+      = form.input :profession, as: :string
+      = form.input :anciennete_profession, as: :string
+      = form.label :type_contrat
+      = form.select :type_contrat, [['CDI', 'cdi'],['CDD', 'cdd'],['Autre', 'autre']]
+      = form.input :salaire_net, as: :string
+      = form.input :autres_revenus, as: :string
+      = form.button :submit, 'Ajouter ce propriétaire'

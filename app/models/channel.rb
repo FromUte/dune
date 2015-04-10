@@ -40,7 +40,7 @@ class Channel < ActiveRecord::Base
     },
     using: {
       tsearch: {
-        dictionary: 'english'
+        dictionary: 'french'
       }
     },
     ignoring: :accents

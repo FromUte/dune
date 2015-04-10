@@ -1,12 +1,12 @@
 = content_for :title, 'Ensemble'
 
-.learn-page
+.ensemble-page
   section.main-section.section-with-hero-header
     = hero_header_tag @presenter, { class: 'text-center' }, @presenter.how_it_works_image do
       header.title-information
         .row
           .small-12.columns
-            h2 Mode d'emploi
+            h2 Une idée
         .row
           .small-12.columns
             strong.subtitle Unissons-nous
@@ -20,16 +20,17 @@
       .row
         .small-12.columns
           p
-            | Chez <strong>Dune investissement</strong> notre mission est de créer le lien entre un besoin et une action solidaire.
-          p Ensemble, développons une économie participative.
+            | Chez <strong>Dune</strong> notre mission est de relier les particuliers en difficulté financière avec une communauté d'épargnant solidaire.
+          p Ensemble, développons une finance solidaire.
       .row.text-center
         .medium-6.columns
-          h3 Épurer vos dettes
-          p Votre patrimoine immobilier vous aide à retrouver un équilibre financier.
+          h3 Apurer vos dettes
+          /p Votre patrimoine immobilier vous aide à retrouver un équilibre financier.
+          p Éviter la saisie immobilière, lever votre interdit bancaire, grâce au financement participatif. Sauvegardez votre patrimoine.
           = link_to 'Déposer un besoin', start_path, class: 'button'
         .medium-6.columns
           h3 Investissez solidaire
-          p Particuliers, fondations, institutionnelles, investissez avec intérêts.
+          p Particuliers, fondations, institutionnelles, investissez avec intérêts dans un projet <br />social.
           = link_to 'Parcourir les besoins', discover_path, class: 'button'
 
   section.main-section.section-with-hero-header
@@ -37,10 +38,10 @@
       header.title-information
         .row
           .small-12.columns
-            h2 Nous-rejoindre
+            h2 Une action
         .row
           .small-12.columns
-            strong.subtitle Évoluons ensemble
+            strong.subtitle Finançons-nous
       .row
         .small-12.columns
           = link_to '#pricing', class: 'expand-section' do
@@ -98,9 +99,9 @@
               h2 Notre équipe
         .row
           .small-12.columns
-            p Nous sommes une équipe de passionnés.
-            p Analystes financiers, architecte du numérique, chefs d’entreprises, et surtout de courageux entrepreneurs.
-            p Notre mission est d’aider les particuliers en difficulté à retrouver un <span style="text-decoration:underline;">équilibre financier</span> et à proposer un financement participatif aux <span style="text-decoration:underline;">risques garantis</span>. Nous aimons notre pays, et pensons que de <cite>l’union des citoyens naitra l’évolution de notre économie</cite>.
+            /p Nous sommes une équipe de passionnés.
+            p Nous sommes des professionnels de la finance, acteur dans l’immobilier et architecte du numérique.
+            p Notre mission est d’aider les particuliers en difficulté à retrouver un <span style="text-decoration:underline;">équilibre financier</span> et à proposer un financement participatif aux <span style="text-decoration:underline;">risques garantis</span>.<br /> Nous pensons que de <cite>l’union des solidarités naitra l’évolution de notre société</cite>.
 
         .team-members
           = render 'team_member', nickname: :pierre, name: 'Pierre Legrand', role: 'Co-fondateur, développeur',
@@ -110,7 +111,7 @@
             description: "12 années dans le financement pour comprendre que l'économie réelle c'est vous",
             social_networks: { linkedin: 'http://linkedin.com/', twitter: 'http://twitter.com/' }
           = render 'team_member', nickname: :sandra, name: 'Sandra Bougaret', role: 'Co-fondateur, Relation professionnelle',
-            description: "Créer l'harmonie entre les idées et les fonds",
+            description: "Créer l'harmonie entre les idées et les personnes",
             social_networks: { linkedin: 'http://linkedin.com/pub/', twitter: 'http://twitter.com/'}
 
   section#supporters.main-section.full-width-row
@@ -121,22 +122,23 @@
             h2 Nos partenaires
         .row
           .small-12.columns
-            strong.subtitle Nous avons des amis étonnants
+            strong.subtitle Des intervenants sécurisants
 
       ul
-        li.supporter.small-6.medium-3.columns
-          = image_tag 'learn/Logo-Sogeco.png', alt: 'Sogeco logo', title: "Cabinet d'expertise comptable"
+        li.supporter.small-6.medium-6.columns
+          = image_tag 'ensemble/Logo-Sogeco.png', alt: 'Sogeco logo', title: "Cabinet d'expertise comptable"
           strong
             /span @KnightFdn
             /span Backed
-        /li.supporter.small-6.medium-3.columns
-        /  = image_tag 'learn/civicx.png', alt: 'The Points of Light Civic Accelerator\'s logo',  title: 'CivicX'
-        /  strong
+        li.supporter.small-6.medium-6.columns
+          = image_tag 'ensemble/logo_N&A.jpg', alt: 'Normand et associes logo',  title: "Cabinet d'avocats"
+          strong
+      ul
         /    span #CivicX
         /    span Accelerated
-        /li.supporter.small-6.medium-3.columns
-        /  = image_tag 'learn/tumml.png', alt: 'Tumml\'s logo',  title: 'TUMML'
-        /  strong
+        li.supporter.small-12.medium-12.large-12.columns
+          = image_tag 'ensemble/notaires.jpg', alt: 'Notaire de france logo',  title: 'Notaire de france'
+          strong
         /    span @TUMML
         /    span Amplified
         /li.supporter.small-6.medium-3.columns
