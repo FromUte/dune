@@ -30,10 +30,6 @@ br
 strong #{resource.key}
 br
 - if resource.is_a?(Contribution)
-  - if resource.project.flexible?
-    br
-    | Le financement de ce projet se termine le <strong>#{l resource.project.expires_at.to_date, format: :long}</strong>. Peu de temps après, #{resource.project.user.display_name} prendra contact avec vous au sujet de la récompense et du suivi du prêt. Ce processus peut prendre quelques jours.
-  - else
     br
     |Si le projet est financé avec succès le <strong>#{l resource.project.expires_at.to_date, format: :long}</strong>, #{resource.project.user.display_name} prendra contact avec vous au sujet de la récompense et du suivi du prêt. Ce processus peut prendre quelques jours.
     |  Si le projet n’atteint pas le but fixé, vous recevrez un e-mail contenant les instructions de remboursement.
