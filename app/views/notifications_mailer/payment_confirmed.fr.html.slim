@@ -30,9 +30,9 @@ br
 strong #{resource.key}
 br
 - if resource.is_a?(Contribution)
-    br
-    |Si le projet est financé avec succès le <strong>#{l resource.project.expires_at.to_date, format: :long}</strong>, #{resource.project.user.display_name} prendra contact avec vous au sujet de la récompense et du suivi du prêt. Ce processus peut prendre quelques jours.
-    |  Si le projet n’atteint pas le but fixé, vous recevrez un e-mail contenant les instructions de remboursement.
+  br
+  |Si le projet est financé avec succès le <strong>#{l resource.project.expires_at.to_date, format: :long}</strong>, #{resource.project.user.display_name} prendra contact avec vous au sujet de la récompense et du suivi du prêt. Ce processus peut prendre quelques jours.
+  |  Si le projet n’atteint pas le but fixé, vous recevrez un e-mail contenant les instructions de remboursement.
   br
 br
 |Si vous souhaitez contacter #{resource.project.user.name}, envoyez lui un e-mail à l'adresse suivante #{mail_to resource.project.user.email}.

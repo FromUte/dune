@@ -4,6 +4,8 @@
   section.row.methods
     p Votre demande d'investissement a bien été sauvegardée.
     p Nous allons vous contacter très prochainement afin de vous accompagner dans les dernières démarches de votre investissement.
+    p Si vous préférez un contact téléphonique, pensez à renseigner votre numéro personnel dans votre profil (ces informations restent strictement confidentielles !)
+    p Modifier #{link_to t('words.profil'), edit_user_path(current_user), target: :blank}
   /  - PaymentEngine.all.each do |engine|
   /    .large-6.columns[class="payment-method-option-#{engine.name}"]
   /      label.payment-method-option

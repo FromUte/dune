@@ -18,7 +18,7 @@ fr:
           successful: "Ce projet a été un succès et a été financé le %{date}"
           waiting_funds: "Ce projet a récemment été clôturé et est financé."
           draft: "Ce projet est en mode brouillon et n’est pas encore ouvert aux prêteurs."
-      contribute: 'Contribuer'
+      contribute: "Proposition d'investissement"
       create_match: 'Créer un Match'
       edit: 'Modifier ma campagne'
       share:
@@ -38,7 +38,7 @@ fr:
     status_bar:
       goal: 'But : %{value}'
       total_contributions: '%{value} duneur'
-      contribute: 'Contribuer'
+      contribute: "Proposition d'investissement"
     tabs:
       about: 'À propos'
       updates: 'Mises à jour'
@@ -56,4 +56,4 @@ fr:
         mensualite: "Le propriétaire du bien réalisera une économie de %{mensualite} € tous les mois"
       so_far: "&nbsp; jusqu'à présent des &nbsp; "
       reached_goal_small_separator_html: '&nbsp; / &nbsp; '
-      contribute: 'Prêter'
+      contribute: "Proposition d'investissement"
