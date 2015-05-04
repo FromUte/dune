@@ -33,7 +33,7 @@ class UserObserver < ActiveRecord::Observer
   end
 
   def welcome_user(user)
-    unless user.email =~ /change-your-email\+[0-9]+@dune-investissement\.fr/
+    unless user.email =~ /change-your-email\+[0-9]+@dune-investissement-solidaire\.fr/
       WelcomeWorker.perform_async(user.id)
     end
   end
