@@ -1,7 +1,7 @@
 Dune::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  Rails.application.routes.default_url_options[:host] = 'dune-investissement-solidaire.fr'
+  Rails.application.routes.default_url_options[:host] = 'www.dune-investissement-solidaire.fr'
 
   # Code is not reloaded between requests.
   config.cache_classes = true
@@ -106,6 +106,6 @@ Dune::Application.configure do
       :user_name => Configuration[:MANDRILL_USERNAME],
       :password  => Configuration[:MANDRILL_APIKEY], # SMTP password is any valid API key
       :authentication => 'plain', # Mandrill supports 'plain' or 'login'
-      :domain => 'dune-investissement-solidaire.fr', # your domain to identify your server when connecting
+      :domain => 'www.dune-investissement-solidaire.fr', # your domain to identify your server when connecting
     }
 end

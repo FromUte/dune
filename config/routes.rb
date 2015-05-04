@@ -4,8 +4,8 @@ Dune::Application.routes.draw do
 
   unless Rails.env.development? || Rails.env.test? || Rails.env.production?
     constraints NonValidSubdomainConstraint do
-      get '/', to: redirect('https://dune-investissement-solidaire.fr')
-      get '/*wildcard', to: redirect('https://dune-investissement-solidaire.fr/%{wildcard}')
+      get '/', to: redirect('https://www.dune-investissement-solidaire.fr')
+      get '/*wildcard', to: redirect('https://www.dune-investissement-solidaire.fr/%{wildcard}')
     end
   end
 
