@@ -33,7 +33,7 @@ class ApplicationController < ActionController::Base
   # Redirect to the appropriate domain i.e. example.com
   def ensure_domain
     unless Rails.env.development?
-    domain_to_redirect_to = 'www.dune-investissement-solidaire.fr'
+    domain_to_redirect_to = 'dune-investissement-solidaire.fr'
     domain_exceptions = ['www.dune-investissement-solidaire.fr','dune-investissement.herokuapp.com']
     should_redirect = !(domain_exceptions.include? request.host)
     new_url = "#{request.protocol}#{domain_to_redirect_to}#{request.fullpath if request.fullpath != '/'}"
