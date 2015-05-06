@@ -34,7 +34,7 @@ class ApplicationController < ActionController::Base
   def ensure_domain
     unless Rails.env.development?
     domain_to_redirect_to = 'dune-investissement-solidaire.fr'
-    domain_exceptions = ['dune-investissement-solidaire.fr','dune-investissement.herokuapp.com']
+    domain_exceptions = ['www.dune-investissement-solidaire.fr','dune-investissement-solidaire.fr','dune-investissement.herokuapp.com']
     should_redirect = !(domain_exceptions.include? request.host)
     new_url = "#{request.protocol}#{domain_to_redirect_to}#{request.fullpath if request.fullpath != '/'}"
     redirect_to new_url, status: :moved_permanently if should_redirect
