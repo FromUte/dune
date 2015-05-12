@@ -50,7 +50,7 @@ gem 'browser'
 
 # Authentication and Authorization
 gem 'omniauth'
-gem 'omniauth-twitter'
+gem 'omniauth-twitter', '1.2.0'
 gem 'omniauth-google-oauth2', '0.2.1'
 gem 'omniauth-linkedin'
 gem 'omniauth-facebook', '1.5.1'

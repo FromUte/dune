@@ -3,7 +3,7 @@ fr:
     contributions:
       new:
         title: "Contribuer à cette campagne"
-        minimum_value: 'Investissez à partir de 1000€'
+        minimum_value: 'Investissez à partir de 5000€'
         subtitle: "Choisissez le montant d'investissement désiré."
         contribute: "Investir dans <strong>%{project_name}</strong>"
         contribution_with_matches: "Votre contribution à <strong>%{project_name}</strong> sera de pair avec %{matchers}"

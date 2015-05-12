@@ -5,7 +5,7 @@ header.contain-to-grid.fixed
         li.name
           h1
             - if Rails.env.production?
-              - url = main_app.root_url(host: Configuration[:base_domain] || request.domain, protocol: 'http')
+              - url = main_app.root_url(host: Configuration[:base_domain] || request.domain, protocol: 'https')
             - else
               - url = main_app.root_url
             = link_to Configuration[:company_name], url

@@ -3,11 +3,11 @@ fr:
     header:
       discover: 'Investir'
       about: 'Ensemble'
-      sign-out: 'Déconnexion Dune'
-      sign-up: "Inscription Dune"
-      sign-in: 'Connexion Dune'
+      sign-out: 'Déconnexion'
+      sign-up: "Inscription"
+      sign-in: 'Connexion'
       my_profile: 'Mon Profil Dune'
-      settings: 'Réglages Dune'
+      settings: 'Réglages'
       my_contributions: 'Mes prêts participatif'
       my_projects: 'Mes projets à réméré'
       dashboard: 'Tableau de bord Dune'
