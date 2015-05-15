@@ -22,6 +22,21 @@ fr:
         facebook: 'http://facebook.com/'
         twitter: 'http://twitter.com/'
         website: 'http://www.'
+    placeholders:
+      user:
+        name: 'nom et prénom'
+        email: 'E-mail'
+        password: 'Mot de passe'
+        current_password: 'Mot de passe actuel'
+        bio: '140 caractères ou moins ...'
+        facebook_url: 'http://facebook.com/'
+        other_url: 'http://www.'
+        linkedin_url: 'http://linkedin.com/in/'
+        twitter_url: 'http://twitter.com/'
+      channel:
+        facebook: 'http://facebook.com/'
+        twitter: 'http://twitter.com/'
+        website: 'http://www.'
     labels:
       contact:
         first_name: 'Prénom'

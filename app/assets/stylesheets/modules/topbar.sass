@@ -1,5 +1,10 @@
 .contain-to-grid.fixed
   -webkit-transform: translateZ(0)
+  padding-bottom: 1px
+
+.contain-to-grid
+  .top-bar
+    max-width: 65em
 
 .top-bar
   margin-bottom: 0
@@ -27,7 +32,9 @@
   .top-bar-section
     .main-menu a:not(.button)
       @media #{$medium}
-        padding: +emCalc(0, 25px)
+        padding: +emCalc(0, 20px)
+      @media #{$small}
+        padding: +emCalc(0, 5px)
 
       i
         color: $topbar-icon-color
@@ -38,7 +45,7 @@
       a
         text-transform: uppercase
       i
-        display: none
+        //display: none
         @media #{$medium}
           display: inline-block
 
