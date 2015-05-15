@@ -1,8 +1,51 @@
 = content_for :title, t('.title')
 .how-it-works-page.static-page
-  .row
-    .large-10.columns.large-centered
-      .title
-        .center-block
-          = image_tag 'schema/Dune_Schema_Explication.jpg', alt: 'comprendre le financement participatif solidaire', title: "schéma financement participatif solidaire" , align: "right"
-          p Notre philosophie est de construire de façon participative un outil de développement au service de votre économie, de l’économie réelle de notre pays, dans le respect le plus strict de vos intérêts, de la réglementation et la déontologie générale.
+  section.main-section.section-with-hero-header
+    /= hero_header_tag @presenter, { class: 'text-center' }, @presenter.how_it_works_image do
+    header.title-information
+      .row
+        .small-12.columns
+          h2 Vendeur
+      .row
+        .small-12.columns
+          strong.subtitle Le processus de vente à réméré
+    .row
+      .small-12.columns
+        = link_to '#how-it-works', class: 'expand-section' do
+          strong.expansion-btn.show-for-large-up[data-alternative-text="Cliquer pour réduire"] Cliquer pour en apprendre plus
+          span.expand-section-icon.icon-fa-chevron-down alt='Aller a comment ca marche'
+
+    #how-it-works.section-content
+      .row
+        .small-12.columns
+          p
+            | Chez <strong>Dune</strong> notre mission est de relier les particuliers en difficulté financière avec une communauté d'épargnant solidaire.
+          p Ensemble, développons une finance solidaire.
+      .row.text-center
+        .medium-6.columns
+          h3 Apurer vos dettes
+          /p Votre patrimoine immobilier vous aide à retrouver un équilibre financier.
+          p Éviter la saisie immobilière, lever votre fichage banque de France, grâce au financement participatif. Sauvegardez votre patrimoine.
+          = link_to("Ouvrir le schéma", image_path( "schema/Dune_Schema.jpg") , :title => "schéma solidaire surendettement", :onclick =>"javascript:(function(ele) { window.open(ele.href, ele.title,'fullscreen=no,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes')})(this); return false;", class: 'button')
+        .medium-6.columns
+          h3 Investissez solidaire
+          p Particuliers, fondations, institutionnelles, investissez avec intérêts dans un projet <br />social.
+          = link_to 'Parcourir les besoins', discover_path, class: 'button'
+
+  section.main-section.section-with-hero-header
+    /= hero_header_tag @presenter, { class: 'text-center' }, @presenter.pricing_image do
+    header.title-information
+      .row
+        .small-12.columns
+          h2 Investisseur
+      .row
+        .small-12.columns
+          strong.subtitle Le processus d'achat participatif
+    .row
+      .small-12.columns
+        = link_to '#pricing', class: 'expand-section' do
+          strong.expansion-btn.show-for-large-up[data-alternative-text="Cliquer pour réduire"] Cliquer pour en apprendre plus
+          span.expand-section-icon.icon-fa-chevron-down alt='Aller à plan de financement'
+
+    #pricing.section-content
+      .row.medium-collapse
