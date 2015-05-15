@@ -24,7 +24,7 @@ fr:
       steps:
         first:
           title: '1. Un investissement solidaire'
-          description: "Placez votre épargne dans un investissement solidaire et garantie grâce au dispositif Dune."
+          description: "Placez votre épargne dans un investissement solidaire et garanti grâce au dispositif Dune."
         second:
           title: '2. Un cadre sécurisé'
           description: "Le dispositif Dune est encadré et sécurisé via l'expertise d'un notaire et d'un avocat."
@@ -48,7 +48,7 @@ fr:
         description9: "Je trouve sérieux d'être suivi pendant toutes la durée du processus par un Conseiller dune"
 
       what:
-        titleSecond: 'Vente avec faculté de rachat (VFR)'
+        titleSecond: 'Financement participatif + Vente à réméré = Dune'
         title: "Le dispositif Dune qu'est ce que c'est ?"
         titleThird: "Entrepreneur le dispositif Dune est adapté à votre besoin de trésorerie"
         proprietaire: 'Propriétaire'

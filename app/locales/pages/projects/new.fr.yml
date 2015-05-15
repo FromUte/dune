@@ -59,10 +59,10 @@ fr:
           description: "Souhaitez-vous rester anonyme ? <br /><br/> <strong>Public :</strong> Vos informations personnelles sont visibles par les membres du site. <br /> <strong>Privée :</strong> Vos informations personnelles restent confidentielles."
         goal:
           title: 'Estimation de votre bien immobilier.'
-          description: 'Si une estimation à été faite par un professionnel indiqué là sinon indiquer une valeur approximative nous vous aiderons lors du montage du dossier à définir une estimation exacte.'
+          description: 'Si une estimation a été faite par un professionnel indiquée là sinon indiquer une valeur approximative nous vous aiderons lors du montage du dossier à définir une estimation exacte.'
         pret_immo:
           title: 'CRD plus IRA du crédit immobilier.'
-          description: "CRD: capital restant dû, IRA: Indémnité de remboursement anticipé. Il s'agit du montant total, restant à payer sur votre bien immobilier. Le calcul est le suivant > (montantMensualité * nombreMoisRestant = crd) + (ira)"
+          description: "CRD: capital restant dû, IRA: Indémnité de remboursement anticipé. Il s'agit du montant total, restant à payer sur votre bien immobilier. Le calcul est le suivant > capital restant dû + IRA (6 mois d'intérêts à la date du remboursement) "
         autre_dette:
           title: 'CRD plus IRA des dettes autres que votre crédit immobilier.'
           description: "Indiquez la somme total de vos autres dettes"
@@ -82,14 +82,14 @@ fr:
           title: "Par qui a été évalué le bien ?"
           description: ""
         nature_bien:
-          title: "S'agit-il d'un appartement, d'une maison, d'un bail commercial"
+          title: "S'agit-il d'un appartement, d'une maison, de locaux professionnels détenus en nom propre ou SCI Familiale"
           description: ""
         descriptif_bien:
           title: "Décrivez votre bien"
           description: "Donnez des indications sur la surface habitable, la situation, le type d'assainissement, type de chauffage, etc."
         pret_conso:
           title: "Avez vous un pret consommation ?"
-          description: "Indiquez le montant total de vos prêts consomation"
+          description: "Indiquez le montant total de vos prêts consommations"
         question_vente:
           title: "Expliquez nous"
           description: "Expliquez nous au mieux votre situation afin que l'on puisse vous conseiller de la meilleure des manières"

@@ -36,15 +36,22 @@
       .row
         .large-10.columns.large-centered
           hr
-        h4 Éviter la saisie immobilière, lever votre interdit bancaire, diminuer vos mensualités.
+        h4 STOP à la saisie immobilière !
+        h4 STOP aux situations de surendettement à couts prohibitifs !
         h4 Le financement participatif vous aide à sauvegarder votre patrimoine et apurer vos dettes
         p
           ' Le dispositif Dune repose sur la loi de vente avec faculté de rachat ou vente à réméré régi par
           a target='_blank' title='loi vente remere' href="http://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=7A9CB9DB7E21315C6C6DA588CC55D08C.tpdila08v_1?idArticle=LEGIARTI000020616218&cidTexte=LEGITEXT000006070721&categorieLien=id&dateTexte=20150403" L'ARTICLE 1659 DU CODE CIVIL
+        .large-6.medium-6.columns
+          .large-10.columns.large-centered
+            = link_to "Exemple de compréhension", how_it_works_path, class: 'button'
+        .large-6.medium-6.columns
+          .large-10.columns.large-centered
+            = link_to 'Schéma de compréhension', how_it_works_path, class: 'button'
       .row
         .large-10.columns.large-centered
           hr
-        h3 = t('.what.titleSecond')
+        /h3 = t('.what.titleSecond')
 
       .large-6.medium-6.columns
         .large-10.columns.large-centered
@@ -52,10 +59,10 @@
           h3 = t('.what.proprietaire')
           ol
             li J'ai contracté trop de dettes, aucune solution financière ne peut me restructurer, je risque la saisie immobilière. Ma famille est en danger.
-            li Je vends mon bien sans déménager et règle une indemnité d'occupation aux porteurs Dune pour une durée maximale de 5ans.
+            li Je vends mon bien sans déménager et règle une indemnité d'occupation à la foncière Dune Solidaire pour une durée maximale de 5ans.
             li Mon bien est évalué par un professionnel et garanti sans décote annoncée. Un notaire garanti le cadre de la transaction.
-            li L’argent de la vente me permet d'apurer mes dettes. Je lève mes fichages et interdits bancaires. Je rétablis une situation saine.
-            li Mon équilibre financier retrouvé, je rachète mon bien au prix de vente initial grâce à la VFR ou je profite de la hausse du marché immobilier pour réaliser une plus-value.
+            li L’argent de la vente me permet d'apurer mes dettes. Je lève mes fichages banque de France. Je rétablis une situation saine.
+            li Mon équilibre financier retrouvé, je rachète mon bien au prix de vente initial grâce à la VFR ou je profite de la hausse du marché immobilier pour réaliser une plus-value en le vendant.
           = link_to 'Etude gratuite', start_path, class: 'button'
       .large-6.medium-6.columns
         .large-10.columns.large-centered
@@ -66,7 +73,7 @@
             li J’investis à partir de 5.000€, sur une durée maximale de 5 ans. Je deviens investisseur participatif et maintiens une famille dans son lieu d'habitation.
             li Mon épargne est garantie par la valeur du bien et mes intérêts par l'indemnité d'occupation notifiée dans l'acte notarié.
             li Un capital garanti, un rendement de 5% minimum, une action solidaire, une famille à l'équilibre budgétaire.
-            li Le bien est revendu au propriétaire initial, dans le délai prévu et au prix convenu. Je retrouve mon capital de départ que je peux de nouveau investir.
+            li Le bien est revendu au propriétaire initial ou à un tiers, dans le délai prévu et au prix convenu ou du marché pour la vente à un tiers. Je retrouve mon capital de départ que je peux de nouveau investir.
             br
           = link_to 'Parcourir les investissements', discover_path, class: 'button'
     .large-10.columns.large-centered

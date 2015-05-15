@@ -1,7 +1,8 @@
 fr:
   layouts:
     header:
-      discover: 'Investir'
+      discover: 'Découvrir'
+      how_it_works: 'Comprendre'
       about: 'Ensemble'
       sign-out: 'Déconnexion'
       sign-up: "Inscription"

@@ -115,7 +115,7 @@ fr:
         tag_list: 'Mots clés'
         street_address: 'Adresse, rue'
         type_estimation: "Estimé par"
-        nature_bien: "Nature du bien (maison, appartement, bail commercial)"
+        nature_bien: "Nature du bien (maison, appartement, locaux professionnels détenus en nom propre ou SCI Familiale)"
         pret_immo: "Prêt immobilier (CRD + IRA)"
         autre_dette: "Autre dette"
         pret_conso: "Prêt consommation (CRD + IRA)"

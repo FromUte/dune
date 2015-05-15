@@ -29,6 +29,10 @@ header.contain-to-grid.fixed
             = link_to main_app.start_path do
               i.icon-et-paper-plane
               = t('.start')
+          li
+            = link_to main_app.how_it_works_path do
+              i.icon-fa-file-text
+              = t('.how_it_works')
 
         ul.right
           - if user_signed_in?

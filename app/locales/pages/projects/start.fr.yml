@@ -18,15 +18,15 @@ fr:
         local-governments: "Entrepreneurs"
         nonprofits: 'Un besoin'
         neighborhood-organizations: 'Particuliers'
-        description: "Particuliers et entrepreneurs peuvent faire appel au dispositif <strong> Dune </strong> afin de dégager de la trésories et retrouver un équilibre financier."
+        description: "Particuliers et entrepreneurs peuvent faire appel au dispositif <strong> Dune </strong> afin de dégager de la trésorie et retrouver un équilibre financier."
         description0: "Aucune solution financière ne m'est offerte"
         description1: "J'ai payé au moins 50% de mon patrimoine immobilier"
         description2: "Mes dettes ne dépassent pas 50% de mon patrimoine immobilier"
         description3: "J'ai des revenus insuffisants pour toutes mes charges de crédits"
         description4: "Je souhaite sauvegarder ma résidence principale et éviter la saisie immobilière"
-        description5: "J'ai besoin d'apurer mes dettes, de lever mon interdit bancaire ou de dégager de la trésorerie"
+        description5: "J'ai besoin d'apurer mes dettes, de lever mes fichages banque de France ou de dégager de la trésorerie"
         description6: "J'accepte de rencontrer un conseiller Dune et d'étudier la solution de Vente avec Faculté de Rachat"
-        description7: "J'accepte de monter un dossier réglementaire avec tous les documents juridiques validé par un notaire ou un avocat"
+        description7: "J'accepte de monter un dossier réglementaire avec tous les documents juridiques validés par un notaire ou un avocat"
         description8: "J'accepte de payer mes indemnités d'occupation aux investisseurs solidaires qui ont financé mon bien immobilier"
         description9: "J'accepte d'être accompagné le temps du processus par un conseiller Dune jusqu'au rachat ou la vente de mon bien"
       work:
