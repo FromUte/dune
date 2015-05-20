@@ -1,6 +1,6 @@
 $suggested-plan-margin: 25px
-$pricing-table-item-padding: 20px
-$section-content-margin: 15px
+$pricing-table-item-padding: 5px
+$section-content-margin: 5px
 $section-content-margin-medium: 65px
 
 .ensemble-page
@@ -116,6 +116,19 @@ $section-content-margin-medium: 65px
       height: +emCalc(70px)
       margin-bottom: 0
       text-align: center
+  .exemple
+    h5
+      text-align: center
+    p
+      font-size: 85%
+      text-transform: none
+      margin: 10px
+      //background-image: image_url('ensemble/post-it-note-light.png')
+      //background-size: 100%
+      //width: 100%
+      //position: absolute
+      //top: 0
+      //left: 0
   #supporters
     background: $input-bg-color
   .supporter
@@ -148,6 +161,8 @@ $section-content-margin-medium: 65px
 
 #pricing
   padding-top: +emCalc($section-content-margin)
+  h3
+    text-align: center
 
 .pricing-table.suggested-plan li:not(.bullet-item)
   background-color: rgba($primary-color, 0.15)
@@ -230,7 +245,7 @@ $section-content-margin-medium: 65px
     .pricing-table-content
       border: none
     .section-content
-      margin: +emCalc($section-content-margin-medium) 0
+      margin: +emCalc($section-content-margin-medium)/4 0
     .section-with-hero-header
       .section-content
         display: none
@@ -249,4 +264,4 @@ $section-content-margin-medium: 65px
     .team-member .description
       text-align: left
   #pricing
-    padding-top: +emCalc($section-content-margin-medium)
+    padding-top: +emCalc($section-content-margin-medium)/2

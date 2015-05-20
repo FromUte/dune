@@ -111,11 +111,11 @@ fr:
         category: 'Catégorie'
         permalink: 'Lien permanent'
         goal: 'Valeur estimée du bien immobilier'
-        headline: 'Résumé de votre besoin'
+        headline: 'Résumé de votre bien immobilier'
         organization_type: "Statut du/des propriétaires"
-        about: "Comment expliquez-vous votre situation actuelle ?"
+        about: "Décrivez votre situation actuelle"
         expires_at: 'Durée'
-        online_days: 'Durée en ligne'
+        online_days: 'Nombre de jours en ligne'
         video_url: 'Vidéo URL'
         uploaded_image: 'Miniature du projet'
         hero_image: "L'image d'en-tête du projet"
@@ -133,7 +133,7 @@ fr:
         nature_bien: "Nature du bien (maison, appartement, locaux professionnels détenus en nom propre ou SCI Familiale)"
         pret_immo: "Prêt immobilier (CRD + IRA)"
         autre_dette: "Autre dette"
-        pret_conso: "Prêt consommation (CRD + IRA)"
+        pret_conso: "Prêt consommation"
         descriptif_bien: "Descriptif du bien (surface, prestations, situation, assainissement)"
         question_vente: "Pourquoi n'avez-vous pas envisagé de vendre votre bien ?"
         question_rachat: "Souhaitez vous racheter votre bien par un financement immobilier et dans quelles conditions pensez-vous le faire ?"
@@ -147,12 +147,15 @@ fr:
       project:
         edit:
           video_url_edit: "Collez ici l'URL de votre vidéo Vimeo ou Youtube."
-          about: "Racontez nous l'histoire de votre projet. Soyez fin objectif charmant, présenter à vos lecteurs un texte qui les émeut, tout en étant très transparent sur les attentes de votre projet !"
+          about: "Décrivez votre situation. Soyez objectif et clair. (Ses informations restent strictement confidentielles !)"
           category: "Quelle catégorie décrit le mieux votre projet ?"
           expires_at: "Combien de temps va durer votre campagne ? Nos recherches montrent qu'une durée correcte doit être comprise entre 30 et 60 jours."
-          goal: "Quel est le montant nécessaire à la réalisation de votre projet ? Gardez à l'esprit les frais de dossier de dune. Ne pas mettre de virgule, signe de devise ou décimale."
+          goal: "S'il vous plaît, soyez le plus réaliste possible. Une estimation notaire est préférable. Nous réaliserons une expertise approfondie de votre bien à nos frais si votre dossier est réalisable."
+          pret_immo: "Ensemble de votre capital restant dû + indemnité de remboursement anticipé (6 mois d'intérêt) sur votre crédit immobilier"
+          pret_conso: "Ensemble dû de vos dettes en crédit consomation, si existantes"
+          autre_dette: "Ensemble dû de vos dettes en crédit consommation, si existante"
           first_contributions: "Affin d'atteindre votre but, il est indispensable d'engager vos contacts. Si vous avez déjà un panel de contributeurs sur lesquels vous pouvez compter dès le premier jour listé les ici. Si vous n'en n'avez pas, expliquez qui vous pensez cibler afin de mener à bien votre campagne."
-          headline: "Résumez votre projet en 130 caractères. Ce paragraphe sera le premier contact entre la communauté et votre projet. Soyez créatif, clair et direct"
+          headline: "Résumez votre bien en 130 caractères. Ce paragraphe sera le premier contact entre la communauté et votre bien immobilier. Soyez clair et direct"
           name: "Soyez concis. 8 mots ou moins."
           uploaded_image: "Ajouter une image de 500x340 minimum (.jpg ou .png)."
           hero_image: "Ajouter une image de 1600x600 minimum (.jpg or .png)."
@@ -164,10 +167,11 @@ fr:
           budget: 'Il est nécessaire de présenter un business plan cohérent à vos prêteurs afin de les rassurer. Expliquez clairement comment les fonds seront utilisés.'
           permalink: 'Généré automatiquement. Vous pourrez modifier ce champ plus tard.'
           headlinet: "Titre de l'astuce"
-          address_neighborhood: 'Si vous êtes dans un quartier spécifique, préciser le.'
+          address_neighborhood: 'Si vous êtes dans un quartier spécifique, précisez
+           le.'
           address_city: 'La ville dans laquelle votre entreprise est situé.'
           address_state: 'La région dans laquelle votre entreprise est situé.'
-          tag_list: "Ajouter des mots-clés améliore la visibilité de votre projet. Par exemple, ajouter votre domaine d'activité. Commencez à taper les premiers caractères pour afficher une liste de mots-clés existants."
+          tag_list: "Ajouter des mots-clés améliore la visibilité de votre projet. Par exemple, ajouter votre ville, quartier, école à proximité, transport et autres."
       channel:
         image: "Ajouter une image de 600x300 minimum (.jpg or .png)."
       organization:

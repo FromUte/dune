@@ -12,7 +12,7 @@
       .section-header #1. Aperçu du projet
       - if policy(@project).permitted_for?(:name, :update)
         = form.input :name, as: :string
-        = form.input :campaign_type, as: :select, collection: [['Publique', 'public'], ['Privée', 'private']], include_blank: false
+        = form.input :campaign_type, as: :select, collection: [['Public', 'public'], ['Privée', 'private']], include_blank: false
       - if policy(@project).permitted_for?(:category, :update)
         = form.association :category, include_blank: false
       - if policy(@project).permitted_for?(:headline, :update)
@@ -49,18 +49,24 @@
               .image-preview
                 = image_tag(@project.hero_image_url(:blur), size: '220')
       - if policy(@project).permitted_for?(:site, :update)
-        = form.input :site
+        /= form.input :site
       - if policy(@project).permitted_for?(:site, :update)
         = form.input :hash_tag
       .section-header #4. BUDGET & CALENDRIER
       - if policy(@project).permitted_for?(:goal, :update)
         = form.input :goal, as: :integer
       - if policy(@project).permitted_for?(:online_days, :update)
-        = form.input :online_days, as: :integer
-      - if policy(@project).permitted_for?(:budget, :update)
-        = form.input :budget
-      - if policy(@project).permitted_for?(:terms, :update)
-        = form.input :terms
+        = form.input :online_days, :input_html => { :value => '60' }, as: :integer
+      - if policy(@project).permitted_for?(:pret_immo, :update)
+        = form.input :pret_immo
+      - if policy(@project).permitted_for?(:pret_conso, :update)
+        = form.input :pret_conso
+      - if policy(@project).permitted_for?(:autre_dette, :update)
+        = form.input :autre_dette
+      - if policy(@project).permitted_for?(:question_vente, :update)
+        = form.input :question_vente
+      - if policy(@project).permitted_for?(:question_rachat, :update)
+        = form.input :question_rachat
 
       = form.button :submit, data: { disable_with: t('words.sending') }
 

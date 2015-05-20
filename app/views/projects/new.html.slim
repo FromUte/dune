@@ -73,7 +73,7 @@
               = f.input :organization_type, as: :select, collection: Project.organization_type_array, prompt: :translate, input_html: { required: true }
               = f.input :name, as: :string, maxlength: 100
               = f.label :campaign_type
-              = f.select :campaign_type, [['Publique', 'public'],['Privée', 'private']]
+              = f.select :campaign_type, [['Public', 'public'],['Privée', 'private']]
 
               .input[class="#{'error' if @project.errors[:goal].present?}"]
                 .row.collapse

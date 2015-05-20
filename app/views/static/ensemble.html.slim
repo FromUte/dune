@@ -49,7 +49,11 @@
             span.expand-section-icon.icon-fa-chevron-down alt='Aller à surendettement'
 
     #pricing.section-content
-      .row.medium-collapse
+      .row.medium-collapse.center
+        h3 Exemple d'intervention vente à réméré participative
+        = render 'exemple_cas', quoi: t('.cas4'), qui: t('.qui1')
+        = render 'exemple_cas', quoi: t('.cas2'), qui: t('.qui2')
+        = render 'exemple_cas', quoi: t('.cas3'), qui: t('.qui3')
         /.pricing-table.small-12.columns
         /  ul.pricing-table-content
         /    li.title 3 ans
