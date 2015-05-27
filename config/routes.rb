@@ -87,6 +87,7 @@ Dune::Application.routes.draw do
   # Static Pages
   get '/sitemap',               to: 'static#sitemap',             as: :sitemap
   get '/how-it-works',          to: 'static#how_it_works',        as: :how_it_works
+  get '/how-it-works2',         to: 'static#how_it_works2',       as: :how_it_works2
   get '/faq',                   to: 'static#faq',                 as: :faq
   get '/terms',                 to: 'static#terms',               as: :terms
   get '/privacy',               to: 'static#privacy',             as: :privacy

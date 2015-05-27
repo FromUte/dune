@@ -19,7 +19,16 @@ fr:
     ensemble:
       cas1: "Je possède avec mon ex-compagne 3 biens immobiliers en indivision, 2 des biens sont en location et l'autre est ma résidence principale, nous avons eu de graves problèmes financiers et nous sommes fichés, est il possible de faire un prêt participatif en réméré, les biens sont estimés à 333000 € et nos dettes sont de 110000 € ?"
       cas2: "Je suis entrepreneur, pendant dix ans ma réussite professionnelle m’a permis d'investir dans l'immobilier, j'ai aujourd'hui un projet professionnel me demandant un besoin en trésorerie. Mes partenaires bancaires ne me suivant pas sur ce dossier, m'est-il possible de réaliser une vente à réméré pour financer mon projet ?"
-      cas3: "Dans le cadre d'une sucession, je n'ai pas actuellement la trésorerie pour payer les frais. Je souhaiterais maintenir ce bien dans mon patrimoine sachant que dans les 5 ans cela me sera possible.Est-il possible de vendre le bien à réméré pour permettre la transition patrimoniale ?"
+      cas3: "Dans le cadre d'une succession, je n'ai pas actuellement la trésorerie pour payer les frais. Je souhaiterais maintenir ce bien dans mon patrimoine sachant que dans les 5 ans cela me sera possible.Est-il possible de vendre le bien à réméré pour permettre la transition patrimoniale ?"
+      cas4: "Je possède avec ma compagne 2 biens immobiliers en indivision, 1 des biens est en location et l'autre est ma résidence principale, nous avons eu de graves problèmes financiers et nous sommes fichés, est il possible de réaliser une vente à réméré, pour apurer mes dettes de 150 000€, les biens sont estimés à 450 000 € ?"
+      qui1: "Particulier"
+      qui2: "Entrepreneur"
+      qui3: "Transmission de patrimoine"
+    how_it_works2:
+      title: 'Comment ça marche ?'
+      cas1: "Je possède avec mon ex-compagne 3 biens immobiliers en indivision, 2 des biens sont en location et l'autre est ma résidence principale, nous avons eu de graves problèmes financiers et nous sommes fichés, est il possible de faire un prêt participatif en réméré, les biens sont estimés à 333000 € et nos dettes sont de 110000 € ?"
+      cas2: "Je suis entrepreneur, pendant dix ans ma réussite professionnelle m’a permis d'investir dans l'immobilier, j'ai aujourd'hui un projet professionnel me demandant un besoin en trésorerie. Mes partenaires bancaires ne me suivant pas sur ce dossier, m'est-il possible de réaliser une vente à réméré pour financer mon projet ?"
+      cas3: "Dans le cadre d'une succession, je n'ai pas actuellement la trésorerie pour payer les frais. Je souhaiterais maintenir ce bien dans mon patrimoine sachant que dans les 5 ans cela me sera possible.Est-il possible de vendre le bien à réméré pour permettre la transition patrimoniale ?"
       cas4: "Je possède avec ma compagne 2 biens immobiliers en indivision, 1 des biens est en location et l'autre est ma résidence principale, nous avons eu de graves problèmes financiers et nous sommes fichés, est il possible de réaliser une vente à réméré, pour apurer mes dettes de 150 000€, les biens sont estimés à 450 000 € ?"
       qui1: "Particulier"
       qui2: "Entrepreneur"

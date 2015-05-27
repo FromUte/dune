@@ -1,0 +1,155 @@
+= content_for :title, t('.title').html_safe
+
+.how-it-works2-page.static-page
+  header.hero[data-image-url="#{ (channel && channel.start_hero_image.present?) ? channel.start_hero_image_url(:blur) : image_path('start/comment-note.jpg')}"]
+    .row
+      .large-8.columns.large-centered.text-center
+        h2
+          = t('.title')
+  section.main-section
+    .row.section-particulier
+      .small-12.columns
+        h2 Je suis un <strong>propriétaire</strong>
+    .row
+      .small-12.columns
+        strong.subtitle Comprendre le déroulement du processus de vente à réméré
+    .row
+      .small-12.columns
+        br
+        = link_to '#comment-vendre', class: 'expand-section' do
+          strong.expansion-btn.show-for-large-up[data-alternative-text="Cliquer pour réduire"] Cliquer pour en apprendre plus
+          span.expand-section-icon.icon-fa-chevron-down alt='Comprendre la vente à réméré'
+
+      #comment-vendre.section-content style= "display: none"
+        .section
+          .small-12.columns
+            p Chez <strong>dune</strong> notre mission est de relier les particuliers en difficulté financière avec une communauté d'épargnant solidaire.
+          .medium-4.columns
+            .row.text-center.image-part
+              = image_tag 'schema/je-suis-particulier.png', alt: 'Je suis un particulier en recherche de liquidité', title: "particulier vendeur à réméré" , align: "right"
+          .medium-8.columns
+            .row.text-center
+              .medium-4.columns
+                h4 1
+                dl
+                  dt Dépôt de dossier
+                  dd Je dépose mon dossier en prenant note de mon endettement actuel et d'informations concernant mon bien immobilier
+              .medium-4.columns
+                h4 2
+                dl
+                  dt Etude du dossier
+                  dd Notre comité des engagements étudie la faisabilité de votre dossier et vous donne une réponse rapide
+              .medium-4.columns
+                h4 3
+                dl
+                  dt Expertise
+                  dd Votre dossier validé, nos partenaires Serexim réalisent une estimation professionnelle de votre bien immobilier
+            .white
+              hr
+              .row.text-center
+                .medium-4.columns
+                  h4 4
+                  dl
+                    dt Financement participatif
+                    dd Votre bien est mis en ligne
+                    dd Vos informations personnelles restent discrètes ou publiques selon votre convenance
+                .medium-4.columns
+                  h4 5
+                  dl
+                    dt Vente à réméré
+                    dd Votre bien financé par la communauté nous prenons rendez vous chez un notaire de votre région
+                    dd La foncière DuneSolidaire achète votre bien à réméré
+                    dd Votre faculté de rachat est sécurisée
+                    dd Vos créanciers remboursés
+                    dd Un compte séquestre à votre nom est créé
+                .medium-4.columns
+                  h4 6
+                  dl
+                    dt Occupation en réméré
+                    dd L'indemnité d'occupation représente 5% par an du capital prêté
+                    dd Nous donnons priorité au reste à vivre!
+                    dd L'indemnité peut être payée en début, chaque mois ou en fin de portage
+            .row.text-center
+              .medium-12.columns.text-center
+                h4 7
+                dl
+                  dt Rachat de votre bien
+                  dd <span style="text-decoration:underline;">Vous profitez de votre faculté de rachat :<span/>
+                  dd Nous vous accompagnons dans la recherche d'un financement bancaire traditionnel. Vous rachetez votre bien au prix d'acquisition participatif
+                  dd OU
+                  dd <span style="text-decoration:underline;">Vous vendez votre bien au prix du marché :<span/>
+                  dd Les investisseurs participatifs récupèrent leur capital de départ
+                  dd Vous récupérez la plus-value sans frais !
+        hr
+  section.main-section
+    .row.section-investisseur
+      .small-12.columns
+        h2 Je suis un <strong>investisseur</strong>
+    .row
+      .small-12.columns
+        strong.subtitle Comprendre le déroulement du processus d'investissement participatif
+    .row
+      .small-12.columns
+        br
+        = link_to '#comment-investir', class: 'expand-section' do
+          strong.expansion-btn.show-for-large-up[data-alternative-text="Cliquer pour réduire"] Cliquer pour en apprendre plus
+          span.expand-section-icon.icon-fa-chevron-down alt='Aller à plan de financement'
+
+      #comment-investir.section-content style= "display: none"
+        .section
+          .small-12.columns
+            p Valoriser votre épargne avec un rendement de <strong>5%</strong> par an, votre placement est garanti par la valeur du bien !
+          .medium-4.columns
+            .row.text-center
+              = image_tag 'schema/je-suis-investisseur.png', alt: 'Je suis un particulier en recherche de liquidité', title: "particulier vendeur à réméré" , align: "right"
+          .medium-8.columns
+            .row.text-center
+              .medium-4.columns
+                h4 1
+                dl
+                  dt Parcours des biens immobiliers
+                  dd Les biens immobiliers qui vous sont présentés sont expertisés par nos partenaires Serexim
+                  dd Vous pouvez visualiser leur rapport et vous faire une idée précise du bien
+              .medium-4.columns
+                h4 2
+                dl
+                  dt Proposition d'investissement
+                  dd Dans la description des biens, vous trouverez le bouton
+                  dd "proposition d'investissement"
+                  dd Une fois cliqué vous pouvez réaliser votre proposition d'investissement et laisser un message public ou discret à la famille que vous êtes sur le point de financé
+                  dd
+              .medium-4.columns
+                h4 3
+                dl
+                  dt Validation de votre investissement
+                  dd Nous réceptionnons votre proposition d'investissement
+                  dd Nous vous contactons afin de vous transmettre :
+                  ul
+                    li le contrat de prêt qui lie la foncière DuneSolidaire à votre investissement
+                    li Les coordonnées SEPA vous permettant d'effectuer le virement
+            .white
+              hr
+              .row.text-center
+                .medium-6.columns
+                  h4 4
+                  dl
+                    dt Indémnité d'occupation
+                    dd La vente à réméré effectué entre la foncière et le vendeur
+                    dd Nous assurons la gestion et réceptionnons votre indemnité d'occupation
+                    dd Nous vous versons sans frais les intérêts sur le capital investi de façons annuelles ou in fine
+                .medium-6.columns
+                  h4 5
+                  dl
+                    dt La sortie d'investissement
+                    dd Le débouclage effectué
+                    dd Nous vous reversons votre capital de départ
+                    dd Nous vous versons les intérêts sur le capital investi si vous aviez choisi un retour sur investissement in fine
+        hr
+        br
+        br
+    .white
+      .row.medium-collapse.center
+        h3 Exemple d'intervention vente à réméré participative
+        = render 'exemple_cas', quoi: t('.cas4'), qui: t('.qui1')
+        = render 'exemple_cas', quoi: t('.cas2'), qui: t('.qui2')
+        = render 'exemple_cas', quoi: t('.cas3'), qui: t('.qui3')

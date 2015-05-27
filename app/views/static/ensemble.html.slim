@@ -20,18 +20,18 @@
       .row
         .small-12.columns
           p
-            | Chez <strong>Dune</strong> notre mission est de relier les particuliers en difficulté financière avec une communauté d'épargnant solidaire.
+            | Chez <strong>dune</strong> notre mission est de relier les particuliers en difficulté financière avec une communauté d'épargnant solidaire.
           p Ensemble, développons une finance solidaire.
       .row.text-center
         .medium-6.columns
           h3 Apurer vos dettes
           /p Votre patrimoine immobilier vous aide à retrouver un équilibre financier.
           p Éviter la saisie immobilière, lever vos fichages Banque de France, grâce au financement participatif. Sauvegardez votre patrimoine.
-          = link_to 'Déposer un besoin', start_path, class: 'button'
+          = link_to 'Déposer mon dossier', start_path, class: 'button'
         .medium-6.columns
           h3 Investissez solidaire
           p Particuliers, fondations, institutionnelles, investissez avec intérêts dans un projet <br />social.
-          = link_to 'Parcourir les besoins', discover_path, class: 'button'
+          = link_to 'Parcourir les dossier', discover_path, class: 'button'
 
   section.main-section.section-with-hero-header
     = hero_header_tag @presenter, { class: 'text-center' }, @presenter.pricing_image do
