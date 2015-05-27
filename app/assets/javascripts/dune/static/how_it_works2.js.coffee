@@ -1,8 +1,8 @@
 Dune.Static ?= {}
 
-Dune.Static.HowItWorks =
+Dune.Static.HowItWorks2 =
   init: Backbone.View.extend
-    el: '.how-it-works-page'
+    el: '.how-it-works2-page'
 
     initialize: ->
       if window.innerWidth < 1000
