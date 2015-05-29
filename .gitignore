@@ -45,3 +45,4 @@ certificate-dune.crt
 bundle.crt
 .env.example
 .env.backup
+dune-investissement-solidaire.crt
