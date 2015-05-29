@@ -8,7 +8,7 @@ fr:
         part_civil: "Fiche de contact"
         part_bien: "Patrimoine support de la vente"
         part_dette: "Endettement"
-        part_conseil: "Commentaires dans le carde de notre devoir de conseil"
+        part_conseil: "Commentaires dans le cadre de notre devoir de conseil"
       joyride:
         next: 'Suivant'
         done: 'Fin'
