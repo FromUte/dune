@@ -54,9 +54,11 @@
         = render 'exemple_cas', quoi: t('.cas4'), qui: t('.qui1')
         = render 'exemple_cas', quoi: t('.cas2'), qui: t('.qui2')
         = render 'exemple_cas', quoi: t('.cas3'), qui: t('.qui3')
-      .row.medium-collapse.center
+      .row.text-center
         h3 Un besoin ?
         h3 Notre équipe vous réponds
+        .small-12.columns
+          = link_to "Je dépose mon dossier gratuitement", new_project_path, class: 'button center'
         /.pricing-table.small-12.columns
         /  ul.pricing-table-content
         /    li.title 3 ans

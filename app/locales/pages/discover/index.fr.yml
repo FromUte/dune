@@ -1,7 +1,7 @@
 fr:
   discover:
     index:
-      title: '5% de rendement brut sur vos investissements solidaire'
+      title: '5% de rendement brut sur vos investissements solidaires'
       empty: 'Aucun projet ne correspond à vos critères de recherches.'
       tags: 'Mots clés populaires: '
       near: 'Localisation'

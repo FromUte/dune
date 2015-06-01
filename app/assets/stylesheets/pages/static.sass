@@ -23,7 +23,7 @@
       margin-top: +emCalc(25px)
       &:first-child
         margin-top: 0
-    a
+    .nav-side
       @media #{$medium}
         display: block
         content: " "
@@ -65,3 +65,11 @@
     h2
       font-size: 180%
       font-weight: 500
+  .button,
+  .button.secondary:hover,
+  .button.secondary:active
+    background-color: $primary-color
+    border: none
+    border-radius: 0
+    color: $input-bg-color
+    font-weight: 400
