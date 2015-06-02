@@ -6,7 +6,7 @@ fr:
         one_more_step: "Plus qu'une étape ! S'il vous plaît vérifier votre compte afin de compléter votre prêt."
         thank_you: "Merci ! %{project_name} n'est possible qu'avec le soutien d'investisseurs tel que vous."
         share: 'Vous pouvez encore aider %{project_owner_name} en parlant à votre réseau de votre investissement !'
-        twitter-text: "Je viens de réaliser un invesstissement d'un montant de %{value} à %{name} sur @dune: %{project_url}"
+        twitter-text: "Je viens de réaliser un invesstissement d'un montant de %{value} à %{name} sur @duneSolidaire: %{project_url}"
         bankaccount:
           title: "Vous avez réalisé votre investissement à l'aide d'un nouveau compte bancaire. S'il vous plaît vérifier votre compte afin de compléter votre prêt."
           steps:

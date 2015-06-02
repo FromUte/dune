@@ -30,7 +30,7 @@ fr:
     video_embed:
       a_project_by_html: "Un projet de %{link} par"
     share:
-      twitter-text: "Découvrez le projet de %{name} #%{hash_tag} sur @dune: %{project_url}"
+      twitter-text: "Découvrez le projet de %{name} #%{hash_tag} sur @duneSolidaire: %{project_url}"
       twitter: 'Tweet'
       facebook: 'Partager'
       email: 'E-mail'
