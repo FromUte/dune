@@ -56,7 +56,7 @@ describe ProjectDecorator do
       let(:project){ create(:project, uploaded_image: nil, video_thumbnail: nil) }
 
       it 'returns the image for "downloading in progress"' do
-        expect(subject).to eql('image-placeholder-upload-in-progress.jpg')
+        expect(subject).to eql('image-placeholder-upload-in-progresss.jpg')
       end
     end
 
@@ -218,7 +218,7 @@ describe ProjectDecorator do
       it "should return a successful image flag when the project is successful" do
         project.stub(:successful?).and_return(true)
 
-        expect(project.successful_flag).to eq('<div class="successful_flag"><img alt="Successful.fr" src="/assets/successful.fr.png" /></div>')
+        expect(project.successful_flag).to eq('<div class="successful_flag"><img alt="Successful.fr" src="/assets/successful.frr.png" /></div>')
       end
     end
 
