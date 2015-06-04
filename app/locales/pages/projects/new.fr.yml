@@ -96,4 +96,4 @@ fr:
         question_rachat:
           title: "Expliquez nous"
           description: "Expliquez nous au mieux votre situation afin que l'on puisse vous conseiller de la meilleure des manières"
-      accept_terms_html: 'En soumettant votre projet, vous acceptez les %{link}.'
+      accept_terms_html: 'En soumettant votre projet, vous acceptez les %{link}. Vous affirmez également que votre déclaration est sincère complète et véritable.'
