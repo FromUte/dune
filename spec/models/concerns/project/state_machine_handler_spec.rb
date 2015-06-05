@@ -135,7 +135,7 @@ describe Project::StateMachineHandler do
           subject.online_days = 0
         end
 
-        context "when campaign type is all_or_none" do
+        context "when campaign type is private" do
           before do
             subject.finish
           end
@@ -143,9 +143,9 @@ describe Project::StateMachineHandler do
           its(:successful?) { should be_true }
         end
 
-        context "when campaign type is flexible" do
+        context "when campaign type is public" do
           before do
-            main_project.update_attributes campaign_type: 'flexible'
+            main_project.update_attributes campaign_type: 'public'
             subject.finish
           end
 
@@ -161,16 +161,16 @@ describe Project::StateMachineHandler do
           main_project.update_attributes state: 'waiting_funds'
         end
 
-        context "when project is all_or_none" do
+        context "when project is private" do
           before do
             subject.finish
           end
           its(:successful?) { should be_false }
         end
 
-        context "when project is flexible" do
+        context "when project is public" do
           before do
-            main_project.update_attributes campaign_type: 'flexible'
+            main_project.update_attributes campaign_type: 'public'
             subject.finish
           end
 
@@ -204,7 +204,7 @@ describe Project::StateMachineHandler do
 
         context "when project is flexible" do
           before do
-            subject.update_attributes campaign_type: 'flexible'
+            subject.update_attributes campaign_type: 'public'
             subject.finish
           end
 

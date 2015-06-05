@@ -14,11 +14,46 @@ fr:
         already_joined: 'Déjà rejoint ? %{link}.'
         sign_in: 'Se connecter'
       hero:
-        title: 'Investissez Français'
-        subtitle: "Prêter aux entreprises proches de vous, valoriser vos intérêts, participer à l'économie réelle."
+        title: 'Investissez Solidaire'
+        subtitle: "AIDEZ une famille en diffciulté financière"
+        subtitle1: "AGISSEZ utile, local, social"
+        subtitle2: "Donnez un sens à votre épargne dans un processus de succès partagé"
       start-one:
         title: 'Vous avez un projets et vous recherchez des fonds ?'
         button: 'Démarrez votre projet'
+      steps:
+        first:
+          title: '1. Un investissement solidaire'
+          description: "Placez votre épargne dans un investissement solidaire et garanti grâce au dispositif Dune."
+        second:
+          title: '2. Un cadre sécurisé'
+          description: "Le dispositif Dune est encadré et sécurisé via l'expertise d'un notaire et d'un avocat."
+        third:
+          title: "3. Un accompagnement"
+          description: "Nous sommes à vos côtés dans chacune de vos démarches à travers notre famille de conseillers."
+      who:
+        title: 'Suis-je concerné par la vente avec faculté de rachat ?'
+        local-governments: 'Entrepreneur'
+        nonprofits: 'Un besoin'
+        neighborhood-organizations: 'Particuliers'
+        description: "Particuliers et entrepreneurs peuvent faire appel au système <strong> Dune </strong> afin de dégager des fonds propres ou retrouver un équilibre financier.<br /> Pour cela, il est nécessaire que : "
+        description1: "la majeure partie du patrimoine immobilier soit payée"
+        description2: "l'ensemble des dettes ne dépasse pas 50% du patrimoine immobilier"
+        description3: "J'ai des revenus mais plus assez pour toutes mes charges de crédits"
+        description4: "Je souhaite sauver ma résidence principale et éviter la saisie immobilière"
+        description5: "J'ai besoin de temps pour repartir financièrement"
+        description6: "J'accepte de rencontrer un Conseiller dune et discuter de la solution de vente avec faculté de rachat"
+        description7: "J'accepte de monter un dossier réglementaire avec tous les documents juridiques devant avocat"
+        description8: "J'accepte de payer mes indemnités d'occupation aux investisseurs solidaires qui ont acheté mon bien immobilier"
+        description9: "Je trouve sérieux d'être suivi pendant toutes la durée du processus par un Conseiller dune"
+
+      what:
+        titleSecond: 'Vente à réméré participative'
+        title: "Le dispositif <strong>dune</strong> qu'est ce que c'est ?"
+        titleThird: "Entrepreneur le dispositif Dune est adapté à votre besoin de trésorerie"
+        titlefour: "Vente temporaire de son logement"
+        proprietaire: 'Propriétaire'
+        investisseur: 'Investisseur'
     invest_box:
       facebook: 'Partager'
       twitter: 'Tweet'

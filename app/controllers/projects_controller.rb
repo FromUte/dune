@@ -31,10 +31,11 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    @project = Project.new(permitted_params[:project].merge(user: current_user))
+   @project = Project.new(permitted_params[:project].merge(user: current_user))
     authorize @project
     @project.save
     respond_with @project, location: success_project_path(@project)
+   #respond_with @project, location: project_proprietaires_path(@project)
   end
 
   def success
@@ -100,4 +101,5 @@ class ProjectsController < ApplicationController
   def permitted_params
     params.permit(policy(@project || Project).permitted_attributes)
   end
+
 end

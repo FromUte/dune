@@ -1,7 +1,7 @@
 Dune::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
-  Rails.application.routes.default_url_options[:host] = 'www.dune-investissement.fr'
+  Rails.application.routes.default_url_options[:host] = 'www.dune-investissement-solidaire.fr'
 
   # Code is not reloaded between requests.
   config.cache_classes = true
@@ -22,7 +22,7 @@ Dune::Application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
-  config.serve_static_assets = false
+  config.serve_static_assets = true
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -35,14 +35,14 @@ Dune::Application.configure do
   config.assets.digest = true
 
   # Version of your assets, change this if you want to expire all your assets.
-  config.assets.version = '1.0'
+  config.assets.version = '2.0'
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  config.force_ssl = true
+  config.force_ssl = false
 
   # Set to :debug to see everything in the log.
   config.log_level = :info
@@ -106,6 +106,6 @@ Dune::Application.configure do
       :user_name => Configuration[:MANDRILL_USERNAME],
       :password  => Configuration[:MANDRILL_APIKEY], # SMTP password is any valid API key
       :authentication => 'plain', # Mandrill supports 'plain' or 'login'
-      :domain => 'www.dune-investissement.fr', # your domain to identify your server when connecting
+      :domain => 'www.dune-investissement-solidaire.fr', # your domain to identify your server when connecting
     }
 end

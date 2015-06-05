@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   before_action :ensure_domain, :referral_it!
 
   before_filter do
-    if current_user and (current_user.email =~ /change-your-email\+[0-9]+@dune-investissement\.fr/)
+    if current_user and (current_user.email =~ /change-your-email\+[0-9]+@dune\.paris/)
       redirect_to set_email_users_path unless controller_name =~ /users|confirmations/
     end
   end
@@ -33,8 +33,8 @@ class ApplicationController < ActionController::Base
   # Redirect to the appropriate domain i.e. example.com
   def ensure_domain
     unless Rails.env.development?
-    domain_to_redirect_to = 'www.dune-investissement.fr'
-    domain_exceptions = ['www.dune-investissement.fr','dune-investissement.herokuapp.com']
+    domain_to_redirect_to = 'www.dune-investissement-solidaire.fr'
+    domain_exceptions = ['www.dune-investissement-solidaire.fr','dune-investissement.herokuapp.com']
     should_redirect = !(domain_exceptions.include? request.host)
     new_url = "#{request.protocol}#{domain_to_redirect_to}#{request.fullpath if request.fullpath != '/'}"
     redirect_to new_url, status: :moved_permanently if should_redirect

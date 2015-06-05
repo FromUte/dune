@@ -1,11 +1,11 @@
 fr:
   discover:
     index:
-      title: 'Découvrez des projets étonnants'
+      title: '5% de rendement brut sur vos investissements solidaires'
       empty: 'Aucun projet ne correspond à vos critères de recherches.'
       tags: 'Mots clés populaires: '
       near: 'Localisation'
-      category: 'Secteur activité'
+      category: 'Type de bien'
       state: 'Avancement'
       showing_results_for: 'Affichage des résultats pour : '
       states:

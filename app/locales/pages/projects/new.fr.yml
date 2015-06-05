@@ -2,37 +2,98 @@ fr:
   projects:
     new:
       titles:
-        site: 'Soumettez nous votre projet Dune'
-        header: 'Proposer un projet'
-        sub: "Chacun peut proposer son projet gratuitement. Commencez dès aujourd'hui !"
+        site: 'Soumettez nous votre dossier Dune'
+        header: 'Déposer votre dossier'
+        sub: "Chacun peut déposer son dossier gratuitement. Commencez dès aujourd'hui !"
+        part_civil: "Fiche de contact"
+        part_bien: "Patrimoine support de la vente"
+        part_dette: "Endettement"
+        part_conseil: "Commentaires dans le cadre de notre devoir de conseil"
       joyride:
         next: 'Suivant'
         done: 'Fin'
         start:
-          title: 'Vous présentez une idée.'
-          description: 'Les informations fournies ici peuvent être modifiées ultérieurement.'
+          title: 'Déposez votre dossier'
+          description: "Les informations fournies ici peuvent être modifiées ultérieurement. Si une information vous pose problème validez votre dossier, nous vous appellerons ensuite afin d'en discuter"
+        name_user:
+          title: 'Indiquez votre nom et prénom'
+          description: "Merci de respecter l'ordre Nom Prénom"
+        date_naissance:
+          title: 'Indiquez votre date de naissance'
+          description: 'Vous pouvez utiliser le module de sélection pour vous aider'
+        lieu_naissance:
+          title: 'Indiquez votre ville de naissance'
+          description: ''
+        situation_famille:
+          title: 'Indiquez votre situation familliale'
+          description: "Il s'agit de votre situation actuel"
+        phone_number:
+          title: 'Indiquez votre numéro de téléphone fixe'
+          description: ''
+        phone_mobile:
+          title: 'Indiquez votre numéro de téléphone mobile'
+          description: ''
+        profession:
+          title: 'Indiquez votre profession actuel'
+          description: ''
+        anciennete_profession:
+          title: 'Indiquez votre ancienneté dans votre entreprise'
+          description: ''
+        type_contrat:
+          title: 'Indiquez votre type de contrat'
+          description: ''
+        salaire_net:
+          title: 'Indiquez votre salaire net actuel'
+          description: "Il s'agit de votre salaire annuel"
+        autres_revenus:
+          title: 'Indiquez vos autres revenus'
+          description: 'Indiquez la totalité de vos autres revenus'
         category:
-          title: 'Choisissez une catégorie'
-          description: 'Quelle catégorie décrit le mieux votre projet ? Vous pouvez la changer plus tard.'
-        name:
-          title: 'Titre de votre projet'
-          description: 'Comment voudriez-vous l’appeler ? Un titre court, accrocheur, et partageable fonctionne bien mieux !'
+          title: 'Choisissez un type de bien'
+          description: "Déposez-vous un dossier pour un bien professionel ou particulier"
+        name_project:
+          title: 'Titre de votre dossier'
+          description: 'Celui-ci sera visible en ligne ? Un titre court, accrocheur, et partageable fonctionne bien !'
         campaign_type:
-          title: 'Type de projet'
-          description: "Quel modèle de financement souhaitez-vous utiliser ? <br /><br/> <strong>Complément :</strong> Le projet est financé que l’objectif soit atteint ou non. <br /> <strong>Tout ou rien :</strong> Vous devez atteindre votre objectif d'ici la fin de votre campagne afin de recevoir les fonds."
+          title: 'Type de vente'
+          description: "Souhaitez-vous rester anonyme ? <br /><br/> <strong>Public :</strong> Vos informations personnelles sont visibles par les membres du site. <br /> <strong>Privée :</strong> Vos informations personnelles restent confidentielles."
         goal:
-          title: 'Objectif de la campagne de financement.'
-          description: 'De combien avez-vous besoin pour réaliser votre projet ? Merci d’entrer un numéro sans virgule.'
+          title: 'Estimation de votre bien immobilier.'
+          description: 'Si une estimation a été faite par un professionnel indiquée là sinon indiquer une valeur approximative nous vous aiderons lors du montage du dossier à définir une estimation exacte.'
+        pret_immo:
+          title: 'CRD plus IRA du crédit immobilier.'
+          description: "CRD: capital restant dû, IRA: Indémnité de remboursement anticipé. Il s'agit du montant total, restant à payer sur votre bien immobilier. Le calcul est le suivant > capital restant dû + IRA (6 mois d'intérêts à la date du remboursement) "
+        autre_dette:
+          title: 'CRD plus IRA des dettes autres que votre crédit immobilier.'
+          description: "Indiquez la somme total de vos autres dettes"
         location:
-          title: 'Ville, région'
-          description: 'Dans quelle ville votre projet prendra forme ?'
+          title: 'Ville'
+          description: 'Où est situé votre bien ?'
         headline:
           title: 'Résumé'
-          description: 'Décrivez votre projet en 140 caractères.'
+          description: 'Décrivez votre situation en 140 caractères.'
         about:
-          title: "L'histoire"
-          description: "Parlez nous de votre projet. Pourquoi avez-vous besoin de l'aide de la communauté ?"
+          title: "Votre histoire"
+          description: "Parlez nous de votre besoin. Pourquoi avez-vous besoin de l'aide de la communauté ?"
         organization_type:
-          title: "Type d'organisation"
-          description: "S'il vous plaît, sélectionnez le type qui décrit le mieux l'entité qui recevra les fonds."
-      accept_terms_html: 'En soumettant votre projet, vous acceptez les %{link}.'
+          title: "Statut du/des propriétaires"
+          description: "S'il vous plaît, sélectionnez le statuts du/des propriétaires."
+        type_estimation:
+          title: "Par qui a été évalué le bien ?"
+          description: ""
+        nature_bien:
+          title: "S'agit-il d'un appartement, d'une maison, de locaux professionnels détenus en nom propre ou SCI Familiale"
+          description: ""
+        descriptif_bien:
+          title: "Décrivez votre bien"
+          description: "Donnez des indications sur la surface habitable, la situation, le type d'assainissement, type de chauffage, etc."
+        pret_conso:
+          title: "Avez vous un pret consommation ?"
+          description: "Indiquez le montant total de vos prêts consommations"
+        question_vente:
+          title: "Expliquez nous"
+          description: "Expliquez nous au mieux votre situation afin que l'on puisse vous conseiller de la meilleure des manières"
+        question_rachat:
+          title: "Expliquez nous"
+          description: "Expliquez nous au mieux votre situation afin que l'on puisse vous conseiller de la meilleure des manières"
+      accept_terms_html: 'En soumettant votre projet, vous acceptez les %{link}. Vous affirmez également que votre déclaration est sincère complète et véritable.'

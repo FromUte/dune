@@ -1,0 +1,13 @@
+.proprietaire
+  p = "Le propriétaire  #{resource.nom} #{resource.prenom} est né à #{resource.lieu_naissance} le #{time_tag(resource.date_naissance)}.".html_safe
+  - unless resource.contrat?
+    p = "Sa profession est #{resource.profession}, et ce depuis #{resource.anciennete_profession} avec un contrat en #{resource.type_contrat}."
+  - else
+    p ="Sa profession est #{resource.profession}, et ce depuis #{resource.anciennete_profession}"
+  p = "Son revenu annuel est de #{resource.salaire_net} € avec un complément de revenu de #{resource.autres_revenus} € par an."
+  - if !user.nil? && user.admin?
+    p = "Situation familiale: #{resource.situation_famille}, téléphone mobile: #{resource.phone_mobile}"
+  hr
+
+  - if policy(@project).update?
+    = link_to 'Supprimer ce propriétaire', project_proprietaire_path(@project, resource), confirm: 'Vous êtes sur ?', method: :delete, class: 'button secondary small'

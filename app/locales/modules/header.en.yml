@@ -2,6 +2,7 @@ en:
   layouts:
     header:
       discover: 'Discover'
+      how_it_works: 'How It Works'
       about: 'Learn'
       sign-out: 'Log out'
       sign-up: 'Join'

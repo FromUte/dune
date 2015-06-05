@@ -6,21 +6,21 @@
 |Bonjour, #{resource.user.display_name}!
 br
 br
-|Le présent e-mail confirme votre #{resource.class.model_name.human} à #{link_to(resource.project.name, project_url(resource.project))}. Merci de conserver cet e-mail pour reçu. Notez également que si vous avez payé à l'aide d'une carte de crédit, le paiement apparaîtra sur votre déclaration sous le libellé #{Configuration[:company_name]}.
+|Le présent e-mail confirme votre #{resource.class.model_name.human} à #{link_to(resource.project.name, project_url(resource.project))}. Merci de conserver cet e-mail pour reçu.
 br
 br
 |#{resource.class.model_name.human} Montant :
 strong #{number_to_currency resource.value, precision: 0}
 br
-- if resource.respond_to?(:reward)
-  br
-  |Vous avez sélectionné la récompense suivante :
-  - if resource.reward
-    strong #{number_to_currency resource.reward.minimum_value, precision: 0}
-    |  &mdash; #{resource.reward.description}
-  -else
-    |  Aucune récompense sélectionnée. S'il s'agit d'une erreur, contactez-nous &nbsp; #{mail_to Configuration[:email_contact]}
-  br
+/- if resource.respond_to?(:reward)
+/  br
+/  |Vous avez sélectionné la récompense suivante :
+/  - if resource.reward
+/    strong #{number_to_currency resource.reward.minimum_value, precision: 0}
+/    |  &mdash; #{resource.reward.description}
+/  -else
+/    |  Aucune récompense sélectionnée. S'il s'agit d'une erreur, contactez-nous &nbsp; #{mail_to Configuration[:email_contact]}
+/  br
 br
 |#{resource.class.model_name.human} crée le :
 strong #{l resource.created_at.to_date, format: :long}
@@ -30,16 +30,12 @@ br
 strong #{resource.key}
 br
 - if resource.is_a?(Contribution)
-  - if resource.project.flexible?
-    br
-    | Le financement de ce projet se termine le <strong>#{l resource.project.expires_at.to_date, format: :long}</strong>. Peu de temps après, #{resource.project.user.display_name} prendra contact avec vous au sujet de la récompense et du suivi du prêt. Ce processus peut prendre quelques jours.
-  - else
-    br
-    |Si le projet est financé avec succès le <strong>#{l resource.project.expires_at.to_date, format: :long}</strong>, #{resource.project.user.display_name} prendra contact avec vous au sujet de la récompense et du suivi du prêt. Ce processus peut prendre quelques jours.
-    |  Si le projet n’atteint pas le but fixé, vous recevrez un e-mail contenant les instructions de remboursement.
+  br
+  |Si la vente à réméré participative est financée avec succès le <strong>#{l resource.project.expires_at.to_date, format: :long}</strong>, nous prendrons contact avec vous afin de finaliser votre prêt à la foncière immobilière DuneSolidaire. Ce processus peut prendre quelques jours.
+  |  Si la campagne n’atteint pas le but fixé, vous recevrez un e-mail contenant les instructions de remboursement.
   br
 br
-|Si vous souhaitez contacter #{resource.project.user.name}, envoyez lui un e-mail à l'adresse suivante #{mail_to resource.project.user.email}.
+|N'hésitez pas à contacter notre conseiller si vous avez d'autres questions.
 br
 br
 |Si vous avez d'autres questions, vous pouvez visiter nos #{link_to('FAQ', "#{Configuration[:base_url]}/faq")}.

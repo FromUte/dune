@@ -2,7 +2,7 @@ fr:
   devise:
     registrations:
       new:
-        have_account_html: "Vous avez déjà un compte ? <strong>%{link}</strong>"
+        have_account_html: "Vous avez déjà un compte ?<br /> <strong>%{link}</strong>"
         titles:
           site: "S'inscrire sur Dune"
           header: "Rejoignez notre dune d'investisseur !"

@@ -40,7 +40,6 @@
 
     p.hide-label label
       display: none
-
     .right, .inline-hint
       font-size: .8em
       color: $secondary-font-color !important
@@ -55,7 +54,8 @@
     .forget-password
       color: $primary-color !important
       padding-right: emCalc(3px)
-      margin-top: emCalc(5px)
+      margin-top: emCalc(1px)
+      margin-bottom: emCalc(1px)
 
     .separator
       border-top: 1px solid $border-color
@@ -88,6 +88,9 @@
 
   .login-logo
     margin: 1em 0 .1em 0
+    a
+      display: block
+      text-align: center
     +single-transition(all, 0.4s)
     &:hover
       opacity: 0.5

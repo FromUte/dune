@@ -9,13 +9,13 @@ en:
       not_reached_goal: 'waiting'
       draft: 'draft'
     organization_type:
-      sarl: 'S.A.R.L'
-      sa: 'S.A'
-      eurl: 'E.U.R.L'
-      sas: 'S.A.S'
+      celibataire: 'Célibataire'
+      mariee: 'Mariée'
+      pacs: 'Pacs'
+      indivision: 'Indivision'
+      sci: 'SCI'
       municipality: 'Municipality'
       neighborhood_organization: 'Neighborhood Organization'
       registered_nonprofit: 'Registered Nonprofit'
-      public_private_partnership: 'Public-Private Partnership'
       other: 'Other'
       not_sure: "I'm Not Sure"

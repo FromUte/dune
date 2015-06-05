@@ -1,0 +1,186 @@
+= content_for :title, 'Ensemble'
+
+.ensemble-page
+  section.main-section.section-with-hero-header
+    = hero_header_tag @presenter, { class: 'text-center' }, @presenter.how_it_works_image do
+      header.title-information
+        .row
+          .small-12.columns
+            h2 Une idée
+        .row
+          .small-12.columns
+            strong.subtitle Unissons-nous
+      .row
+        .small-12.columns
+          = link_to '#how-it-works', class: 'expand-section' do
+            strong.expansion-btn.show-for-large-up[data-alternative-text="Cliquer pour réduire"] Cliquer pour en apprendre plus
+            span.expand-section-icon.icon-fa-chevron-down alt='Aller a comment ca marche'
+
+    #how-it-works.section-content
+      .row
+        .small-12.columns
+          p
+            | Chez <strong>dune</strong> notre mission est de relier les particuliers en difficulté financière avec une communauté d'épargnant solidaire.
+          p Ensemble, développons une finance solidaire.
+      .row.text-center
+        .medium-6.columns
+          h3 Apurez vos dettes
+          /p Votre patrimoine immobilier vous aide à retrouver un équilibre financier.
+          p Éviter la saisie immobilière, supprimer vos fichages Banque de France, grâce au financement participatif. Sauvegardez votre patrimoine.
+          = link_to 'Déposer mon dossier', start_path, class: 'button'
+        .medium-6.columns
+          h3 Investissez solidaire
+          p Particuliers, fondations, institutionnelles, investissez avec intérêts dans un projet <br />social.
+          = link_to 'Parcourir les dossier', discover_path, class: 'button'
+
+  section.main-section.section-with-hero-header
+    = hero_header_tag @presenter, { class: 'text-center' }, @presenter.pricing_image do
+      header.title-information
+        .row
+          .small-12.columns
+            h2 Une action
+        .row
+          .small-12.columns
+            strong.subtitle Investissons-nous
+      .row
+        .small-12.columns
+          = link_to '#pricing', class: 'expand-section' do
+            strong.expansion-btn.show-for-large-up[data-alternative-text="Cliquer pour réduire"] Cliquer pour en apprendre plus
+            span.expand-section-icon.icon-fa-chevron-down alt='Aller à surendettement'
+
+    #pricing.section-content
+      .row.medium-collapse.center
+        h3 Exemple d'intervention vente à réméré participative
+        = render 'exemple_cas', quoi: t('.cas4'), qui: t('.qui1')
+        = render 'exemple_cas', quoi: t('.cas2'), qui: t('.qui2')
+        = render 'exemple_cas', quoi: t('.cas3'), qui: t('.qui3')
+      .row.text-center
+        h3 Un besoin ?
+        h3 Notre équipe vous réponds
+        .small-12.columns
+          = link_to "Je dépose mon dossier gratuitement", new_project_path, class: 'button center'
+        /.pricing-table.small-12.columns
+        /  ul.pricing-table-content
+        /    li.title 3 ans
+        /    li.price.description
+        /      span.strong 2%
+        /      | /an
+        /      span +3% / transaction
+        /    li.description Pour un taux bas
+        /    li.description à voir
+        /    li.cta-button.description = link_to 'Commencer', start_path, class: 'button secondary'
+        /    li.bullet-item Projet noté A
+        /    li.bullet-item Projet noté B
+        /    li.bullet-item Projet noté C
+        /.pricing-table.suggested-plan.small-12.columns
+        /  ul.pricing-table-content
+        /    li.title 5 ans
+        /    li.price.description
+        /      span.strong 4%
+        /      | /an
+        /      span +3% / transaction
+        /    li.description Pour un projet sérieux
+        /    li.description à voir
+        /    li.cta-button.description = link_to 'Nous contacter', contact_path, class: 'button'
+        /    li.bullet-item Projet noté A
+        /    li.bullet-item Projet noté B
+        /    li.bullet-item Projet noté C
+        /.pricing-table.small-12.columns
+        /  ul.pricing-table-content
+        /    li.title 7 ans
+        /    li.price.description
+        /      span.strong 5%
+        /      | /an
+        /      span +3% / transaction
+        /    li.description Pour un projet d'envergure
+        /    li.description à voir
+        /    li.cta-button.description = link_to 'Commencer', start_path, class: 'button secondary'
+        /    li.bullet-item Projet noté A
+        /    li.bullet-item Projet noté B
+        /    li.bullet-item Projet noté C
+
+  section#team.main-section.full-width-row
+    .row
+      .small-12.columns
+        header.title-information.text-center.row
+          .row
+            .small-12.columns
+              h2 Notre équipe
+        .row
+          .small-12.columns
+            /p Nous sommes une équipe de passionnés.
+            p Nous sommes des professionnels de la finance, acteurs dans l’immobilier et architecte du numérique.
+            p Notre mission est d’aider les particuliers en difficulté à retrouver un <span style="text-decoration:underline;">équilibre financier</span> et à proposer un financement participatif aux <span style="text-decoration:underline;">risques garantis</span>.<br /> Nous pensons que de <cite>l’union des solidarités naitra l’évolution de notre société</cite>.
+
+        .team-members
+          = render 'team_member', nickname: :pierre, name: 'Pierre Legrand', role: 'Co-fondateur, développeur',
+            description: "L'évolution économique passe par la révoltuion numérique",
+            social_networks: { linkedin: 'http://linkedin.com/', twitter: 'http://twitter.com/', github: 'https://github.com/'}
+          = render 'team_member', nickname: :christian, name: 'Christian Micale', role: 'Co-fondateur, Financier',
+            description: "12 années dans le financement pour comprendre que l'économie réelle c'est vous",
+            social_networks: { linkedin: 'http://linkedin.com/', twitter: 'http://twitter.com/' }
+          = render 'team_member', nickname: :sandra, name: 'Sandra Bougaret', role: 'Co-fondateur, Relation professionnelle',
+            description: "Créer l'harmonie entre les idées et les personnes",
+            social_networks: { linkedin: 'http://linkedin.com/pub/', twitter: 'http://twitter.com/'}
+
+  section#supporters.main-section.full-width-row
+    .row
+      header.title-information.text-center.row
+        .row
+          .small-12.columns
+            h2 Nos partenaires
+        .row
+          .small-12.columns
+            strong.subtitle Des intervenants sécurisants
+
+      ul
+        li.supporter.small-6.medium-6.columns
+          = image_tag 'ensemble/Logo-Sogeco.png', alt: 'Sogeco logo', title: "Cabinet d'expertise comptable"
+          strong
+            /span @KnightFdn
+            /span Backed
+        li.supporter.small-6.medium-6.columns
+          = image_tag 'ensemble/logo_N&A.jpg', alt: 'Normand et associes logo',  title: "Cabinet d'avocats"
+          strong
+      ul
+        /    span #CivicX
+        /    span Accelerated
+        li.supporter.small-12.medium-12.large-12.columns
+          = image_tag 'ensemble/notaires.jpg', alt: 'Notaire de france logo',  title: 'Notaire de france'
+          strong
+        /    span @TUMML
+        /    span Amplified
+        /li.supporter.small-6.medium-3.columns
+        /  = image_tag 'learn/madeinkcsf.png', alt: 'US map with hearts in Kansas City and San Francisco',  title: 'Made in KC and SF'
+        /  strong
+        /    span Made in @KCMO &amp;
+        /    span San Francisco
+    /.angel-list.row
+    /  .small-12.medium-offset-3.medium-6.column.text-center
+    /    = link_to 'https://angel.co/dune' do
+    /      strong.important-notice
+    /        | Find us on
+    /        = image_tag 'learn/angel_list.png', alt: 'Angel List\'s logo', title: 'Angel List', class: 'angel-list-logo'
+
+  section#open.main-section.full-width-row
+    .row
+      .small-12.columns
+        header.title-information.text-center.row
+          .row
+            .small-12.columns
+              h2 De l'union est née l'évolution
+          /.row
+          /  .small-12.columns
+          /    strong.subtitle De l'union est née l'évolution
+      /.open-type.small-12.medium-4.columns.text-center
+      /  .open-type-image
+      /    = image_tag 'learn/github.png', alt: 'GitHub\'s logo', title: 'GitHub', class: 'github-logo'
+      /  strong.important-notice Open Source
+      /.open-type.small-12.medium-4.columns.text-center
+      /  .open-type-image
+      /    = image_tag 'learn/sunlight_foundation.png', alt: 'Sunlight Foundation\'s logo', title: 'Sunlight Foundation', class: 'sunlight-foundation-logo'
+      /  strong.important-notice Open Data
+      /.open-type.small-12.medium-4.columns.text-center
+      /  .open-type-image
+      /    = image_tag 'learn/open_company.png', alt: 'Open Company Initiative\'s logo', title: 'The Open Company Initiative', class: 'open-company-logo'
+      /  strong.important-notice Open Company

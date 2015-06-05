@@ -4,12 +4,12 @@ Dune::Application.routes.draw do
 
   unless Rails.env.development? || Rails.env.test? || Rails.env.production?
     constraints NonValidSubdomainConstraint do
-      get '/', to: redirect('https://www.dune-investissement.fr')
-      get '/*wildcard', to: redirect('https://www.dune-investissement.fr/%{wildcard}')
+      get '/', to: redirect('https://www.dune-investissement-solidaire.fr')
+      get '/*wildcard', to: redirect('https://www.dune-investissement-solidaire.fr/%{wildcard}')
     end
   end
 
-  get '/about', to: redirect('/learn')
+  get '/about', to: redirect('/ensemble')
 
   devise_for :users, path: '',
     path_names:  {
@@ -87,11 +87,12 @@ Dune::Application.routes.draw do
   # Static Pages
   get '/sitemap',               to: 'static#sitemap',             as: :sitemap
   get '/how-it-works',          to: 'static#how_it_works',        as: :how_it_works
+  get '/how-it-works2',         to: 'static#how_it_works2',       as: :how_it_works2
   get '/faq',                   to: 'static#faq',                 as: :faq
   get '/terms',                 to: 'static#terms',               as: :terms
   get '/privacy',               to: 'static#privacy',             as: :privacy
   get '/start',                 to: 'projects#start',             as: :start
-  get '/learn',                 to: 'static#learn',               as: :learn
+  get '/ensemble',              to: 'static#ensemble',               as: :ensemble
 
   # Only accessible on development
   if Rails.env.development?
@@ -113,7 +114,7 @@ Dune::Application.routes.draw do
     resources :faqs, controller: 'projects/faqs', only: [ :index, :create, :destroy ]
     resources :terms, controller: 'projects/terms', only: [ :index, :create, :destroy ]
     resources :updates, controller: 'projects/updates', only: [ :index, :create, :destroy ]
-
+    resources :proprietaires, controller: 'projects/proprietaires', only: [ :index, :create, :destroy ]
     collection do
       get 'video'
     end
@@ -150,7 +151,7 @@ Dune::Application.routes.draw do
     end
   end
 
-  resources :users, path: 'neighbors' do
+  resources :users, path: 'duneurs' do
     resources :questions, controller: 'users/questions', only: [:new, :create]
     resources :projects, controller: 'users/projects', only: [ :index ]
     resources :contributions, controller: 'users/contributions', only: [:index] do
@@ -181,7 +182,7 @@ Dune::Application.routes.draw do
   end
 
   # Redirect from old users url to the new
-  get '/users/:id', to: redirect('neighbors/%{id}')
+  get '/users/:id', to: redirect('duneurs/%{id}')
 
   # Temporary Routes
   get '/projects/57/video_embed', to: redirect('projects/ideagarden/video_embed')

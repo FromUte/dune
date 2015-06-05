@@ -23,7 +23,7 @@
       margin-top: +emCalc(25px)
       &:first-child
         margin-top: 0
-    a
+    .nav-side
       @media #{$medium}
         display: block
         content: " "
@@ -40,3 +40,36 @@
     margin-top: +emCalc(24px)
     dt
       font-size: 120%
+  .section-content
+    background-image: linear-gradient(to bottom, transparent 98%, $body-font-color 110%)
+    margin-bottom: 0
+    padding-bottom: +emCalc(20px)
+  .center
+    text-align: center
+  .main-section
+    h2
+      text-align: left
+    .exemple
+      p
+        font-size: 80%
+        padding-left: +emCalc(5px)
+        padding-right: +emCalc(5px)
+    div
+      padding-bottom: +emCalc(5px)
+  .hero
+    min-height: +emCalc(185px)
+    padding: +emCalc(50px, 0)h
+    text-transform: uppercase
+    background-image:
+      position: absolute
+    h2
+      font-size: 180%
+      font-weight: 500
+  .button,
+  .button.secondary:hover,
+  .button.secondary:active
+    background-color: $primary-color
+    border: none
+    border-radius: 0
+    color: $input-bg-color
+    font-weight: 400

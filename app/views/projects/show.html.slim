@@ -47,8 +47,8 @@
                 = image_tag @project.last_channel.image.large.url
 
       - if @project.total_contributions_without_matches > 0
-        section.custom.neighbors-behind-this.hide-for-medium-down
-          .title = t('.neighbors_behind_this')
+        section.custom.duneurs-behind-this.hide-for-medium-down
+          .title = t('.duneurs_behind_this')
           .list
             - for contribution in @project.contributions.available_to_display.includes(:user).where(matching_id: nil).order("RANDOM()").limit(15)
               - if contribution.anonymous

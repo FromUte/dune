@@ -27,7 +27,7 @@ end
 
 # Checks for pending migrations before tests are run.
 # If you are not using ActiveRecord, you can remove this line.
-ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
+# ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
 
 RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
@@ -50,7 +50,7 @@ RSpec.configure do |config|
 
   config.before(:suite) do
     ActiveRecord::Base.connection.execute "SET client_min_messages TO warning;"
-    ActiveRecord::Base.connection.execute "SET timezone TO 'utc';"
+    ActiveRecord::Base.connection.execute "SET timezone TO 'Europe/Paris';"
     DatabaseCleaner.clean_with :truncation
     I18n.locale = :fr
     I18n.default_locale = :fr

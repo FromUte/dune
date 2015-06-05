@@ -2,8 +2,8 @@ fr:
   projects:
     contributions:
       edit:
-        title: 'Vous contribuez à %{project_name}'
-        you_are_contributing_to: 'Vous contribuez à'
+        title: 'Vous souhaitez investir dans %{project_name}'
+        you_are_contributing_to: 'Vous souhaitez investir dans'
         total: 'Total: '
         i_want_pay_fees: "Je vais couvrir les frais de transaction"
         reward:

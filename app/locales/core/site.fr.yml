@@ -1,11 +1,11 @@
 fr:
   facebook_locale: 'fr_FR'
   site:
-    title: "Dune : Financement participatif et communautaire"
-    meta_title:  "%{title} · %{company_name} crowdfunding"
-    description: "INVESTISSEZ FRANÇAIS prêter aux entreprises proches de vous, valoriser vos intérêts, participer à l'économie réelle. De l'union de votre épargne naitra l'évolution de nos entreprises françaises."
-    keywords: "dune-investissement, dune, crowdfunding, projets, communauté, open source, civique, économie local, innovation, Finance, Finance participative, prêts, intêrets, TPE, PME, crowdlending, saisie immobilière, lendingclub"
+    title: "Dune investissement solidaire : solution de financement à travers un patrimoine immobilier et une communauté d'investisseur participatif"
+    meta_title:  "%{title} · %{company_name} Investissement Participatif Solidaire et Garanti"
+    description: "Particulier : Éviter la saisie immobilière, lever votre interdit bancaire,lever vos fichages BDF, diminuer vos mensualités. Le financement participatif vous aide à sauvegarder votre patrimoine et apurez vos dettes. Investisseur : Invetissez avec une garantie immobilière, un rendement positif de 5% par an !"
+    keywords: "saisie immobiliere, portage immobilier, ficp, interdit bancaire, travail patrimoine, investissement immobilier, investissement garanti, saisie immobilière, saisie maison, surendettement, économie locale, innovation, Finance, Finance participative, prêts, intêrets, crowdlending, lendingclub"
     email:
-      contact: 'contact@dune-investissement.fr'
+      contact: 'contact@dune.paris'
     ograph:
-      description: "Dune investissement, plateforme de financement participatif et accompagnant en recherche de financement est le meilleur moyen de faire travailler intelligemment son épargne en invertissant dans l'économie locale, l'aide avant saisie immobilière, le rachat d'entreprise, en supportant nos TPE/PME et en y gagnant des intérêts. Dune investissement est un site de crowdfunding/crowdlending ou finance participative en français. Ce site d'investissement collaboratif a pour objectif de fournir un outil à la commuanté lui permettant de façonner l'économie locale en fonction de ses idées et sentiments."
+      description: "Particulier : Éviter la saisie immobilière, lever votre interdit bancaire,lever vos fichages BDF, diminuer vos mensualités. Le financement participatif et la vente à réméré vous aident à sauvegarder votre patrimoine et apurez vos dettes. Investisseur : investissez avec une garantie immobilière, un rendement positif à 5% par an"

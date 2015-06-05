@@ -1,11 +1,11 @@
 en:
   facebook_locale: 'en_US'
   site:
-    title: "De l'union est née l'évolution : Financement participatif"
-    meta_title:  "%{title} · %{company_name}"
-    description: "INVESTISSEZ FRANÇAIS prêter aux entreprises proches de vous, valoriser vos intérêts, participer à l'économie réelle. De l'union de votre épargne naitra l'évolution de nos entreprises françaises."
-    keywords: "dune-investissement, dune, crowdfunding, projets, communauté, open source, civique, économie local, innovation, Finance, Finance participative, prêts, intêrets, TPE, PME, crowdlending, saisie immobilière"
+    title: "Dune : financing solution through a real estate investor and a crowdfunding community"
+    meta_title:  "%{title} · %{company_name} Participatory Solidarity and Guaranteed Investment"
+    description: "Avoid foreclosure, lift your prohibits bank, lower your monthly payments. The crowdfunding helps you to save your assets and pay off your debts. Investor: Invetissez with a property guarantee a positive return of 5% per year !"
+    keywords: "entry estate, real estate portage, FICP, prohibited banking, labor heritage, property investment, guaranteed investment, foreclosure, foreclosed home, debt, local economy, innovation, Finance, participatory Finance, loans, intêrets, crowdlending, LendingClub"
     email:
-      contact: 'contact@dune-investissement.fr'
+      contact: 'contact@dune.paris'
     ograph:
-      description: "dune-investissement, plateforme de financement participatif, est le meilleur moyen de faire travailler intelligemment son épargne en invertissant dans l'économie locale, l'aide avant saisie immobilière, la rachat d'entreprise, en supportant nos TPE/PME et en y gagnant des intérêts. Dune investissement est un site de crowdfunding/crowdlending ou finance participative en français. Ce site d'investissement collaboratif a pour objectif de fournir un outil à la commuanté lui permettant de façonner l'économie locale en fonction de ses idées et sentiments."
+      description: "Avoid foreclosure, lift your prohibits bank, lower your monthly payments. Participatory financing and sale and repurchase agreements help you save your assets and pay off your debts. Investor: invest with a real estate guarantee a positive return of 5% per year !"

@@ -31,6 +31,10 @@ module Dune
     config.time_zone = 'Europe/Paris'
     config.active_record.default_timezone = :local
 
+    # if Rails.env.development?
+    # config.action_controller.action_on_unpermitted_parameters = :raise
+    # end
+
     # Do not generate specs for views and requests. Also, do not generate assets.
     config.generators do |g|
       g.javascripts false
@@ -62,7 +66,7 @@ module Dune
     config.assets.initialize_on_precompile = false
 
     # Version of your assets, change this if you want to expire all your assets
-    config.assets.version = '1.0'
+    config.assets.version = '2.0'
 
     config.to_prepare do
       Devise::SessionsController.layout 'devise'

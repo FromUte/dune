@@ -33,7 +33,7 @@ gem 'dune-balanced-bankaccount', '~> 1.0.0'
 gem 'dune-balanced', '~> 1.0.0'
 
 # dune Engines
-gem 'dune-admin', '~> 1.2.3'
+gem 'dune-admin', '~> 1.2.4'
 gem 'dune-api', '~> 1.1.0'
 gem 'dune-dashboard', '~> 1.1.3'
 
@@ -50,7 +50,7 @@ gem 'browser'
 
 # Authentication and Authorization
 gem 'omniauth'
-gem 'omniauth-twitter'
+gem 'omniauth-twitter', '1.2.0'
 gem 'omniauth-google-oauth2', '0.2.1'
 gem 'omniauth-linkedin'
 gem 'omniauth-facebook', '1.5.1'

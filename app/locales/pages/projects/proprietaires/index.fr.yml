@@ -1,0 +1,6 @@
+fr:
+  projects:
+    proprietaires:
+      index:
+        empty: 'Posez vos questions au porteur de projet.'
+        title: 'Titre'

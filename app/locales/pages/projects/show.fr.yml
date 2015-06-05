@@ -2,35 +2,35 @@ fr:
   projects:
     show:
       anonymous_contribution: "Prêteurs anonymes"
-      neighbors_behind_this: "duneur actif"
+      duneurs_behind_this: "duneur actif"
       display_status:
-        all_or_none:
+        public:
           reached_goal: "Ce projet sera couronné de succès et financé le %{date}"
           not_reached_goal: "Ce projet sera financé si au moins %{goal} sont prêté d'ici le %{date}"
           failed: "Ce projet n'a pas atteint l'objectif de %{goal} à la date du %{date} et n'est donc pas financé"
           successful: "Ce projet a été un succès et a été financé entièrement le %{date}"
           waiting_funds: "En attente de confirmation de paiements afin de savoir si ce projet est financé."
           draft: "Ce projet est en mode brouillon et n’est pas encore ouvert aux prêteurs."
-        flexible:
+        private:
           reached_goal: "Ce projet sera couronné de succès et financé le %{date}"
           not_reached_goal: "Ce projet sera financé le %{date}"
           failed: "Ce projet a été financé le %{date}"
           successful: "Ce projet a été un succès et a été financé le %{date}"
           waiting_funds: "Ce projet a récemment été clôturé et est financé."
           draft: "Ce projet est en mode brouillon et n’est pas encore ouvert aux prêteurs."
-      contribute: 'Contribuer'
+      contribute: "Proposition d'investissement"
       create_match: 'Créer un Match'
       edit: 'Modifier ma campagne'
       share:
         title: 'Impliquez vos amis'
-      no-neighbors: "Pas encore de prêteur, soyez le premier !"
+      no-duneurs: "Pas encore de prêteur, soyez le premier !"
       author:
         about: 'A propos %{name}'
       in_partnership_with: 'En partenariat avec'
     video_embed:
       a_project_by_html: "Un projet de %{link} par"
     share:
-      twitter-text: "Découvrez le projet de %{name} #%{hash_tag} sur @dune: %{project_url}"
+      twitter-text: "Découvrez le projet de %{name} #%{hash_tag} sur @duneSolidaire: %{project_url}"
       twitter: 'Tweet'
       facebook: 'Partager'
       email: 'E-mail'
@@ -38,7 +38,7 @@ fr:
     status_bar:
       goal: 'But : %{value}'
       total_contributions: '%{value} duneur'
-      contribute: 'Contribuer'
+      contribute: "Proposition d'investissement"
     tabs:
       about: 'À propos'
       updates: 'Mises à jour'
@@ -50,8 +50,10 @@ fr:
       reports: 'Rapports'
     header:
       subtitle:
-        all_or_none: "Financement tout ou rien dans la catégorie %{category_name}, situé à %{city}, crée par %{author}"
-        flexible: "<span data-tooltip class='has-tip' title='Chaque euro compte ! <br /><br />Ce projet est financé que l'objectif soit atteint ou non.'>Financement flexible dans la catégorie</span> %{category_name}, situé à %{city}, crée par %{author}"
+        public: "Ce projet concerne un %{category_name}, situé à %{city}, crée par %{author}"
+        private: "Ce projet concerne un %{category_name}, situé à %{city}, crée par %{author}"
+        loyer: "L'indemnité locative de ce bien est de %{loyer} € par mois"
+        mensualite: "Le propriétaire du bien réalisera une économie de %{mensualite} € tous les mois"
       so_far: "&nbsp; jusqu'à présent des &nbsp; "
       reached_goal_small_separator_html: '&nbsp; / &nbsp; '
-      contribute: 'Prêter'
+      contribute: "Proposition d'investissement"

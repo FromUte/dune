@@ -6,7 +6,9 @@ fr:
     send: 'envoi'
     sending: 'Envoi en cours...'
     remaining_plural: 'restants'
+    remaininge_plural: 'restantes'
     remaining_singular: 'restant'
+    remaininge_singular: 'restante'
     neighbor_plural: 'duneurs'
     neighbor_singular: 'duneur'
     confirm: 'Vous êtes sûr ?'
@@ -17,6 +19,7 @@ fr:
     terms: "Conditions d'utilisation"
     see_more: 'Voir plus'
     credits: 'Crédits'
+    profil: 'mon profil'
     no_name: 'Anonyme'
     found_plural: 'Trouvés'
     found_singular: 'Trouvé'

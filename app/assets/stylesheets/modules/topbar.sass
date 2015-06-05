@@ -1,5 +1,10 @@
 .contain-to-grid.fixed
   -webkit-transform: translateZ(0)
+  padding-bottom: 1px
+
+.contain-to-grid
+  .top-bar
+    max-width: 65em
 
 .top-bar
   margin-bottom: 0
@@ -17,17 +22,19 @@
       a
         display: block
         text-indent: -99999em
-        width: 194px
+        width: 200px
         height: 54px
         background: image-url('logo-white@2x.png') center no-repeat
         background: image-url('logo-white.png') center no-repeat\9 // It will apply to all ie from 8 and below
-        background-size: cover
+        background-size: contain
         padding-left: 0
 
   .top-bar-section
     .main-menu a:not(.button)
       @media #{$medium}
         padding: +emCalc(0, 20px)
+      @media #{$small}
+        padding: +emCalc(0, 5px)
 
       i
         color: $topbar-icon-color
@@ -38,7 +45,7 @@
       a
         text-transform: uppercase
       i
-        display: none
+        //display: none
         @media #{$medium}
           display: inline-block
 

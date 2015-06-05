@@ -1,4 +1,4 @@
-- content_for :title, t('.title')
+- content_for :title, t('.title').html_safe
 
 .start-page
   header.hero[data-image-url="#{ (channel && channel.start_hero_image.present?) ? channel.start_hero_image_url(:blur) : image_path('start/hero.jpg')}"]
@@ -17,9 +17,9 @@
         - if channel
           - steps = channel.start
         - else
-          - steps = OpenStruct.new first_step_icon: 'et-paper-plane', first_step_title: t('.steps.first.title'), first_step_description: t('.steps.first.description'),
-                                   second_step_icon: 'et-clock', second_step_title: t('.steps.second.title'), second_step_description: t('.steps.second.description'),
-                                   third_step_icon: 'et-rocket', third_step_title: t('.steps.third.title'), third_step_description: t('.steps.third.description')
+          - steps = OpenStruct.new first_step_icon: 'et-heart', first_step_title: t('.steps.first.title'), first_step_description: t('.steps.first.description'),
+                                   second_step_icon: 'et-lock', second_step_title: t('.steps.second.title'), second_step_description: t('.steps.second.description'),
+                                   third_step_icon: 'et-users', third_step_title: t('.steps.third.title'), third_step_description: t('.steps.third.description')
 
         - for step in [:first, :second, :third]
           .large-4.medium-4.columns
@@ -28,7 +28,10 @@
                 i[class="icon-#{steps.send("#{step}_step_icon")}"]
                 h5 = steps.send("#{step}_step_title")
                 p = steps.send("#{step}_step_description")
-
+      .row
+        .large-2.columns.large-centered
+        h3 Une réponse instantanée à vos questions
+        h3 N° TÉLÉPHONE : 01 30 06 09 62
     .row
       .large-10.columns.large-centered
         hr
@@ -38,30 +41,38 @@
         - unless channel
           .large-12.columns
             h2 = t('.who.title')
-          .large-4.medium-4.columns
-            .large-10.columns.large-centered
-              i.icon-fa-building
-              h5 = t('.who.local-governments')
-          .large-4.medium-4.columns
-            .large-10.columns.large-centered
-              i.icon-fa-heart
-              h5 = t('.who.nonprofits')
-          .large-4.medium-4.columns
+          .large-6.medium-6.columns
             .large-10.columns.large-centered
               i.icon-fa-home
               h5 = t('.who.neighborhood-organizations')
+          .large-6.medium-6.columns
+            .large-10.columns.large-centered
+              i.icon-fa-building
+              h5 = t('.who.local-governments')
         .large-11.columns.large-centered
           .row
             .large-12.columns
               - if channel
                 = channel.start_primary_content_html
               - else
-                p = t('.who.description')
+                p = t('.who.description').html_safe
+                ul
+                  li = t('.who.description0')
+                  li = t('.who.description1')
+                  li = t('.who.description2')
+                  li = t('.who.description3')
+                  li = t('.who.description4')
+                  li = t('.who.description5')
+                  hr
+                  li = t('.who.description6')
+                  li = t('.who.description7')
+                  li = t('.who.description8')
+                  li = t('.who.description9')
 
               - if channel && channel.application_url
                 = link_to t('.get-started'), channel.application_url, class: 'button large large-5 medium-5 columns large-centered'
               - else
-                = link_to t('.get-started'), new_project_path, class: 'button large large-5 medium-5 columns large-centered'
+                = link_to "Je dépose mon dossier gratuitement", new_project_path, class: 'button large large-5 medium-5 columns large-centered'
 
               - if channel
                 .row
@@ -79,32 +90,33 @@
       .row
         .large-12.columns
           h2 = t('.work.title')
-          h3 = t('.work.subtitle')
+          //h3 = t('.work.subtitle')
       .row
         .large-4.small-6.columns
           i.icon-fa-group
           h5 = t('.work.team.title')
           p = t('.work.team.description')
         .large-4.small-6.columns
-          i.icon-et-picture
-          h5 = t('.work.imagery.title')
-          p = t('.work.imagery.description')
-        .large-4.small-6.columns
-          i.icon-et-video
-          h5 = t('.work.video.title')
-          p = t('.work.video.description')
+          i.icon-et-link
+          h5 = t('.work.engagement.title')
+          p = t('.work.engagement.description')
         .large-4.small-6.columns
           i.icon-et-book-open
           h5 = t('.work.detailed.title')
           p = t('.work.detailed.description')
-        .large-4.small-6.columns
-          i.icon-fa-gift
-          h5 = t('.work.rewards.title')
-          p = t('.work.rewards.description')
-        .large-4.small-6.columns
-          i.icon-et-link
-          h5 = t('.work.engagement.title')
-          p = t('.work.engagement.description')
+        /.large-4.small-6.columns
+        /  i.icon-et-picture
+        /  h5 = t('.work.imagery.title')
+        /  p = t('.work.imagery.description')
+        /.large-4.small-6.columns
+        /  i.icon-et-video
+        /  h5 = t('.work.video.title')
+        /  p = t('.work.video.description')
+        /.large-4.small-6.columns
+        /  i.icon-fa-gift
+        /  h5 = t('.work.rewards.title')
+        /  p = t('.work.rewards.description')
+
 
   - unless channel
     section.inspiration

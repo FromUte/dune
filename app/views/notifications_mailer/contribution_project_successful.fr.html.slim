@@ -6,7 +6,7 @@ br
 |Merci à vous et aux #{contribution.project.total_contributions - 1} autres duneurs, #{link_to(contribution.project.name, "#{Configuration[:base_url]}/projects/#{contribution.project.to_param}")} a été financé avec succès sur #{Configuration[:company_name]}. Ensemble, vous avez levé #{contribution.project.display_pledged}, totalisant #{contribution.project.progress}% du but recherché !
 br/
 br/
-|À présent, vous participez activement à l'économie locale. #{contribution.project.user.display_name} assurera le suivi avec vous très rapidement. Si vous avez choisi une récompense qui requiert des informations supplémentaires, le propriétaire du projet entrera en contact avec vous directement, si ce n’est pas le cas n’hésitez pas à nous le faire savoir.
+|À présent, vous participez activement à l'économie locale. #{contribution.project.user.display_name} assurera le suivi avec vous très rapidement.
 br
 br
 |Pendant ce temps, vous pouvez partager cette réussite avec le monde entier !
@@ -40,7 +40,8 @@ br
 strong #{contribution.key}
 br
 br
-|Si vous souhaitez contacter #{contribution.project.user.name}, voici son adresse e-mail  #{mail_to contribution.project.user.email}
+- if contribution.reward
+  |Si vous souhaitez contacter #{contribution.project.user.name}, voici son adresse e-mail  #{mail_to contribution.project.user.email}
 br
 br
 |Si vous avez d'autres questions, vous pouvez accéder à notre #{link_to('FAQ', "#{Configuration[:base_url]}/faq")}.

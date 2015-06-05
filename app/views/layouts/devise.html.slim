@@ -33,8 +33,8 @@ head
 body#devise
   = initjs_tag app_name: 'Dune'
   = render 'layouts/loader'
-  = render 'layouts/google_tag_manager'
-  = render 'layouts/analytics'
+  /= render 'layouts/google_tag_manager'
+  /= render 'layouts/analytics'
   = yield
   = yield :modals
 |</html>

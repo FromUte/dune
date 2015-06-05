@@ -9,14 +9,14 @@ fr:
       not_reached_goal: 'En attente'
       draft: 'brouillon'
     organization_type:
-      sarl: 'S.A.R.L'
-      sa: 'S.A'
-      eurl: 'E.U.R.L'
-      sas: 'S.A.S'
-      organization_type: "type d'organisation"
+      celibataire: 'Célibataire'
+      mariee: 'Mariée'
+      pacs: 'Pacs'
+      indivision: 'Indivision'
+      sci: 'SCI'
+      organization_type: "Statut du/des propriétaires"
       municipality: 'Municipalité'
       neighborhood_organization: 'Organisation de quartier'
       registered_nonprofit: 'Organisme à but non lucratif'
-      public_private_partnership: 'Partenariat public-privé'
       other: 'Autres'
       not_sure: "Je ne suis pas sûr"

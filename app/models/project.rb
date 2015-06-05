@@ -30,6 +30,7 @@ class Project < ActiveRecord::Base
            :display_organization_type,
            to: :decorator
 
+
   belongs_to :user
   belongs_to :category
   has_one :project_total
@@ -41,9 +42,11 @@ class Project < ActiveRecord::Base
   has_many :project_documents, dependent: :destroy
   has_and_belongs_to_many :channels
   has_many :unsubscribes
+  has_many :proprietaires, dependent: :destroy
 
   accepts_nested_attributes_for :rewards
   accepts_nested_attributes_for :project_documents
+  accepts_nested_attributes_for :user
 
   delegate :pledged, :progress, :total_contributions,
     :total_contributions_without_matches, :total_payment_service_fee,
@@ -60,7 +63,7 @@ class Project < ActiveRecord::Base
     ],
     associated_against: {
       user: %i(name email address_city),
-      category: %i(name_en name_fr)
+      category: %i(name_fr name_en)
     },
     using: {
       tsearch: {
@@ -108,7 +111,7 @@ class Project < ActiveRecord::Base
   end
 
   validates :video_url, :online_days, :address_city, :address_state, presence: true, if: ->(p) { p.state_name == 'online' }
-  validates_presence_of :name, :user, :category, :about, :headline, :goal, :permalink, :location
+  validates_presence_of :name, :user, :category, :about, :headline, :goal, :permalink, :location, :pret_immo, :autre_dette, :pret_conso
   validates_length_of :headline, maximum: 140
   validates_numericality_of :online_days
   validates_uniqueness_of :permalink, allow_blank: true, case_sensitive: false, on: :update

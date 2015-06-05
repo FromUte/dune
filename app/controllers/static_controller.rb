@@ -13,8 +13,8 @@ class StaticController < ApplicationController
   def start; end
   def faq; end
 
-  def learn
-    @presenter = LearnPagePresenter.new
+  def ensemble
+    @presenter = EnsemblePagePresenter.new
   end
 
   def thank_you

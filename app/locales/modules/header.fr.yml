@@ -1,15 +1,16 @@
 fr:
   layouts:
     header:
-      discover: 'Découvrir'
+      discover: 'Investir'
+      how_it_works: 'Comprendre'
       about: 'Ensemble'
       sign-out: 'Déconnexion'
       sign-up: "Inscription"
       sign-in: 'Connexion'
-      my_profile: 'Mon Profil'
+      my_profile: 'Mon Profil Dune'
       settings: 'Réglages'
-      my_contributions: 'Mes prêts'
-      my_projects: 'Mes projets'
-      dashboard: 'Tableau de bord'
+      my_contributions: 'Mes prêts participatif'
+      my_projects: 'Mes projets à réméré'
+      dashboard: 'Tableau de bord Dune'
       start: 'Démarrer'
 
