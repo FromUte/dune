@@ -1,0 +1,173 @@
+= content_for :title, t('.title').html_safe
+
+.how-it-works2-page.static-page
+  header.hero[data-image-url="#{ (channel && channel.start_hero_image.present?) ? channel.start_hero_image_url(:blur) : image_path('start/comment-note.png')}"]
+    .row
+      .large-8.columns.large-centered.text-center
+        h2
+          = t('.title')
+  section.main-section
+    .white
+      .row
+        .medium-12.columns
+          dl
+            dt Principe du réméré immobilier traditionnel
+            dd Une personne vend son bien immobilier à un <span style="text-decoration:underline;">investisseur privé ou une société d’investissement</span> pour un montant situé entre 50 à 80 % de sa valeur marché.
+            dd Le vendeur reste occupant de son logement et conserve la faculté de racheter sa maison à un prix défini dés le départ.
+            dd En échange l’investisseur perçoit un loyer mensuel <span style="text-decoration:underline;">assorti d’une prime</span> perçue soit à l’initial soit au moment de l’acquisition, soit au final au moment de la revente.
+            dd Pour l’investisseur, il ne s’agit donc pas d’acquérir à proprement parler un bien immobilier, mais de réaliser un investissement « éthique » en prêtant une somme d’argent moyennant intérêts (sous forme de loyers et d’une prime) tout en disposant d’une garantie supplémentaire en devenant temporairement propriétaire du bien.
+            dd En effet, en cas de non-paiement des loyers ou de non-rachat du bien à l’issue des cinq ans, <span style="text-decoration:underline;">le vendeur perd définitivement la jouissance de son bien au profit de l’investisseur</span> qui en devient pleinement propriétaire et peut en <span style="text-decoration:underline;">disposer à son gré, en le vendant au enchères</span> par exemple.
+    .row.section-particulier
+      .small-12.columns
+        h2 Je suis un <strong>propriétaire</strong>
+    .row
+      .small-12.columns
+        strong.subtitle Comprendre le déroulement du processus de vente à réméré
+    .row
+      .small-12.columns
+        br
+        = link_to '#comment-vendre', class: 'expand-section' do
+          strong.expansion-btn.show-for-large-up[data-alternative-text="Cliquer pour en apprendre plus"] Cliquer pour réduire
+          span.expand-section-icon.icon-fa-chevron-down alt='Comprendre la vente à réméré'
+
+      #comment-vendre.section-content
+        .section
+          .small-12.columns
+            p Chez <strong>dune</strong> notre mission est de relier les particuliers en difficulté financière avec une communauté d'épargnant solidaire.
+          .medium-4.columns
+            .row.text-center.image-part
+              = image_tag 'schema/je-suis-particulier.png', alt: 'Je suis un particulier en recherche de liquidité', title: "particulier vendeur à réméré" , align: "right"
+          .medium-8.columns
+            .row.text-center
+              .medium-4.columns
+                h4 1
+                dl
+                  dt Dépôt de dossier
+                  dd Je dépose mon dossier en prenant note de mon endettement actuel et d'informations concernant mon bien immobilier
+              .medium-4.columns
+                h4 2
+                dl
+                  dt Etude du dossier
+                  dd Notre comité des engagements étudie la faisabilité de votre dossier et vous donne une réponse rapide
+              .medium-4.columns
+                h4 3
+                dl
+                  dt Expertise
+                  dd Votre dossier validé, nos partenaires Serexim réalisent une estimation professionnelle de votre bien immobilier
+            .white
+              hr
+              .row.text-center
+                .medium-4.columns
+                  h4 4
+                  dl
+                    dt Financement participatif
+                    dd Votre bien est mis en ligne
+                    dd Vos informations personnelles restent confidentielles ou publiques selon votre convenance
+                .medium-4.columns
+                  h4 5
+                  dl
+                    dt Vente à réméré
+                    dd Votre bien financé par la communauté nous prenons rendez vous chez un notaire de votre région
+                    dd La Foncière DuneSolidaire achète votre bien à réméré
+                    dd Votre faculté de rachat est sécurisée
+                    dd Vos créanciers remboursés
+                    dd Un compte séquestre à votre nom est créé
+                .medium-4.columns
+                  h4 6
+                  dl
+                    dt Occupation en réméré
+                    dd L'indemnité d'occupation représente 5% brut par an du capital prêté
+                    dd Nous favorisons le reste à vivre !
+                    dd L'indemnité peut être prépayée, ou payé chaque mois
+            .row.text-center
+              .medium-12.columns.text-center
+                h4 7
+                dl
+                  dt Rachat de votre bien
+                  dd <span style="text-decoration:underline;">Vous profitez de votre faculté de rachat :<span/>
+                  dd Nous vérifions avec vous la possibilité d'un financement bancaire traditionnel. Vous rachetez votre bien au prix d'acquisition participatif
+                  dd OU
+                  dd <span style="text-decoration:underline;">Vous vendez votre bien au prix du marché :<span/>
+                  dd Les investisseurs participatifs récupèrent leur capital de départ
+                  dd <strong>Vous récupérez la plus-value</strong> !
+        hr
+  section.main-section
+    .row.section-investisseur
+      .small-12.columns
+        h2 Je suis un <strong>investisseur</strong>
+    .row
+      .small-12.columns
+        strong.subtitle Comprendre le déroulement du processus d'investissement participatif
+    .row
+      .small-12.columns
+        br
+        = link_to '#comment-investir', class: 'expand-section' do
+          strong.expansion-btn.show-for-large-up[data-alternative-text="Cliquer pour en apprendre plus"] Cliquer pour réduire
+          span.expand-section-icon.icon-fa-chevron-down alt='Aller à plan de financement'
+
+      #comment-investir.section-content
+        .section
+          .small-12.columns
+            p Valoriser votre épargne avec un rendement de <strong>5%</strong> brut par an !
+            |Votre placement est garanti par la valeur du bien.
+          .medium-4.columns
+            .row.text-center
+              = image_tag 'schema/je-suis-investisseur.png', alt: 'Je suis un particulier en recherche de liquidité', title: "particulier vendeur à réméré" , align: "right"
+          .medium-8.columns
+            .row.text-center
+              .medium-4.columns
+                h4 1
+                dl
+                  dt Parcours des biens immobiliers
+                  dd Les biens immobiliers qui vous sont présentés sont expertisés par nos partenaires Serexim et Diagamter
+                  dd Vous pouvez visualiser leurs rapports et vous faire une idée précise de la qualité du bien
+              .medium-4.columns
+                h4 2
+                dl
+                  dt Proposition d'investissement
+                  dd Dans la description des biens, vous trouverez le bouton
+                  dd "proposition d'investissement"
+                  dd Une fois cliqué vous pouvez réaliser votre proposition d'investissement et laisser un message public ou privée à la famille que vous êtes sur le point de financé
+                  dd
+              .medium-4.columns
+                h4 3
+                dl
+                  dt Validation de votre investissement
+                  dd Nous réceptionnons votre proposition d'investissement
+                  dd Nous vous contactons afin de vous transmettre :
+                  ul
+                    li le contrat de prêt qui engage la foncière DuneSolidaire auprès de vous
+                    li Les coordonnées SEPA vous permettant d'effectuer le virement
+            .white
+              hr
+              .row.text-center
+                .medium-6.columns
+                  h4 4
+                  dl
+                    dt Indémnité d'occupation
+                    dd La vente à réméré effectuée entre la foncière et le vendeur
+                    dd Nous assurons le parfait paiement des indemnités d'occupation
+                    dd Nous versons, en fonction de vos desiderata, les intérêts sur le capital investi de façons annuelles ou in fine
+                .medium-6.columns
+                  h4 5
+                  dl
+                    dt Au terme de l'action solidaire
+                    dd
+                      ul Nous vous :
+                        li remboursons votre capital de départ que vous pourrez librement réinvestir
+                        li versons les intérêts sur le capital investi si vous aviez choisi un retour sur investissement in fine
+                    /dd Nous vous remboursons votre capital de départ que vous pourrez librement réinvestir
+                    /dd Nous vous versons les intérêts sur le capital investi si vous aviez choisi un retour sur investissement in fine
+        hr
+        br
+        br
+    .white
+      .row
+        .medium-12.columns
+          dl
+            dt Principe du réméré immobilier traditionnel
+            dd Une personne vend son bien immobilier à un <span style="text-decoration:underline;">investisseur privé ou une société d’investissement</span> pour un montant situé entre 50 à 80 % de sa valeur marché.
+            dd Le vendeur reste occupant de son logement et conserve la faculté de racheter sa maison à un prix défini dés le départ.
+            dd En échange l’investisseur perçoit un loyer mensuel <span style="text-decoration:underline;">assorti d’une prime</span> perçue soit à l’initial au moment de l’acquisition, soit au final au moment de la revente.
+            dd Pour l’investisseur, il ne s’agit donc pas d’acquérir à proprement parler un bien immobilier, mais de réaliser un investissement « éthique » en prêtant une somme d’argent moyennant intérêts (sous forme de loyers et d’une prime) tout en disposant d’une garantie supplémentaire en devenant temporairement propriétaire du bien.
+            dd En effet, en cas de non-paiement des loyers ou de non-rachat du bien à l’issue des cinq ans, <span style="text-decoration:underline;">le vendeur perd définitivement la jouissance de son bien au profit de l’investisseur</span> qui en devient pleinement propriétaire et peut en <span style="text-decoration:underline;">disposer à son gré en le vendant au enchères</span> par exemple.
