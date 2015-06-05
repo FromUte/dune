@@ -1,0 +1,3 @@
+rails generate migration add_crd_to_project crd:decimal
+
+redis-server /usr/local/etc/redis.conf
