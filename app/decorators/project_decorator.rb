@@ -103,7 +103,7 @@ class ProjectDecorator < Draper::Decorator
 
   def use_video_tumbnail(version)
     source.video_thumbnail.send(version).url ||
-      'image-placeholder-upload-in-progress.jpg'
+      'image-placeholder-upload-in-progresss.jpg'
   end
 
   def time_to_go_for(unit)

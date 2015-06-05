@@ -56,7 +56,7 @@ describe ProjectDecorator do
       let(:project){ create(:project, uploaded_image: nil, video_thumbnail: nil) }
 
       it 'returns the image for "downloading in progress"' do
-        expect(subject).to eql('image-placeholder-upload-in-progress.jpg')
+        expect(subject).to eql('image-placeholder-upload-in-progresss.jpg')
       end
     end
 
