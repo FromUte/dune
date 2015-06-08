@@ -169,23 +169,47 @@
                 = t('words.see_more')
                 i.icon-et-right-circled
 
-      /- if @coming_soon.any?
-        /section.coming-soon
-          /.small-12.columns
-            /h3
-              /= link_to discover_path(filter: 'soon') do
-                /i.icon-et-clock
-                /= t('.coming_soon')
+      - if @coming_soon.any?
+        section.coming-soon
+          .small-12.columns
+            h3
+              = link_to discover_path(filter: 'soon') do
+                i.icon-et-clock
+                = t('.coming_soon')
 
-          /- for project in @coming_soon
-            /= render 'project', project: project
+          - for project in @coming_soon
+            = render 'project', project: project
 
-          /- if @coming_soon.size >= 4
-            /.text-right.text-right.small-12.columns
-              /= link_to discover_path(filter: 'soon'), class: 'see-more' do
-                /= t('words.see_more')
-                /i.icon-et-right-circled
+          - if @coming_soon.size >= 4
+            .text-right.text-right.small-12.columns
+              = link_to discover_path(filter: 'soon'), class: 'see-more' do
+                = t('words.see_more')
+                i.icon-et-right-circled
 
+  section#supporters.main-section.full-width-row
+    .row
+      header.title-information.text-center.row
+        .row
+          .small-12.columns
+            h2 Un dispositif approuvé par :
+      ul
+        li.supporter.small-6.medium-6.columns
+          = image_tag 'ensemble/Logo-Sogeco.png', alt: 'Sogeco logo', title: "Cabinet d'expertise comptable"
+          strong
+        li.supporter.small-6.medium-6.columns
+          = image_tag 'ensemble/logo_N&A.jpg', alt: 'Normand et associes logo', title: "Cabinet d'avocats"
+          strong
+      ul
+        li.supporter.small-12.medium-12.large-12.columns
+          = image_tag 'ensemble/logoSerexim.png', alt: 'Serexim expertise immobilière logo', title: 'Serexim expertise immobilière', style: 'padding-top:20px'
+          strong
+      ul
+        li.supporter.small-6.medium-6.large-6.columns
+          = image_tag 'ensemble/notaires.jpg', alt: 'Notaire de france logo', title: 'Notaire de france'
+          strong
+        li.supporter.small-6.medium-6.large-6.columns
+          = image_tag 'ensemble/logoDiagamter.png', alt: 'Diagamter diagnostic immobilier professionel logo', title: 'Diagamter diagnostic immobilier professionel', style: 'padding-top:20px'
+          strong
       /section.start-one.hide-for-small
         /.small-12.columns
           /= link_to start_path do

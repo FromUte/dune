@@ -187,6 +187,45 @@
         border-top: none
         border-bottom: 1px solid darken($primary-color, 20%)
 
+  #how-dropdown
+    background: darken(desaturate($primary-color, 30%), 10%)
+    border-width: 0
+    border-radius: $global-radius
+    font-size: 120%
+    margin-top: +emCalc(1px)
+    &.f-dropdown:before
+      border-bottom-color: $primary-color
+    &.f-dropdown:after
+      border-bottom-color: transparent
+    li
+      float: none
+      background: darken(desaturate($primary-color, 30%), 10%)
+      &:first-child
+        border-radius: $global-radius $global-radius 0 0
+      &:last-child
+        border-radius: 0 0 $global-radius $global-radius
+      &:hover
+        background: $primary-color
+      a
+        padding: +emCalc(10px)
+        text-transform: none
+        background: darken(desaturate($primary-color, 30%), 10%)
+        line-height: normal !important
+        &:first-child
+          border-radius: $global-radius $global-radius 0 0
+        &:last-child
+          border-radius: 0 0 $global-radius $global-radius
+        &:hover
+          background: $primary-color
+        i
+          color: white
+          padding: 3px 4px 0 0
+          font-size: 0.9em
+          font-weight: 400
+      &.divider
+        border-top: none
+        border-bottom: 1px solid darken($primary-color, 20%)
+
 .f-topbar-fixed
   padding-top: 0 !important
   @media #{$medium}

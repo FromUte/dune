@@ -29,10 +29,22 @@ header.contain-to-grid.fixed
             = link_to main_app.start_path do
               i.icon-et-paper-plane
               = t('.start')
-          li
-            = link_to main_app.how_it_works_path do
+          /li
+          /  = link_to main_app.how_it_works_path do
+          /    i.icon-fa-file-text
+          /    = t('.how_it_works')
+          li.how-action
+            = link_to main_app.how_it_works_path, class: 'how-profile', data: {dropdown: 'how-dropdown'} do
               i.icon-fa-file-text
-              = t('.how_it_works')
+              |  Comprendre
+            ul#how-dropdown.f-dropdown[data-dropdown-content]
+              li = link_to how_it_works2_path do
+                i.icon-et-help-circled
+                | Comment ça marche
+              li.divider
+              li = link_to how_it_works_path do
+                i.icon-et-info-circled
+                |Infographie
 
         ul.right
           - if user_signed_in?
@@ -59,8 +71,8 @@ header.contain-to-grid.fixed
 
                 li.divider
                 li = link_to main_app.user_contributions_path(current_user) do
-                    i.icon-et-check
-                    = t('.my_contributions')
+                  i.icon-et-check
+                  = t('.my_contributions')
 
                 - if current_user.projects.any?
                   li = link_to user_projects_path(current_user) do
