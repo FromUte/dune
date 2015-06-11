@@ -13,7 +13,7 @@ class @Facebook
       facebookScript = document.createElement("script")
       facebookScript.id = 'facebook-jssdk'
       facebookScript.async = 1
-      facebookScript.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=#{Facebook.appId()}&version=v2.0"
+      facebookScript.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=#{Facebook.appId()}&version=v2.0"
 
       firstScript = document.getElementsByTagName("script")[0]
       firstScript.parentNode.insertBefore facebookScript, firstScript
