@@ -1,4 +1,5 @@
 //= require jquery.js
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require jquery.remotipart
 //= require turbolinks
@@ -9,6 +10,7 @@
 //= require ./lib/underscore.js
 //= require ./lib/backbone.js
 //= require ./lib/jquery.sticky-kit.js
+//= require dune/facebook.js
 //= require dune/dune.js
 //= require init.js
 //= require_tree ./lib

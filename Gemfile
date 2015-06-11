@@ -154,6 +154,8 @@ gem 'remotipart', '~> 1.2.1'
 # a retirer pour la prodction réel
 #gem 'ffaker'
 
+#Pour le bug turbo links et jquery
+gem 'jquery-turbolinks'
 
 gem 'balanced', '1.1.1'
 gem 'handlebars-source', '1.3.0'
