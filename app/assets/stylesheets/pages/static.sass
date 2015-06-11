@@ -39,7 +39,13 @@
   dl
     margin-top: +emCalc(24px)
     dt
-      font-size: 120%
+      font-size: 105%
+    dd
+      font-size: 85%
+  p
+    font-size: 85%
+  ul li
+    font-size: 90%
   .section-content
     background-image: linear-gradient(to bottom, transparent 98%, $body-font-color 110%)
     margin-bottom: 0
@@ -73,3 +79,37 @@
     border-radius: 0
     color: $input-bg-color
     font-weight: 400
+  .comparaison
+    ul
+      list-style: none
+    ul li
+      padding: 5px 0 10px 25px
+      position: relative
+      font-size: 90%
+    ul li:before
+      content: '\f004'
+      //content: '\f055'
+      color: #a7dacc
+      font-family: 'FontAwesome'
+      position: absolute
+      top: 6px
+      left: 5px
+  .notgood
+    ul
+      list-style: none
+    ul li
+      padding: 5px 0 10px 25px
+      position: relative
+      font-size: 90%
+    ul li:before
+      content: '\f056'
+      color: #a7dacc
+      font-family: 'FontAwesome'
+      position: absolute
+      top: 6px
+      left: 5px
+    i
+      text-align: center
+//.faqs-page
+//  dl dt dd ul li
+//    font-size: 85%

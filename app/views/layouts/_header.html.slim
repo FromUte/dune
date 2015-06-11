@@ -34,7 +34,7 @@ header.contain-to-grid.fixed
           /    i.icon-fa-file-text
           /    = t('.how_it_works')
           li.how-action
-            = link_to main_app.how_it_works_path, class: 'how-profile', data: {dropdown: 'how-dropdown'} do
+            = link_to main_app.how_it_works2_path, class: 'how-profile', data: {dropdown: 'how-dropdown'} do
               i.icon-fa-file-text
               |  Comprendre
             ul#how-dropdown.f-dropdown[data-dropdown-content]
@@ -43,8 +43,12 @@ header.contain-to-grid.fixed
                 | Comment ça marche
               li.divider
               li = link_to how_it_works_path do
-                i.icon-et-info-circled
+                i.icon-fa-picture
                 |Infographie
+              li.divider
+              li = link_to faq_path do
+                i.icon-et-info-circled
+                |Questions fréquentes
 
         ul.right
           - if user_signed_in?
