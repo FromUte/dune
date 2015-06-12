@@ -52,7 +52,7 @@ body.f-topbar-fixed
   = yield :modals
 
   /[if lt IE 9]
-  = javascript_include_tag "http://html5shiv.googlecode.com/svn/trunk/html5.js", 'data-turbolinks-eval' => false
+    = javascript_include_tag "https://html5shiv.googlecode.com/svn/trunk/html5.js", 'data-turbolinks-eval' => false
   = javascript_include_tag 'vendor/custom.modernizr', 'data-turbolinks-eval' => false
   = javascript_include_tag :application, 'data-turbolinks-eval' => false
   = render 'layouts/uservoice'
