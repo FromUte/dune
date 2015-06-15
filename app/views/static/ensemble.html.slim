@@ -110,7 +110,7 @@
           .small-12.columns
             /p Nous sommes une équipe de passionnés.
             /p Nous sommes des professionnels de la finance, acteurs dans l’immobilier et architecte du numérique.
-            p La finance, l'immobilier, le numérique sont nos expériences professionel. Elles nous permettent de vous proposer le système dune et un encadrement professionel de qualité.
+            p La finance, l'immobilier, le numérique sont nos expériences professionnelles. Elles nous permettent de vous proposer le système dune et un encadrement professionnel de qualité.
             p Notre mission est d’aider les particuliers en difficulté à retrouver un <span style="text-decoration:underline;">équilibre financier</span> et à proposer un financement participatif aux <span style="text-decoration:underline;">risques garantis</span>.<br /> Nous pensons que de <cite>l’union des solidarités naitra l’évolution de notre société</cite>.
 
         .team-members
@@ -123,6 +123,12 @@
           = render 'team_member', nickname: :sandra, name: 'Sandra Bougaret', role: 'Co-fondateur, Relation professionnelle',
             description: "Créer l'harmonie entre les idées et les personnes",
             social_networks: { linkedin: 'http://linkedin.com/pub/', twitter: 'http://twitter.com/'}
+          article.team-member.small-12.medium-12.columns.left
+            header
+              = image_tag "ensemble/team/equipe.jpg", class: 'team-all-picture', alt: "Equipe Dune' photo", title: 'Equipe Dune'
+              h3.name = "L'équipe Dune"
+              strong.role = 'Une équipe à votre écoute'
+            //p.description = "Créer l'harmonie entre les idées et les personnes"
 
   section#supporters.main-section.full-width-row
     .row
