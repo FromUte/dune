@@ -34,11 +34,11 @@ header.contain-to-grid.fixed
           /    i.icon-fa-file-text
           /    = t('.how_it_works')
           li.how-action
-            = link_to main_app.how_it_works2_path, class: 'how-profile', data: {dropdown: 'how-dropdown'} do
+            = link_to main_app.comment_ca_marche_path, class: 'how-profile', data: {dropdown: 'how-dropdown'} do
               i.icon-fa-file-text
               |  Comprendre
             ul#how-dropdown.f-dropdown[data-dropdown-content]
-              li = link_to how_it_works2_path do
+              li = link_to comment_ca_marche_path do
                 i.icon-et-help-circled
                 | Comment ça marche
               li.divider

@@ -1,8 +1,8 @@
 Dune.Static ?= {}
 
-Dune.Static.HowItWorks2 =
+Dune.Static.CommentCaMarche =
   init: Backbone.View.extend
-    el: '.how-it-works2-page'
+    el: '.comment-ca-marche-page'
 
     initialize: ->
       if window.innerWidth < 1000
