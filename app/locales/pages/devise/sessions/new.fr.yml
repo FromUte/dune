@@ -2,9 +2,9 @@ fr:
   devise:
     sessions:
       new:
-        no_account_html: "Vous n'êtes pas encore monté sur notre Dune ?<br /> <strong>%{link}</strong>"
+        no_account_html: "Vous n'êtes pas encore monté sur notre dune ?<br /> <strong>%{link}</strong>"
         titles:
-          site: "S'identifier sur Dune"
+          site: "S'identifier sur dune"
           header: "S'identifier"
         links:
           register: "Rejoindre <i class='icon-et-right-circled'></i>"

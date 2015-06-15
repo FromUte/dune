@@ -4,7 +4,7 @@ fr:
       new:
         no_account_html: "Pas de problème !"
         titles:
-          site: 'Mot de passe Dune oublié ?'
+          site: 'Mot de passe dune oublié ?'
           header: 'Mot de passe oublié ?'
         links:
           register: "S'inscrire"

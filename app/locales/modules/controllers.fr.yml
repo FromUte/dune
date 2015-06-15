@@ -1,7 +1,7 @@
 fr:
   controllers:
     omniauth_authentication:
-      needs_ownership_confirmation: "S'il vous plaît, connectez-vous avec votre compte Dune existant avant de continuer"
+      needs_ownership_confirmation: "S'il vous plaît, connectez-vous avec votre compte dune existant avant de continuer"
     unsubscribes:
       create:
         success: 'Vos informations ont étés mise à jour !'
