@@ -65,9 +65,8 @@
             li J'ai contracté trop de dettes, aucune solution financière ne peut restructurer mes dettes, je risque la saisie immobilière. Ma famille est en danger.
             li Je vends mon bien sans déménager et règle une indemnité d'occupation pour une durée maximale de 5 ans conformément à l'article 1673 du code civil.
             li Mon bien est évalué, par un professionnel reconnu et garanti sur cette base. Un notaire assure toujours le cadre de la transaction.
-            li L’argent de la vente me permet exclusivement d'apurer toutes mes dettes ! Je lève mes fichages banque de France. Je rétablis une situation saine.
-            li Mon équilibre financier retrouvé, je rachète mon bien au prix de vente initial grâce à la VFR ou bien je choisis de vendre au prix du marché.
-            br
+            li L’argent de la vente me permet d'apurer toutes mes dettes ! Je lève mes fichages banque de France. Je rétablis une situation saine.
+            li Mon équilibre financier retrouvé, je rachète mon bien au prix de vente initial grâce à la VFR ou bien je choisis de vendre au prix du marché et récupère la plus-value.
           = link_to 'Etude gratuite', start_path, class: 'button'
       .large-6.medium-6.columns
         .large-10.columns.large-centered
@@ -226,9 +225,26 @@
 
       .row
         = render @channels
-  section.press.hide-for-small
+  - if @press_assets.any?
+    section.press.hide-for-small
+      .row
+        .small-12.columns
+          - @press_assets.each do |asset|
+            = link_to asset.url, target: :blank, title: asset.title do
+              = image_tag asset.image.thumb.url
+  section.definition
     .row
-      .small-12.columns
-        - @press_assets.each do |asset|
-          = link_to asset.url, target: :blank, title: asset.title do
-            = image_tag asset.image.thumb.url
+      .large-12.columns
+        h2 Définitions
+        h4 Vous trouverez ci-dessous les définitions des termes rencontrés sur votre plate-forme.
+        dl
+          dt Vente à réméré :
+          dd Le réméré est un contrat de vente établi devant notaire, qui va garantir au vendeur la possibilité de racheter son bien ultérieurement. Le vendeur pourra continuer à occuper le bien et devra, dans ce cas, conclure un contrat d’occupation des lieux avec l’acquéreur et lui payer des indemnités d’occupation. Dans un contrat de réméré, on ne parlera pas de bail ni de loyer, mais plus précisément de contrat d’occupation des lieux (ou de convention d’occupation précaire) et d’indemnités d’occupation.
+        dl
+          dt Apurer :
+          dd Solder l'intégralité de son passif.
+        dl
+          dt Propriétaires :
+          dd Propriétaires ou personnes morales domiciliées en France et immatriculées au RCS propriétaires de biens immobiliers faisant appel à la Foncière DuneSolidaire, par le biais du Site, afin que cette dernière porte leur projet.
+
+

@@ -18,7 +18,7 @@ fr:
         local-governments: "Entrepreneurs"
         nonprofits: 'Un besoin'
         neighborhood-organizations: 'Particuliers'
-        description: "Particuliers et entrepreneurs peuvent faire appel au dispositif <strong>'dune'</strong> afin de retrouver un équilibre financier et dégager de la trésorerie."
+        description: "Particuliers et entrepreneurs peuvent faire appel au dispositif <strong>dune</strong> afin de retrouver un équilibre financier et dégager de la trésorerie."
         description0: "Aucune solution financière ne m'est offerte."
         description1: "J'ai payé au moins 50% de mon patrimoine immobilier."
         description2: "Mes dettes ne dépassent pas 50% de mon patrimoine immobilier."
@@ -27,7 +27,7 @@ fr:
         description5: "Je dois apurer mes dettes, lever mes fichages banque de France ou dégager de la trésorerie."
         description6: "J'accepte de rencontrer un conseiller dune et d'étudier la solution de Vente avec Faculté de Rachat (VFR)."
         description7: "J'accepte de constituer un dossier réglementaire avec tous les documents juridiques validés par un notaire ou un avocat."
-        description8: "Je m'engage à payer mes indemnités d'occupation à la foncière dune, reversées sans frais aux investisseurs solidaires."
+        description8: "Je m'engage à payer mes indemnités d'occupation à la foncière dune, rétrocédée intégralement aux investisseurs solidaires."
         description9: "Je m'engage à être accompagné le temps du processus par un conseiller dune jusqu'au rachat ou la vente de mon bien."
       work:
         title: "De l'union née l'évolution"
