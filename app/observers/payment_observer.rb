@@ -28,6 +28,8 @@ class PaymentObserver < ActiveRecord::Observer
                               { project: resource.project,
                                 bcc: Configuration[:email_payments] })
 
+    notification_for_backoffice(resource, :payment_confirmed)
+
     if resource.project.expires_at < 7.days.ago
       notification_for_backoffice(resource, :payment_confirmed_after_finished_project)
     end
