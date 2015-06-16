@@ -27,7 +27,7 @@ fr:
       success: "Connecté avec succès par le biais de %{kind}."
     passwords:
       no_token: "Vous ne pouvez pas accéder à cette page sans jeton de sécurité provenant d'un e-mail de réinitialisation de mot de passe. Si vous avez bien reçu un e-mail de réinitialisation de mot de passe, s'il vous plaît assurez-vous que vous avez bien utilisé l'URL fourni en entier.Vous ne pouvez pas accéder à cette page sans jeton de sécurité provenant d'un e-mail de réinitialisation de mot de passe. Si vous avez bien reçu un e-mail de réinitialisation de mot de passe, s'il vous plaît assurez-vous que vous avez bien utilisé l'URL fourni en entier."
-      send_instructions: "Vous recevrez un e-mail de réinitialiser de votre mot de passe dans quelques minutes."
+      send_instructions: "Vous recevrez un e-mail de réinitialisation de votre mot de passe dans quelques minutes."
       send_paranoid_instructions: "Si votre adresse électronique existe dans notre base de données, vous recevrez un e-mail avec les instructions de confirmation sous peu."
       updated: "Votre mot de passe a été modifié avec succès. Vous êtes à présent connecté."
       updated_not_active: "Votre mot de passe a été changé avec succès."
