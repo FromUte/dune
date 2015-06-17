@@ -5,6 +5,7 @@ class EmailsController < ApplicationController
       :adm_project_deadline,
       :contact,
       :payment_confirmed,
+      :payment_pending,
       :payment_canceled_after_confirmed,
       :payment_confirmed_after_finished_project,
       :contribution_project_successful,

@@ -1,0 +1,46 @@
+- if @notification.contribution.present?
+  - resource = @notification.contribution
+- else
+  - resource = @notification.match
+
+|Bonjour, #{resource.user.display_name}!
+br
+br
+|Le présent e-mail confirme votre #{resource.class.model_name.human} à #{link_to(resource.project.name, project_url(resource.project))}. Merci de conserver cet e-mail pour reçu.
+br
+br
+|#{resource.class.model_name.human} Montant :
+strong #{number_to_currency resource.value, precision: 0}
+br
+/- if resource.respond_to?(:reward)
+/  br
+/  |Vous avez sélectionné la récompense suivante :
+/  - if resource.reward
+/    strong #{number_to_currency resource.reward.minimum_value, precision: 0}
+/    |  &mdash; #{resource.reward.description}
+/  -else
+/    |  Aucune récompense sélectionnée. S'il s'agit d'une erreur, contactez-nous &nbsp; #{mail_to Configuration[:email_contact]}
+/  br
+br
+|#{resource.class.model_name.human} crée le :
+strong #{l resource.created_at.to_date, format: :long}
+br
+br
+|Clé paiement :
+strong #{resource.key}
+br
+- if resource.is_a?(Contribution)
+  br
+  |Si la vente à réméré participative est financée avec succès le <strong>#{l resource.project.expires_at.to_date, format: :long}</strong>, nous prendrons contact avec vous afin de finaliser votre prêt à la foncière immobilière DuneSolidaire. Ce processus peut prendre quelques jours.
+  |  Si la campagne n’atteint pas le but fixé, vous recevrez un e-mail vous le notifiant.
+  br
+br
+|N'hésitez pas à contacter notre conseiller si vous avez d'autres questions.
+br
+br
+|Vous pouvez également visiter nos #{link_to('FAQ', "#{Configuration[:base_url]}/faq")}.
+br
+br
+|Sincères salutations,
+br
+| L'équipe #{Configuration[:company_name]}
