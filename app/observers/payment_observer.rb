@@ -3,10 +3,10 @@ class PaymentObserver < ActiveRecord::Observer
 
   def after_create(resource)
     resource.define_key!
-    notification_for_backoffice(resource, :payment_pending)
   end
 
   def before_save(resource)
+    notification_for_backoffice(resource, :payment_pending)
     if resource.confirmed? && resource.confirmed_at.nil?
       notify_confirmation(resource)
     end

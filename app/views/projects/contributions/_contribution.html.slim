@@ -25,13 +25,13 @@
               .tooltip-content.hide
                 .reward
                   .value = contribution.display_value
-                  - if contribution.reward
-                    .user-reward
-                      = contribution.reward.display_minimum
-                      |  -
-                      = contribution.reward.description
-                  - else
-                    = t('.no_reward')
+                  /- if contribution.reward
+                  /  .user-reward
+                  /    = contribution.reward.display_minimum
+                  /    |  -
+                  /    = contribution.reward.description
+                  /- else
+                  /  = t('.no_reward')
                   .user_email = mail_to contribution.user.email
           - if contribution.matched_contributions.size > 0
             .matched-by
