@@ -8,7 +8,8 @@ header.contain-to-grid.fixed
               - url = main_app.root_url(host: Configuration[:base_domain] || request.domain, protocol: 'https')
             - else
               - url = main_app.root_url
-            = link_to Configuration[:company_name], url
+            /= link_to Configuration[:company_name], url
+            = link_to '1er site de vente à réméré participative', url
 
         / Mobile thing
         li.toggle-topbar.menu-icon
