@@ -1,8 +1,7 @@
 //= require jquery.js
-//= require jquery.turbolinks
+
 //= require jquery_ujs
 //= require jquery.remotipart
-//= require turbolinks
 //= require jquery.pjax
 //= require foundation
 //= require dropzone
@@ -21,3 +20,4 @@
 //= require dune-balanced-creditcard
 //= require dune-balanced-bankaccount
 //= require dune-admin
+//= require turbolinks
