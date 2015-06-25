@@ -89,17 +89,17 @@ Dune::Application.routes.draw do
   get '/infographie',           to: 'static#how_it_works',        as: :how_it_works
   get '/comment-ca-marche',     to: 'static#comment_ca_marche',   as: :comment_ca_marche
   get '/faq',                   to: 'static#faq',                 as: :faq
-  get '/terms',                 to: 'static#terms',               as: :terms
+  get '/utilisation',           to: 'static#terms',               as: :terms
   get '/privacy',               to: 'static#privacy',             as: :privacy
-  get '/start',                 to: 'projects#start',             as: :start
-  get '/ensemble',              to: 'static#ensemble',               as: :ensemble
+  get '/demarrer',              to: 'projects#start',             as: :start
+  get '/ensemble',              to: 'static#ensemble',            as: :ensemble
 
   # Only accessible on development
   if Rails.env.development?
     get '/base',                to: 'static#base',              as: :base
   end
 
-  get '/discover/(:state)(/near/:near)(/category/:category)(/tags/:tags)(/search/:search)', to: 'discover#index', as: :discover
+  get '/investir/(:state)(/near/:near)(/category/:category)(/tags/:tags)(/search/:search)', to: 'discover#index', as: :discover
 
   resources :tags, only: [:index]
 
