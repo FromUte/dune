@@ -7,10 +7,11 @@ module Concerns
     # and remove FB templates from acceptance tests
     included do
       helper_method :facebook_url_admin,
+                    :render_facebook_sdk,
                     :render_facebook_like,
                     :render_twitter,
                     :display_uservoice_sso
-                    # :render_facebook_sdk
+
     end
 
     def facebook_url_admin

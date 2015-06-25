@@ -20,7 +20,7 @@ head
   = stylesheet_link_tag :animate, 'data-turbolinks-track' => false
   = stylesheet_link_tag :application, 'data-turbolinks-track' => false
   = stylesheet_link_tag "//fonts.googleapis.com/css?family=Lato:300,400,700", 'data-turbolinks-track' => false
-  -#= javascript_include_tag 'facebook.js'
+  /= javascript_include_tag 'facebook.js', 'data-turbolinks-track' => false
 
   -# CSRF protection
   = csrf_meta_tag
@@ -42,7 +42,7 @@ head
 body.f-topbar-fixed
   = render 'layouts/analytics'
   = initjs_tag app_name: 'Dune'
-  /= render_facebook_sdk
+  = render_facebook_sdk
   = render 'layouts/loader'
   = render 'layouts/header'
   /= render 'layouts/google_tag_manager'
